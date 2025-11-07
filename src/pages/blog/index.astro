@@ -25,8 +25,13 @@ const blogEntries = posts.map((item: any) => ({
 ---
 
 <BaseLayout title="Danh Sách Blog | MiAgent">
-    <main class="container py-12">
-        <h1 class="text-4xl font-bold mb-8">Tất Cả Bài Viết Blog</h1>
+    <main class="container px-8 py-12">
+        <h1 class="text-4xl font-bold text-center mb-8">Tất Cả Bài Viết Blog</h1>
+        <p class="text-2xl font-bold text-center mb-4 text-gray-400">
+            Khám phá cách Mi Agent đang giúp doanh nghiệp đổi mới vận hành<br>
+            và đạt được kết quả ấn tượng trên nhiều lĩnh vực khác nhau.
+        </p>
+
         
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogEntries.length > 0 ? (
