@@ -1,0 +1,72 @@
+---
+// 1. IMPORT: Tải các hàm và component cần thiết
+import { getBlogPosts } from '../../lib/contentful'; 
+import BaseLayout from "../../layouts/BaseLayout.astro"; // Giả định bạn có Layout
+
+// =======================================================
+// KHU VỰC FRONTMATTER (Chạy trên Server trong thời gian build/runtime)
+// =======================================================
+
+// 2. FETCH DỮ LIỆU: Gọi hàm API để lấy danh sách Entry 'post'
+const posts = await getBlogPosts(); 
+
+// 3. ĐỊNH HÌNH LẠI DỮ LIỆU (Data Transformation)
+// Map qua mảng Contentful Entry và trích xuất các trường cần thiết
+const blogEntries = posts.map((item: any) => ({
+    title: item.fields.title,
+    slug: item.fields.slug,
+    excerpt: item.fields.excerpt,
+    
+    // Giữ nguyên dòng sửa lỗi an toàn
+    thumbnailUrl: item.fields.thumbnail?.fields.file.url ?? '/images/default-placeholder.jpg',
+    
+    publishedDate: new Date(item.fields.publishedAt).toLocaleDateString('vi-VN'),
+}));
+---
+
+<BaseLayout title="Danh Sách Blog | MiAgent">
+    <main class="container py-12">
+        <h1 class="text-4xl font-bold mb-8">Tất Cả Bài Viết Blog</h1>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {blogEntries.length > 0 ? (
+                blogEntries.map(post => (
+                    <article class="border p-4 rounded-lg shadow-md hover:shadow-lg transition">
+                        
+                        <a href={`/blog/${post.slug}`}>
+                            <img 
+                                src={post.thumbnailUrl} 
+                                alt={post.title} 
+                                class="w-full h-48 object-cover rounded mb-4" 
+                                width="400" 
+                                height="200"
+                            />
+                        </a>
+
+                        <h2 class="text-xl font-semibold mb-2">
+                            <a href={`/blog/${post.slug}`} class="text-blue-600 hover:underline">
+                                {post.title}
+                            </a>
+                        </h2>
+
+                        <p class="text-sm text-gray-500 mb-3">
+                            Ngày đăng: {post.publishedDate}
+                        </p>
+
+                        <p class="text-gray-700">
+                            {post.excerpt}
+                        </p>
+                        
+                    </article>
+                ))
+            ) : (
+                <p class="text-lg col-span-full text-center">
+                    Hiện chưa có bài viết nào được xuất bản.
+                </p>
+            )}
+        </div>
+    </main>
+
+
+
+</BaseLayout>
