@@ -1,0 +1,92 @@
+---
+// src/pages/blog/[...page].astro
+
+// SỬA: Dùng alias @/ cho nhất quán với code của bạn
+import { getProcessedBlogData } from '@/lib/contentful'; 
+import BaseLayout from "@/layouts/BaseLayout.astro"; 
+import BlogPostCard from '@/components/blog/BlogPostCard.astro'; 
+import FeaturedPost from '@/components/blog/FeaturedPost.astro'; 
+
+// Import 'paginate' (dòng này vẫn đúng)
+// @ts-ignore (Dùng nếu VS Code còn báo lỗi ảo)
+import { paginate } from 'astro:core';
+
+// FIX LỖI TYPE: Import 'type' của GetStaticPathsOptions
+// @ts-ignore (Dùng nếu VS Code còn báo lỗi ảo)
+import type { GetStaticPathsOptions } from 'astro';
+
+// =======================================================
+// TẠO TRANG TĨNH VÀ PHÂN TRANG (PAGINATION)
+// ĐÂY LÀ HÀM MÀ ASTRO ĐANG YÊU CẦU
+// =======================================================
+export const getStaticPaths = async ({ paginate }: GetStaticPathsOptions) => {
+  // 1. Lấy tất cả dữ liệu đã xử lý
+  const { featuredPost, remainingPosts } = await getProcessedBlogData();
+
+  // 2. Chỉ phân trang cho 'remainingPosts' (ví dụ: 49 bài)
+  //    Chúng ta sẽ đặt 9 bài/trang (bạn có thể đổi thành 10 hoặc 12)
+  return paginate(remainingPosts, {
+    pageSize: 6,
+    // 3. Truyền 'featuredPost' vào TẤT CẢ các trang
+    props: { featuredPost }
+  });
+};
+
+// =======================================================
+// LẤY DỮ LIỆU CHO TRANG HIỆN TẠI
+// =======================================================
+const { page, featuredPost } = Astro.props;
+
+const isPageOne = page.currentPage === 1;
+const postsForCurrentPage = page.data;
+---
+
+<BaseLayout title="Danh Sách Blog | MiAgent">
+  <main class="container px-12 py-12">
+    
+    {isPageOne && featuredPost && <FeaturedPost post={featuredPost} />}
+
+    {postsForCurrentPage.length > 0 && (
+      <div class="mt-16">
+        <h2 class="text-3xl font-bold mb-8">
+          {isPageOne ? "Top Articles" : `Bài viết (Trang ${page.currentPage})`}
+        </h2> 
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {postsForCurrentPage.map(post => (
+            <BlogPostCard post={post} /> 
+          ))}
+        </div>
+      </div>
+    )}
+    
+    <div class="pagination-nav mt-16 flex justify-center">
+      <div class="btn-group">
+        
+        {page.url.prev ? (
+          <a href={page.url.prev} class="btn btn-outline">«</a>
+        ) : (
+          <button class="btn btn-outline btn-disabled">«</button>
+        )}
+
+        <button class="btn btn-active">
+          Trang {page.currentPage} / {page.lastPage}
+        </button>
+
+        {page.url.next ? (
+          <a href={page.url.next} class="btn btn-outline">»</a>
+        ) : (
+          <button class="btn btn-outline btn-disabled">»</button>
+        )}
+
+      </div>
+    </div>
+
+    {isPageOne && !featuredPost && postsForCurrentPage.length === 0 && (
+       <p class="text-lg col-span-full text-center mt-16">
+           Hiện chưa có bài viết nào được xuất bản.
+       </p>
+    )}
+
+  </main>
+</BaseLayout>
