@@ -3,9 +3,17 @@ const currentYear = new Date().getFullYear();
 
 const sections = [
   {
+    title: "Về MiAgent",
+    links: [
+      { name: "Về chúng tôi", href: "/about" },
+      { name: "Liên hệ ", href: "/contact" },
+      // { name: "Các bài viết", herf: "/blog" },
+    ],
+  },
+  {
     title: "Sản phẩm",
     links: [
-      { name: "Tính năng", href: "/" },
+      // { name: "Tính năng", href: "/" },
       { name: "Bảng giá", href: "/pricing" },
       { name: "Tích hợp CRM/ERP", href: "/#cong-nghe-doc-quyen" },
       // { name: "AI Agent Demo", href: "/demo" },
@@ -17,13 +25,6 @@ const sections = [
       { name: "Chính sách bảo mật", href: "/privacy-policy" }, // Quan trọng cho Trust
       { name: "Điều khoản sử dụng", href: "/terms-of-service" }, // Quan trọng cho Trust
       { name: "Chính sách thanh toán", href: "/payment-policy" },
-    ],
-  },
-  {
-    title: "Về MiAgent",
-    links: [
-      { name: "Về chúng tôi", href: "/" },
-      { name: "Liên hệ", href: "/contact" },
     ],
   },
 ];
