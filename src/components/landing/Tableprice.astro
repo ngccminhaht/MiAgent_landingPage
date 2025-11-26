@@ -1,350 +1,498 @@
 ---
-// src/pages/banggia.astro
+// src/pages/pricing.astro
 ---
 
-
-
 <section class="py-16 md:py-20">
-    <div class="max-w-[1600px] mx-auto px-4 lg:px-6">
-        <!-- Grid CHUNG (1 cột trên mobile, 5 cột trên desktop/tablet) -->
-        <div class="grid grid-cols-1 md:grid-cols-5 gap-6 md:gap-4">
-
-            <!-- ===================================== GÓI 1: DÙNG THỬ (P1) ===================================== -->
-            <div
-                class="bg-gradient-to-br from-gray-300 via-white to-gray-400 border-base-200 rounded-2xl shadow-md p-4 border-2 relative hover:shadow-lg transition flex flex-col md:order-1"
-            >
-                <div class="flex-1">
-                    <h3 class="text-lg font-bold text-black mb-2">DÙNG THỬ</h3>
-                    <p class="text-sm mb-4 text-black text-left opacity-80">
-                        Dành cho những doanh nghiệp vừa và nhỏ muốn làm việc với AI Agent
-                    </p>
-                    <div class="text-3xl font-bold text-black mb-1 mt-4">Miễn Phí</div>
-                </div>
-                <a
-                    href="/checkout"
-                    class="block text-center bg-black text-white font-semibold rounded-lg py-2 hover:bg-green-400 transition mt-4 shadow-sm"
-                >
-                    Mua ngay
-                </a>
-            </div>
-
-            <!-- ===================================== TÍNH NĂNG 1: DÙNG THỬ (F1) ===================================== -->
-            <div class="bg-white rounded-2xl shadow-inner p-8 border-2 border-gray-200 flex flex-col text-black text-base md:order-6">
-                <h4 class="font-bold text-gray-800 mb-4 border-b pb-2">Chi tiết Gói Dùng Thử:</h4>
-                <ul class="space-y-2 text-left text-gray-700">
-                    <li class="mb-2"><span class=" text-green-500">✔</span> Tài khoản truy cập: 1</li>
-                    <li><span class=" text-green-500">✔</span> Tin nhắn AI xử lý / tháng: 200</li>
-                    <li class = "mb-8"><span class=" text-green-500">✔</span> Trang hội thoại đa kênh: 1</li>
-                    <li ><span class=" text-green-500">✔</span> Xử lý hồ sơ khách hàng: 1000</li>
-                    <li><span class=" text-green-500">✔</span> AI trả lời phản hồi cơ bản: Có</li>
-                    <li class = "mb-8"><span class=" text-red-500">✘</span> AI trả lời bằng hình ảnh: Không</li>
-                    <li><span class=" text-red-500">✘</span> AI xử lý Ticket đa kênh: Không</li>
-                    <li><span class=" text-red-500">✘</span> Phân tích cảm xúc & chủ đề: Không hỗ trợ</li>
-                    <li class = "mb-8"><span class=" text-red-500">✘</span> Tác vụ mở rộng AI: Không</li>
-                    <li><span class=" text-red-500">✘</span> Chuyên viên hỗ trợ: Không hỗ trợ</li>
-                    <li><span class=" text-green-500">✔</span> Thiết lập & huấn luyện AI: Hạn chế</li>
-                    <li><span class=" text-red-500">✘</span> Chiến dịch tự động: Không hỗ trợ</li>
-                    <li><span class=" text-green-500">✔</span> Ngôn ngữ & nền tảng: Đa ngôn ngữ</li>
-                </ul>
-            </div>
-            
-
-            <!-- ===================================== GÓI 2: KHỞI ĐẦU (P2) ===================================== -->
-            <div
-                class="bg-white rounded-2xl shadow-md p-4 border-2 border-green-500 relative hover:shadow-lg transition flex flex-col md:order-2"
-            >
-                <div class="flex-1">
-                    <h3 class="text-lg font-bold text-green-600 mb-2">KHỞI ĐẦU</h3>
-                    <p class="text-sm mb-4 text-gray-600 text-left">
-                        Dành cho những doanh nghiệp vừa và nhỏ muốn làm việc với AI Agent
-                    </p>
-                    <div class="text-3xl font-bold text-gray-900 mb-1 mt-4">980,000đ</div>
-                    <div class="text-gray-600 text-left">/tháng</div>
-                </div>
-                <a
-                    href="/checkout"
-                    class="block text-center bg-black text-white font-semibold rounded-lg py-2 hover:bg-green-400 transition mt-4 shadow-sm"
-                >
-                    Mua ngay
-                </a>
-            </div>
-
-            <!-- ===================================== TÍNH NĂNG 2: KHỞI ĐẦU (F2) ===================================== -->
-            <div class="bg-white rounded-2xl shadow-inner p-8 border-2 border-gray-200 flex flex-col text-black text-base md:order-7">
-                <h4 class="font-bold text-gray-800 mb-4 border-b pb-2">Chi tiết Gói Khởi Đầu:</h4>
-                <ul class="space-y-2 text-left text-gray-700">
-                    <li><span class=" text-green-500">✔</span> Tài khoản truy cập: 3</li>
-                    <li><span class=" text-green-500">✔</span> Tin nhắn AI xử lý / tháng: 1,500</li>
-                    <li class = "mb-8"><span class=" text-green-500">✔</span> Trang hội thoại đa kênh: 5</li>
-                    <li ><span class=" text-green-500">✔</span> Xử lý hồ sơ khách hàng: 10,000</li>
-                    <li><span class=" text-green-500">✔</span> AI trả lời phản hồi cơ bản: Có</li>
-                    <li class = "mb-8"><span class=" text-red-500">✘</span> AI trả lời bằng hình ảnh: Không</li>
-                    <li><span class=" text-green-500">✔</span> AI xử lý Ticket đa kênh: Có</li>
-                    <li><span class=" text-red-500">✘</span> Phân tích cảm xúc & chủ đề: Không hỗ trợ</li>
-                    <li class = "mb-8"><span class=" text-red-500">✘</span> Tác vụ mở rộng AI: Không</li>
-                    <li><span class=" text-red-500">✘</span> Chuyên viên hỗ trợ: Không</li>
-                    <li><span class=" text-green-500">✔</span> Thiết lập & huấn luyện AI: Có </li>
-                    <li><span class=" text-green-500">✔</span> Chiến dịch tự động: Có </li>
-                    <li><span class=" text-green-500">✔</span> Ngôn ngữ & nền tảng: Đa ngôn ngữ</li>
-                </ul>
-            </div>
-
-            <!-- ===================================== GÓI 3: CHUYÊN NGHIỆP (P3) ===================================== -->
-            <div
-                class="bg-gradient-to-br from-black to-green-800 rounded-2xl shadow-lg p-4 border-2 border-white relative hover:shadow-xl transition overflow-hidden flex flex-col md:order-3"
-            >
-                <div class="flex-1">
-                    <h3 class="text-lg font-bold text-white mb-2">CHUYÊN NGHIỆP</h3>
-                    <p class="text-sm mb-4 text-white text-left opacity-90">
-                        Dành cho doanh nghiệp vừa và lớn, cần AI Agent chuyên nghiệp
-                    </p>
-                    <div class="text-3xl font-bold text-white mb-1 mt-4">2,390,000đ</div>
-                    <div class="text-white text-left">/tháng</div>
-                </div>
-                <a
-                    href="/checkout"
-                    class="block text-center bg-green-600 text-white font-semibold rounded-lg py-2 hover:bg-blue-700 transition mt-4 shadow-md"
-                >
-                    Mua ngay
-                </a>
-            </div>
-
-            <!-- ===================================== TÍNH NĂNG 3: CHUYÊN NGHIỆP (F3) ===================================== -->
-            <div class="bg-white rounded-2xl shadow-inner p-8 border-2 border-gray-200 flex flex-col text-black text-base md:order-8">
-                <h4 class="font-bold text-gray-800 mb-4 border-b pb-2">Chi tiết Gói Chuyên Nghiệp:</h4>
-                <ul class="space-y-2 text-left text-gray-700">
-                    <li><span class=" text-green-500">✔</span> Tài khoản truy cập: 5</li>
-                    <li><span class=" text-green-500">✔</span> Tin nhắn AI xử lý / tháng: 5,000</li>
-                    <li class = "mb-8"><span class=" text-green-500">✔</span> Trang hội thoại đa kênh: 10</li>
-                    <li ><span class=" text-green-500">✔</span> Xử lý hồ sơ khách hàng: 50,000</li>
-                    <li><span class=" text-green-500">✔</span> AI trả lời phản hồi cơ bản: Có</li>
-                    <li class = "mb-8"><span class=" text-green-500">✔</span> AI trả lời bằng hình ảnh: Có</li>
-                    <li><span class=" text-green-500">✔</span> AI xử lý Ticket đa kênh: Có</li>
-                    <li><span class=" text-green-500">✔</span> Phân tích cảm xúc & chủ đề: Có hỗ trợ</li>
-                    <li class = "mb-8"><span class=" text-green-500">✔</span> Tác vụ mở rộng AI: Không</li>
-                    <li><span class=" text-green-500">✔</span> Chuyên viên hỗ trợ: Có</li>
-                    <li><span class=" text-green-500">✔</span> Thiết lập & huấn luyện AI: Có </li>
-                    <li><span class=" text-green-500">✔</span> Chiến dịch tự động: Có </li>
-                    <li><span class=" text-green-500">✔</span> Ngôn ngữ & nền tảng: Đa ngôn ngữ</li>
-                </ul>
-            </div>
-
-            <!-- ===================================== GÓI 4: MỞ RỘNG (P4) ===================================== -->
-            <div
-                class="bg-gradient-to-br from-white to-blue-400 rounded-2xl shadow-lg p-4 border-2 border-blue-900 relative hover:shadow-xl transition overflow-hidden flex flex-col md:order-4"
-            >
-                <span
-                    class="absolute top-0 right-0 bg-blue-900 text-white text-xs font-semibold px-3 py-1 rounded-bl-lg"
-                >
-                    Phổ biến
-                </span>
-                <div class="flex-1">
-                    <h3 class="text-lg font-bold text-blue-900 mb-2">MỞ RỘNG</h3>
-                    <p class="text-sm mb-4 text-black text-left">
-                        Dành cho doanh nghiệp lớn, cần AI Agent chuyên nghiệp mở rộng hệ thống
-                    </p>
-                    <div class="text-3xl font-bold text-gray-900 mb-1 mt-4">6,900,000đ</div>
-                    <div class="text-gray-600 text-left">/tháng</div>
-                </div>
-                <a
-                    href="/checkout"
-                    class="block text-center bg-blue-600 text-white font-semibold rounded-lg py-2 hover:bg-blue-700 transition mt-4 shadow-md"
-                >
-                    Mua ngay
-                </a>
-            </div>
-
-            <!-- ===================================== TÍNH NĂNG 4: MỞ RỘNG (F4) ===================================== -->
-            <div class="bg-white rounded-2xl shadow-inner p-8 border-2 border-gray-200 flex flex-col text-black text-base md:order-9">
-                <h4 class="font-bold text-gray-800 mb-4 border-b pb-2">Chi tiết Gói Mở Rộng:</h4>
-                <ul class="space-y-2 text-left text-gray-700">
-                    <li><span class=" text-green-500">✔</span> Tài khoản truy cập: 10</li>
-                    <li><span class=" text-green-500">✔</span> Tin nhắn AI xử lý / tháng: 15,000</li>
-                    <li class = "mb-8"><span class=" text-green-500">✔</span> Trang hội thoại đa kênh: 50</li>
-                    <li><span class=" text-green-500">✔</span> Xử lý hồ sơ khách hàng: 300,000</li>
-                    <li><span class=" text-green-500">✔</span> AI trả lời phản hồi cơ bản: Có</li>
-                    <li class = "mb-8"><span class=" text-green-500">✔</span> AI trả lời bằng hình ảnh: Có</li>
-                    <li><span class=" text-green-500">✔</span> AI xử lý Ticket đa kênh: Có</li>
-                    <li><span class=" text-green-500">✔</span> Phân tích cảm xúc & chủ đề: Có hỗ trợ</li>
-                    <li class = "mb-8"><span class=" text-green-500">✔</span> Tác vụ mở rộng AI: 5 tác vụ</li>
-                    <li><span class=" text-green-500">✔</span> Chuyên viên hỗ trợ: Ưu tiên</li>
-                    <li><span class=" text-green-500">✔</span> Thiết lập & huấn luyện AI: Có </li>
-                    <li><span class=" text-green-500">✔</span> Chiến dịch tự động: Có </li>
-                    <li><span class=" text-green-500">✔</span> Ngôn ngữ & nền tảng: Đa ngôn ngữ</li>
-                </ul>
-            </div>
-
-            <!-- ===================================== GÓI 5: DOANH NGHIỆP LỚN (P5) ===================================== -->
-            <div
-                class="bg-gradient-to-b from-orange-200 to-white rounded-2xl shadow-lg p-4 border-2 border-orange-500 relative hover:shadow-xl transition overflow-hidden flex flex-col md:order-5"
-            >
-                <div class="flex-1">
-                    <h3 class="text-lg font-bold text-orange-600 mb-2">DOANH NGHIỆP LỚN</h3>
-                    <p class="text-sm mb-4 text-black text-left">
-                        Dành cho doanh nghiệp lớn, cần AI Agent cho các mục đích phức tạp.
-                    </p>
-                    <div class="text-3xl font-bold text-black mb-1 mt-4">LIÊN HỆ</div>
-                </div>
-                <a
-                    href="/checkout"
-                    class="block text-center bg-orange-600 text-white font-semibold rounded-lg py-2 hover:bg-blue-700 transition mt-4 shadow-md"
-                >
-                    Liên hệ ngay
-                </a>
-            </div>
-
-            <!-- ===================================== TÍNH NĂNG 5: DOANH NGHIỆP LỚN (F5) ===================================== -->
-            <div class="bg-white rounded-2xl shadow-inner p-8 border-2 border-gray-200 flex flex-col text-black text-base md:order-10">
-                <h4 class="font-bold text-gray-800 mb-4 border-b pb-2">Chi tiết Gói Doanh Nghiệp Lớn:</h4>
-                <ul class="space-y-2 text-left text-gray-700">
-                    <li><span class=" text-green-500">✔</span> Tài khoản truy cập: tùy chỉnh</li>
-                    <li><span class=" text-green-500">✔</span> Tin nhắn AI xử lý / tháng: tùy chỉnh</li>
-                    <li class = "mb-8"><span class=" text-green-500">✔</span> Trang hội thoại đa kênh: tùy chỉnh</li>
-                    <li><span class=" text-green-500">✔</span> Xử lý hồ sơ khách hàng: tùy chỉnh</li>
-                    <li><span class=" text-green-500">✔</span> AI trả lời phản hồi cơ bản: Có</li>
-                    <li class = "mb-8"><span class=" text-green-500">✔</span> AI trả lời bằng hình ảnh: Có</li>
-                    <li><span class=" text-green-500">✔</span> AI xử lý Ticket đa kênh: Có</li>
-                    <li><span class=" text-green-500">✔</span> Phân tích cảm xúc & chủ đề: Có hỗ trợ</li>
-                    <li class = "mb-8"><span class=" text-green-500">✔</span> Tác vụ mở rộng AI: tùy chỉnh</li>
-                    <li><span class=" text-green-500">✔</span> Chuyên viên hỗ trợ: Ưu tiên</li>
-                    <li><span class=" text-green-500">✔</span> Thiết lập & huấn luyện AI: Có </li>
-                    <li><span class=" text-green-500">✔</span> Chiến dịch tự động: Có </li>
-                    <li><span class=" text-green-500">✔</span> Ngôn ngữ & nền tảng: tùy chỉnh</li>
-                </ul>
-            </div>
-            
+  <div class="max-w-[1600px] mx-auto px-4 lg:px-6">
+    <!-- Grid CHUNG (1 cột trên mobile, 5 cột trên desktop/tablet) -->
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-6 md:gap-4">
+      <!-- ===================================== GÓI 1: DÙNG THỬ (P1) ===================================== -->
+      <div
+        class="bg-gradient-to-br from-gray-300 via-white to-gray-400 border-base-200 rounded-2xl shadow-md p-4 border-2 relative hover:shadow-lg transition flex flex-col md:order-1"
+      >
+        <div class="flex-1">
+          <h3 class="text-lg font-bold text-black mb-2">DÙNG THỬ</h3>
+          <p class="text-sm mb-4 text-black text-left opacity-80">
+            Dành cho những doanh nghiệp vừa và nhỏ muốn làm việc với AI Agent
+          </p>
+          <div class="text-3xl font-bold text-black mb-1 mt-4">Miễn Phí</div>
         </div>
-    </div>
-
-
-
-      <p style="text-align: center; margin-bottom: 60px;margin-top: 60px;"> 
-        <a href="/" style="font-weight: bold; font-size: 40px; text-decoration: underline; text-decoration-color: purple; color: inherit;">
-        MIAGENT KHÁC BIỆT SO VỚI ĐỐI THỦ
+        <a
+          href="/checkout"
+          class="block text-center bg-black text-white font-semibold rounded-lg py-2 hover:bg-green-400 transition mt-4 shadow-sm"
+        >
+          Mua ngay
         </a>
-      </p>
-      <!-- Bảng sản phẩm -->
-      <div class="rounded-xl overflow-hidden border border-gray-300">
-        <div class="overflow-x-auto">
-          <table class="min-w-full text-left border-collapse">
-            <thead class="bg-gray-100 text-gray-700">
-              <tr>
-                <th class="px-4 py-3 rounded-tl-xl">#</th>
-                <th class="px-4 py-3">Tính năng nổi bật</th>
-                <th class="px-4 py-3">Mô tả chi tiết</th>
-                <th class="px-4 py-3 rounded-tr-xl">Giá trị khác biệt so với đối thủ</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y">
-              <tr>
-                <td class="px-4 py-4 font-semibold">1</td>
-                <td class="px-4 py-4">Nhận diện & xử lý hình ảnh sản phẩm</td>
-                <td class="px-4 py-4">
-                  • Gửi và phân tích hình ảnh trực tiếp trong cuộc trò chuyện.<br>
-                  • AI tự động nhận diện hình ảnh khách hàng gửi để xác định sản phẩm họ đang quan tâm.
-                </td>
-                <td class="px-4 py-4">
-                  • Đa số nền tảng chỉ hỗ trợ chat văn bản.<br>
-                  • MiAgent hiểu hình ảnh như con người, cho phép khách hàng chỉ cần chụp sản phẩm là AI đã nhận ra và tư vấn đúng nhu cầu.
-                </td>
-              </tr>
-              <tr>
-                <td class="px-4 py-4 font-semibold">2</td>
-                <td class="px-4 py-4">Hiểu & phân tích nội dung video</td>
-                <td class="px-4 py-4">
-                  • Cho phép gửi video sản phẩm ngay trong khung chat.<br>
-                  • AI có thể đọc hiểu, trích xuất nội dung và phân tích video khách hàng gửi lại.
-                </td>
-                <td class="px-4 py-4">
-                  • Các đối thủ gần như không xử lý video.<br>
-                  • MiAgent phân tích cả nội dung và cảm xúc trong video để xác định mức độ quan tâm hoặc vấn đề khách hàng đang gặp.
-                </td>
-              </tr>
-              <tr>
-                <td class="px-4 py-4 font-semibold">3</td>
-                <td class="px-4 py-4">Hiểu ý định & kế thừa hội thoại tự nhiên</td>
-                <td class="px-4 py-4">
-                  • Nhận diện chính xác ý định của khách hàng và chỉ phản hồi khi đủ ngữ cảnh.<br>
-                  • AI kế thừa toàn bộ lịch sử hội thoại để tiếp tục tư vấn liền mạch như con người.
-                </td>
-                <td class="px-4 py-4">
-                  • Đối thủ thường mất ngữ cảnh khi đổi người chat hoặc khi khách quay lại sau vài ngày.<br>
-                  • MiAgent giữ mạch hội thoại xuyên suốt, giúp trải nghiệm tự nhiên và chuyên nghiệp hơn.
-                </td>
-              </tr>
-              <tr>
-                <td class="px-4 py-4 font-semibold">4</td>
-                <td class="px-4 py-4">Kết nối hệ thống & tự động hóa toàn chuỗi bán hàng</td>
-                <td class="px-4 py-4">
-                  • Tích hợp CRM, ERP cùng các nền tảng Facebook, Zalo OA, Shopee, Amazon, TikTok Shop, Spotify…<br>
-                  • Remarketing thông minh: tự động gửi tin chăm sóc theo hành vi mua hàng, cảnh báo nhân viên khi có tín hiệu xấu.
-                </td>
-                <td class="px-4 py-4 rounded-b-xl">
-                  • Trong khi các nền tảng khác chỉ dừng ở chatbot chăm sóc khách hàng,<br>
-                  • MiAgent hoạt động như một hệ thống AI Sales – tự động hóa toàn chuỗi bán hàng, từ tương tác, phân tích đến chốt đơn.
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
       </div>
 
-      
+      <!-- ===================================== TÍNH NĂNG 1: DÙNG THỬ (F1) ===================================== -->
+      <div
+        class="bg-white rounded-2xl shadow-inner p-8 border-2 border-gray-200 flex flex-col text-black text-base md:order-6"
+      >
+        <h4 class="font-bold text-gray-800 mb-4 border-b pb-2">
+          Chi tiết Gói Dùng Thử:
+        </h4>
+        <ul class="space-y-2 text-left text-gray-700">
+          <li class="mb-2">
+            <span class="text-green-500">✔</span> Tài khoản truy cập: 1
+          </li>
+          <li>
+            <span class="text-green-500">✔</span> Tin nhắn AI xử lý / tháng: 200
+          </li>
+          <li class="mb-8">
+            <span class="text-green-500">✔</span> Trang hội thoại đa kênh: 1
+          </li>
 
-      
-
-    <div class="mt-16 sm:mt-24 relative bg-zinc-900 text-white rounded-3xl overflow-visible text-center">
-
-    <div aria-hidden="true" class="absolute inset-x-0 top-1/2 -translate-y-1/2 h-64 bg-gradient-to-r from-rose-500 via-violet-500 to-sky-500 blur-3xl"></div>
-
-
-    <div class="mt-16 sm:mt-24 rounded-3xl p-px bg-gradient-to-br from-gray-700 via-gray-900 to-gray-900
-              transition-transform duration-300 hover:scale-105 group">
-
-    <div class="relative bg-zinc-900 text-white rounded-[23px] overflow-visible text-center">
-
-      <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-r from-gray-500/20 to-transparent blur-3xl opacity-50
-                                    transition-opacity duration-300 group-hover:opacity-100 -z-10"></div>
-
-
-      <div class="relative z-10 py-16 lg:py-20 px-6 space-y-4 lg:space-y-6">
-        
-        <div class="flex items-center justify-center gap-x-2">
-          <img src="/logomi.svg" alt="Miagent Logo" class="h-8 w-auto brightness-0 invert">
-          <img src="/miagent.svg" alt="Miagent Logo" class="h-8 w-auto brightness-0 invert">
-        </div>
-
-        <p class="text-xl font-medium text-gray-300">
-          MI Agent giúp doanh nghiệp tự động hóa quy trình và phục vụ khách hàng nhanh chóng 
-        </p>
-
-        <div class="flex items-center justify-center gap-4">
-          <a
-            href="/lienhe"
-            class="bg-green-400 text-white font-semibold rounded-lg py-2 px-6 hover:bg-green-500 transition">
-            Đặt lịch tư vấn
-          </a>
-          <a
-            href="/banggia"
-            class="bg-green-400 text-white font-semibold rounded-lg py-2 px-6 hover:bg-green-500 transition">
-            Tham khảo giá
-          </a>
-        </div>
-
+          <li>
+            <span class="text-green-500">✔</span> AI trả lời phản hồi cơ bản: Có
+          </li>
+          <li class="mb-8">
+            <span class="text-red-500">✘</span> AI trả lời bằng hình ảnh: Không
+          </li>
+          <li>
+            <span class="text-red-500">✘</span> AI xử lý Ticket đa kênh: Không
+          </li>
+          <li>
+            <span class="text-red-500">✘</span> Phân tích cảm xúc & chủ đề: Không
+            hỗ trợ
+          </li>
+          <li class="mb-8">
+            <span class="text-red-500">✘</span> Tác vụ mở rộng AI: Không
+          </li>
+          <li>
+            <span class="text-red-500">✘</span> Chuyên viên hỗ trợ: Không hỗ trợ
+          </li>
+          <li>
+            <span class="text-green-500">✔</span> Thiết lập & huấn luyện AI: Hạn
+            chế
+          </li>
+          <li>
+            <span class="text-red-500">✘</span> Chiến dịch tự động: Không hỗ trợ
+          </li>
+          <li>
+            <span class="text-green-500">✔</span> Ngôn ngữ & nền tảng: Đa ngôn ngữ
+          </li>
+        </ul>
       </div>
 
-      
+      <!-- ===================================== GÓI 2: KHỞI ĐẦU (P2) ===================================== -->
+      <div
+        class="bg-white rounded-2xl shadow-md p-4 border-2 border-green-500 relative hover:shadow-lg transition flex flex-col md:order-2"
+      >
+        <div class="flex-1">
+          <h3 class="text-lg font-bold text-green-600 mb-2">KHỞI ĐẦU</h3>
+          <p class="text-sm mb-4 text-gray-600 text-left">
+            Dành cho những doanh nghiệp vừa và nhỏ muốn làm việc với AI Agent
+          </p>
+          <div class="text-3xl font-bold text-gray-900 mb-1 mt-4">980,000đ</div>
+          <div class="text-gray-600 text-left">/tháng</div>
+        </div>
+        <a
+          href="/checkout"
+          class="block text-center bg-black text-white font-semibold rounded-lg py-2 hover:bg-green-400 transition mt-4 shadow-sm"
+        >
+          Mua ngay
+        </a>
+      </div>
 
+      <!-- ===================================== TÍNH NĂNG 2: KHỞI ĐẦU (F2) ===================================== -->
+      <div
+        class="bg-white rounded-2xl shadow-inner p-8 border-2 border-gray-200 flex flex-col text-black text-base md:order-7"
+      >
+        <h4 class="font-bold text-gray-800 mb-4 border-b pb-2">
+          Chi tiết Gói Khởi Đầu:
+        </h4>
+        <ul class="space-y-2 text-left text-gray-700">
+          <li><span class="text-green-500">✔</span> Tài khoản truy cập: 3</li>
+          <li>
+            <span class="text-green-500">✔</span> Tin nhắn AI xử lý / tháng: 1,500
+          </li>
+          <li class="mb-8">
+            <span class="text-green-500">✔</span> Trang hội thoại đa kênh: 5
+          </li>
+
+          <li>
+            <span class="text-green-500">✔</span> AI trả lời phản hồi cơ bản: Có
+          </li>
+          <li class="mb-8">
+            <span class="text-red-500">✘</span> AI trả lời bằng hình ảnh: Không
+          </li>
+          <li>
+            <span class="text-green-500">✔</span> AI xử lý Ticket đa kênh: Có
+          </li>
+          <li>
+            <span class="text-red-500">✘</span> Phân tích cảm xúc & chủ đề: Không
+            hỗ trợ
+          </li>
+          <li class="mb-8">
+            <span class="text-red-500">✘</span> Tác vụ mở rộng AI: Không
+          </li>
+          <li><span class="text-red-500">✘</span> Chuyên viên hỗ trợ: Không</li>
+          <li>
+            <span class="text-green-500">✔</span> Thiết lập & huấn luyện AI: Có
+          </li>
+          <li><span class="text-green-500">✔</span> Chiến dịch tự động: Có</li>
+          <li>
+            <span class="text-green-500">✔</span> Ngôn ngữ & nền tảng: Đa ngôn ngữ
+          </li>
+        </ul>
+      </div>
+
+      <!-- ===================================== GÓI 3: CHUYÊN NGHIỆP (P3) ===================================== -->
+      <div
+        class="bg-gradient-to-br from-black to-green-800 rounded-2xl shadow-lg p-4 border-2 border-white relative hover:shadow-xl transition overflow-hidden flex flex-col md:order-3"
+      >
+        <div class="flex-1">
+          <h3 class="text-lg font-bold text-white mb-2">CHUYÊN NGHIỆP</h3>
+          <p class="text-sm mb-4 text-white text-left opacity-90">
+            Dành cho doanh nghiệp vừa và lớn, cần AI Agent chuyên nghiệp
+          </p>
+          <div class="text-3xl font-bold text-white mb-1 mt-4">2,390,000đ</div>
+          <div class="text-white text-left">/tháng</div>
+        </div>
+        <a
+          href="/checkout"
+          class="block text-center bg-green-600 text-white font-semibold rounded-lg py-2 hover:bg-blue-700 transition mt-4 shadow-md"
+        >
+          Mua ngay
+        </a>
+      </div>
+
+      <!-- ===================================== TÍNH NĂNG 3: CHUYÊN NGHIỆP (F3) ===================================== -->
+      <div
+        class="bg-white rounded-2xl shadow-inner p-8 border-2 border-gray-200 flex flex-col text-black text-base md:order-8"
+      >
+        <h4 class="font-bold text-gray-800 mb-4 border-b pb-2">
+          Chi tiết Gói Chuyên Nghiệp:
+        </h4>
+        <ul class="space-y-2 text-left text-gray-700">
+          <li><span class="text-green-500">✔</span> Tài khoản truy cập: 5</li>
+          <li>
+            <span class="text-green-500">✔</span> Tin nhắn AI xử lý / tháng: 5,000
+          </li>
+          <li class="mb-8">
+            <span class="text-green-500">✔</span> Trang hội thoại đa kênh: 10
+          </li>
+
+          <li>
+            <span class="text-green-500">✔</span> AI trả lời phản hồi cơ bản: Có
+          </li>
+          <li class="mb-8">
+            <span class="text-green-500">✔</span> AI trả lời bằng hình ảnh: Có
+          </li>
+          <li>
+            <span class="text-green-500">✔</span> AI xử lý Ticket đa kênh: Có
+          </li>
+          <li>
+            <span class="text-green-500">✔</span> Phân tích cảm xúc & chủ đề: Có
+            hỗ trợ
+          </li>
+          <li class="mb-8">
+            <span class="text-green-500">✔</span> Tác vụ mở rộng AI: Không
+          </li>
+          <li><span class="text-green-500">✔</span> Chuyên viên hỗ trợ: Có</li>
+          <li>
+            <span class="text-green-500">✔</span> Thiết lập & huấn luyện AI: Có
+          </li>
+          <li><span class="text-green-500">✔</span> Chiến dịch tự động: Có</li>
+          <li>
+            <span class="text-green-500">✔</span> Ngôn ngữ & nền tảng: Đa ngôn ngữ
+          </li>
+        </ul>
+      </div>
+
+      <!-- ===================================== GÓI 4: MỞ RỘNG (P4) ===================================== -->
+      <div
+        class="bg-gradient-to-br from-white to-blue-400 rounded-2xl shadow-lg p-4 border-2 border-blue-900 relative hover:shadow-xl transition overflow-hidden flex flex-col md:order-4"
+      >
+        <span
+          class="absolute top-0 right-0 bg-blue-900 text-white text-xs font-semibold px-3 py-1 rounded-bl-lg"
+        >
+          Phổ biến
+        </span>
+        <div class="flex-1">
+          <h3 class="text-lg font-bold text-blue-900 mb-2">MỞ RỘNG</h3>
+          <p class="text-sm mb-4 text-black text-left">
+            Dành cho doanh nghiệp lớn, cần AI Agent chuyên nghiệp mở rộng hệ
+            thống
+          </p>
+          <div class="text-3xl font-bold text-gray-900 mb-1 mt-4">
+            6,900,000đ
+          </div>
+          <div class="text-gray-600 text-left">/tháng</div>
+        </div>
+        <a
+          href="/checkout"
+          class="block text-center bg-blue-600 text-white font-semibold rounded-lg py-2 hover:bg-blue-700 transition mt-4 shadow-md"
+        >
+          Mua ngay
+        </a>
+      </div>
+
+      <!-- ===================================== TÍNH NĂNG 4: MỞ RỘNG (F4) ===================================== -->
+      <div
+        class="bg-white rounded-2xl shadow-inner p-8 border-2 border-gray-200 flex flex-col text-black text-base md:order-9"
+      >
+        <h4 class="font-bold text-gray-800 mb-4 border-b pb-2">
+          Chi tiết Gói Mở Rộng:
+        </h4>
+        <ul class="space-y-2 text-left text-gray-700">
+          <li><span class="text-green-500">✔</span> Tài khoản truy cập: 10</li>
+          <li>
+            <span class="text-green-500">✔</span> Tin nhắn AI xử lý / tháng: 15,000
+          </li>
+          <li class="mb-8">
+            <span class="text-green-500">✔</span> Trang hội thoại đa kênh: 50
+          </li>
+
+          <li>
+            <span class="text-green-500">✔</span> AI trả lời phản hồi cơ bản: Có
+          </li>
+          <li class="mb-8">
+            <span class="text-green-500">✔</span> AI trả lời bằng hình ảnh: Có
+          </li>
+          <li>
+            <span class="text-green-500">✔</span> AI xử lý Ticket đa kênh: Có
+          </li>
+          <li>
+            <span class="text-green-500">✔</span> Phân tích cảm xúc & chủ đề: Có
+            hỗ trợ
+          </li>
+          <li class="mb-8">
+            <span class="text-green-500">✔</span> Tác vụ mở rộng AI: 5 tác vụ
+          </li>
+          <li>
+            <span class="text-green-500">✔</span> Chuyên viên hỗ trợ: Ưu tiên
+          </li>
+          <li>
+            <span class="text-green-500">✔</span> Thiết lập & huấn luyện AI: Có
+          </li>
+          <li><span class="text-green-500">✔</span> Chiến dịch tự động: Có</li>
+          <li>
+            <span class="text-green-500">✔</span> Ngôn ngữ & nền tảng: Đa ngôn ngữ
+          </li>
+        </ul>
+      </div>
+
+      <!-- ===================================== GÓI 5: DOANH NGHIỆP LỚN (P5) ===================================== -->
+      <div
+        class="bg-gradient-to-b from-orange-200 to-white rounded-2xl shadow-lg p-4 border-2 border-orange-500 relative hover:shadow-xl transition overflow-hidden flex flex-col md:order-5"
+      >
+        <div class="flex-1">
+          <h3 class="text-lg font-bold text-orange-600 mb-2">
+            DOANH NGHIỆP LỚN
+          </h3>
+          <p class="text-sm mb-4 text-black text-left">
+            Dành cho doanh nghiệp lớn, cần AI Agent cho các mục đích phức tạp.
+          </p>
+          <div class="text-3xl font-bold text-black mb-1 mt-4">LIÊN HỆ</div>
+        </div>
+        <a
+          href="/checkout"
+          class="block text-center bg-orange-600 text-white font-semibold rounded-lg py-2 hover:bg-blue-700 transition mt-4 shadow-md"
+        >
+          Liên hệ ngay
+        </a>
+      </div>
+
+      <!-- ===================================== TÍNH NĂNG 5: DOANH NGHIỆP LỚN (F5) ===================================== -->
+      <div
+        class="bg-white rounded-2xl shadow-inner p-8 border-2 border-gray-200 flex flex-col text-black text-base md:order-10"
+      >
+        <h4 class="font-bold text-gray-800 mb-4 border-b pb-2">
+          Chi tiết Gói Doanh Nghiệp Lớn:
+        </h4>
+        <ul class="space-y-2 text-left text-gray-700">
+          <li>
+            <span class="text-green-500">✔</span> Tài khoản truy cập: tùy chỉnh
+          </li>
+          <li>
+            <span class="text-green-500">✔</span> Tin nhắn AI xử lý / tháng: tùy
+            chỉnh
+          </li>
+          <li class="mb-8">
+            <span class="text-green-500">✔</span> Trang hội thoại đa kênh: tùy chỉnh
+          </li>
+
+          <li>
+            <span class="text-green-500">✔</span> AI trả lời phản hồi cơ bản: Có
+          </li>
+          <li class="mb-8">
+            <span class="text-green-500">✔</span> AI trả lời bằng hình ảnh: Có
+          </li>
+          <li>
+            <span class="text-green-500">✔</span> AI xử lý Ticket đa kênh: Có
+          </li>
+          <li>
+            <span class="text-green-500">✔</span> Phân tích cảm xúc & chủ đề: Có
+            hỗ trợ
+          </li>
+          <li class="mb-8">
+            <span class="text-green-500">✔</span> Tác vụ mở rộng AI: tùy chỉnh
+          </li>
+          <li>
+            <span class="text-green-500">✔</span> Chuyên viên hỗ trợ: Ưu tiên
+          </li>
+          <li>
+            <span class="text-green-500">✔</span> Thiết lập & huấn luyện AI: Có
+          </li>
+          <li><span class="text-green-500">✔</span> Chiến dịch tự động: Có</li>
+          <li>
+            <span class="text-green-500">✔</span> Ngôn ngữ & nền tảng: tùy chỉnh
+          </li>
+        </ul>
       </div>
     </div>
+  </div>
 
+  <p style="text-align: center; margin-bottom: 60px;margin-top: 60px;">
+    <a
+      href="/"
+      style="font-weight: bold; font-size: 40px; text-decoration: underline; text-decoration-color: purple; color: inherit;"
+    >
+      MiAgent KHÁC BIỆT SO VỚI ĐỐI THỦ
+    </a>
+  </p>
+  <!-- Bảng sản phẩm -->
+  <div class="rounded-xl overflow-hidden border border-gray-300">
+    <div class="overflow-x-auto">
+      <table class="min-w-full text-left border-collapse">
+        <thead class="bg-gray-100 text-gray-700">
+          <tr>
+            <th class="px-4 py-3 rounded-tl-xl">#</th>
+            <th class="px-4 py-3">Tính năng nổi bật</th>
+            <th class="px-4 py-3">Mô tả chi tiết</th>
+            <th class="px-4 py-3 rounded-tr-xl"
+              >Giá trị khác biệt so với đối thủ</th
+            >
+          </tr>
+        </thead>
+        <tbody class="divide-y">
+          <tr>
+            <td class="px-4 py-4 font-semibold">1</td>
+            <td class="px-4 py-4">Nhận diện & xử lý hình ảnh sản phẩm</td>
+            <td class="px-4 py-4">
+              • Gửi và phân tích hình ảnh trực tiếp trong cuộc trò chuyện.<br />
+              • AI tự động nhận diện hình ảnh khách hàng gửi để xác định sản phẩm
+              họ đang quan tâm.
+            </td>
+            <td class="px-4 py-4">
+              • Đa số nền tảng chỉ hỗ trợ chat văn bản.<br />
+              • MiAgent hiểu hình ảnh như con người, cho phép khách hàng chỉ cần
+              chụp sản phẩm là AI đã nhận ra và tư vấn đúng nhu cầu.
+            </td>
+          </tr>
+          <tr>
+            <td class="px-4 py-4 font-semibold">2</td>
+            <td class="px-4 py-4">Hiểu & phân tích nội dung video</td>
+            <td class="px-4 py-4">
+              • Cho phép gửi video sản phẩm ngay trong khung chat.<br />
+              • AI có thể đọc hiểu, trích xuất nội dung và phân tích video khách
+              hàng gửi lại.
+            </td>
+            <td class="px-4 py-4">
+              • Các đối thủ gần như không xử lý video.<br />
+              • MiAgent phân tích cả nội dung và cảm xúc trong video để xác định
+              mức độ quan tâm hoặc vấn đề khách hàng đang gặp.
+            </td>
+          </tr>
+          <tr>
+            <td class="px-4 py-4 font-semibold">3</td>
+            <td class="px-4 py-4">Hiểu ý định & kế thừa hội thoại tự nhiên</td>
+            <td class="px-4 py-4">
+              • Nhận diện chính xác ý định của khách hàng và chỉ phản hồi khi đủ
+              ngữ cảnh.<br />
+              • AI kế thừa toàn bộ lịch sử hội thoại để tiếp tục tư vấn liền mạch
+              như con người.
+            </td>
+            <td class="px-4 py-4">
+              • Đối thủ thường mất ngữ cảnh khi đổi người chat hoặc khi khách
+              quay lại sau vài ngày.<br />
+              • MiAgent giữ mạch hội thoại xuyên suốt, giúp trải nghiệm tự nhiên
+              và chuyên nghiệp hơn.
+            </td>
+          </tr>
+          <tr>
+            <td class="px-4 py-4 font-semibold">4</td>
+            <td class="px-4 py-4"
+              >Kết nối hệ thống & tự động hóa toàn chuỗi bán hàng</td
+            >
+            <td class="px-4 py-4">
+              • Tích hợp CRM, ERP cùng các nền tảng Facebook, Zalo OA, Shopee,
+              Amazon, TikTok Shop, Spotify…<br />
+              • Remarketing thông minh: tự động gửi tin chăm sóc theo hành vi mua
+              hàng, cảnh báo nhân viên khi có tín hiệu xấu.
+            </td>
+            <td class="px-4 py-4 rounded-b-xl">
+              • Trong khi các nền tảng khác chỉ dừng ở chatbot chăm sóc khách
+              hàng,<br />
+              • MiAgent hoạt động như một hệ thống AI Sales – tự động hóa toàn chuỗi
+              bán hàng, từ tương tác, phân tích đến chốt đơn.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 
+  <div
+    class="mt-16 sm:mt-24 relative bg-zinc-900 text-white rounded-3xl overflow-visible text-center"
+  >
+    <div
+      aria-hidden="true"
+      class="absolute inset-x-0 top-1/2 -translate-y-1/2 h-64 bg-gradient-to-r from-rose-500 via-violet-500 to-sky-500 blur-3xl"
+    >
+    </div>
 
+    <div
+      class="mt-16 sm:mt-24 rounded-3xl p-px bg-gradient-to-br from-gray-700 via-gray-900 to-gray-900
+              transition-transform duration-300 hover:scale-105 group"
+    >
+      <div
+        class="relative bg-zinc-900 text-white rounded-[23px] overflow-visible text-center"
+      >
+        <div
+          aria-hidden="true"
+          class="absolute inset-0 bg-gradient-to-r from-gray-500/20 to-transparent blur-3xl opacity-50
+                                    transition-opacity duration-300 group-hover:opacity-100 -z-10"
+        >
+        </div>
 
+        <div class="relative z-10 py-16 lg:py-20 px-6 space-y-4 lg:space-y-6">
+          <div class="flex items-center justify-center gap-x-2">
+            <img
+              src="/logomi.svg"
+              alt="Miagent Logo"
+              class="h-8 w-auto brightness-0 invert"
+            />
+            <img
+              src="/miagent.svg"
+              alt="Miagent Logo"
+              class="h-8 w-auto brightness-0 invert"
+            />
+          </div>
 
+          <p class="text-xl font-medium text-gray-300">
+            MiAgent giúp doanh nghiệp tự động hóa quy trình và phục vụ khách
+            hàng nhanh chóng
+          </p>
 
-
-
+          <div class="flex items-center justify-center gap-4">
+            <a
+              href="/contact"
+              class="bg-green-400 text-white font-semibold rounded-lg py-2 px-6 hover:bg-green-500 transition"
+            >
+              Đặt lịch tư vấn
+            </a>
+            <a
+              href="/pricing"
+              class="bg-green-400 text-white font-semibold rounded-lg py-2 px-6 hover:bg-green-500 transition"
+            >
+              Tham khảo giá
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

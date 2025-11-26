@@ -1,173 +1,588 @@
-<!DOCTYPE html><html lang="en" class="scroll-smooth selection:bg-accent-500 selection:text-white no-touchevents hydrated"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Basic Meta Tags --><title>Oriagent</title><meta name="description" content="Build The AI Version of Your Dream Team."><meta name="keywords" content="keyword1, keyword2, keyword3"><meta name="author" content="Your Name or Company Name"><!-- Favicons --><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- Favicon for IE --><link rel="shortcut icon" href="/logo.svg" type="image/x-icon"><!-- Favicons for different sizes --><!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="scroll-smooth selection:bg-accent-500 selection:text-white no-touchevents hydrated"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Basic Meta Tags -->
+    <title>Oriagent</title>
+    <meta
+      name="description"
+      content="Build The AI Version of Your Dream Team."
+    />
+    <meta name="keywords" content="keyword1, keyword2, keyword3" />
+    <meta name="author" content="Your Name or Company Name" />
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <!-- Favicon for IE -->
+    <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
+    <!-- Favicons for different sizes -->
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" /> --><!-- Open Graph / Facebook --><meta property="og:image" content="/og-image.png"><meta property="og:type" content="website"><meta property="og:url" content="https://www.yourwebsite.com/"><meta property="og:title" content="Your Website Title"><meta property="og:description" content="A brief description of your website content."><meta property="og:image" content="https://www.yourwebsite.com/path/to/image.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://www.yourwebsite.com/"><meta property="twitter:title" content="Your Website Title"><meta property="twitter:description" content="A brief description of your website content."><meta property="twitter:image" content="https://www.yourwebsite.com/path/to/image.jpg"><!-- Canonical URL --><link rel="canonical" href="https://www.yourwebsite.com/"><!-- Additional SEO --><meta name="robots" content="index, follow"><meta name="googlebot" content="index, follow"><!-- Apple Touch Icon (already included in favicons, but keeping for backwards compatibility) --><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><!-- Theme Color for Mobile Browsers --><meta name="theme-color" content="#ffffff"><!-- For IE --><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" /> -->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.yourwebsite.com/" />
+    <meta property="og:title" content="Your Website Title" />
+    <meta
+      property="og:description"
+      content="A brief description of your website content."
+    />
+    <meta
+      property="og:image"
+      content="https://www.yourwebsite.com/path/to/image.jpg"
+    />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.yourwebsite.com/" />
+    <meta property="twitter:title" content="Your Website Title" />
+    <meta
+      property="twitter:description"
+      content="A brief description of your website content."
+    />
+    <meta
+      property="twitter:image"
+      content="https://www.yourwebsite.com/path/to/image.jpg"
+    />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.yourwebsite.com/" />
+    <!-- Additional SEO -->
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <!-- Apple Touch Icon (already included in favicons, but keeping for backwards compatibility) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <!-- Theme Color for Mobile Browsers -->
+    <meta name="theme-color" content="#ffffff" />
+    <!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--
 https://rsms.me/inter/
---><link rel="preconnect" href="https://rsms.me/"><link rel="stylesheet" href="https://rsms.me/inter/inter.css"><!---- Alpine  --><script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script><link rel="stylesheet" href="/_astro/banggia.DQpkTRCH.css"></head> <body class="bg-white flex flex-col min-h-svh"> <header class="sticky top-0 z-50 bg-white border-b border-black/5" data-astro-cid-ieyx6y3k> <div class="w-full mx-auto lg:px-12 px-8 max-w-7xl lg:px-16" data-astro-cid-ieyx6y3k> <div x-data="{ open: false }" class="relative flex w-full py-5 mx-auto bg-white lg:items-center lg:flex-row" data-astro-cid-ieyx6y3k> <div class="flex flex-row items-center justify-between flex-shrink-0" data-astro-cid-ieyx6y3k> <a href="/" class="text-black inline-flex items-center gap-3" data-astro-cid-ieyx6y3k> <img width="30" src="/logomi.svg" alt="logo" data-astro-cid-ieyx6y3k> <img width="125" src="/miagent.svg" alt="logo" data-astro-cid-ieyx6y3k> </a> <button @click="open = !open" :aria-expanded="open.toString()" aria-controls="main-navigation" aria-label="Toggle navigation menu" class="inline-flex items-center justify-center p-2 text-gray-400 hover:text-black focus:outline-none focus:text-black lg:hidden" data-astro-cid-ieyx6y3k> <svg :class="{'rotate-90': open}" class="w-6 h-6 transition-transform duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-astro-cid-ieyx6y3k> <path x-show="!open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" data-astro-cid-ieyx6y3k></path> <path x-show="open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" data-astro-cid-ieyx6y3k></path> </svg> </button> </div> <div :class="{'flex': open, 'hidden': !open}" class="flex-col w-full hidden lg:flex lg:flex-row lg:items-center" data-astro-cid-ieyx6y3k> <nav class="flex-col items-center gap-4 lg:gap-8 lg:pb-0 flex lg:flex-row lg:mx-auto" data-astro-cid-ieyx6y3k> <a class="text-sm text-black transition duration-300 hover:text-blue-600 bg-green-100  rounded-full px-3 py-1" href="/#features" data-astro-cid-ieyx6y3k>
-Về Miagent
-</a> <a href="/banggia" class="text-sm text-black transition duration-300 hover:text-blue-600 relative" data-astro-cid-ieyx6y3k>
-Bảng Giá
-<span class="bg-red-500 ms-1 text-white text-[10px] px-2 py-1 rounded-full" data-astro-cid-ieyx6y3k>NEW</span> </a> <a href="/" class="text-sm text-black transition duration-300 hover:text-blue-600 relative" data-astro-cid-ieyx6y3k>
-Liên Hệ
-<sup class="ml-1 inline-block mt-1 w-1.5 h-1.5 bg-green-500 rounded-full" data-astro-cid-ieyx6y3k></sup> </a> <a href="/faq" class="text-sm text-black transition duration-300 hover:text-blue-600 relative" data-astro-cid-ieyx6y3k>
-Blog
-</a> <div class="language-selector" data-astro-cid-ieyx6y3k> <button class="language-toggle text-sm" data-astro-cid-ieyx6y3k>Language</button> <ul class="language-options" data-astro-cid-ieyx6y3k> <li data-astro-cid-ieyx6y3k><a href="https://www.aihive.global/" target="_blank" data-astro-cid-ieyx6y3k>English</a></li> <li data-astro-cid-ieyx6y3k><a href="https://vi.aihive.global/" target="_blank" data-astro-cid-ieyx6y3k>Tiếng Việt</a></li> <li data-astro-cid-ieyx6y3k><a href="https://jp.aihive.global/" target="_blank" data-astro-cid-ieyx6y3k>日本語</a></li> <li data-astro-cid-ieyx6y3k><a href="https://kr.aihive.global/" target="_blank" data-astro-cid-ieyx6y3k>한국어</a></li> </ul> </div> </nav> <div class="inline-flex items-center gap-2 list-none" data-astro-cid-ieyx6y3k> <a href="https://app.oriagent.com/install" target="_blank" class="flex items-center justify-center transition-all duration-200 focus:ring-2 focus:outline-none
-             text-white bg-green-500 rounded-full px-3 py-1 hover:text-white ring-1 ring-gray-200 focus:ring-blue-500 h-8  text-xs font-medium  hover:bg-blue-500" data-astro-cid-ieyx6y3k>
-Đăng Ký
-</a> <a href="https://app.oriagent.com/signin" target="_blank" class="flex items-center justify-center transition-all duration-200 ring-1 focus:ring-2 ring-gray-100 focus:outline-none text-white bg-black hover:bg-white focus:ring-gray-500/50 h-8  text-xs font-medium rounded-full px-3 py-1" data-astro-cid-ieyx6y3k>
-Đăng Nhập
-</a> </div> </div> </div> </div> <script type="module">document.addEventListener("DOMContentLoaded",function(){const t=document.querySelector(".language-toggle"),n=document.querySelector(".language-options"),o=document.querySelectorAll(".language-options li a");t&&n&&(t.addEventListener("click",function(e){e.stopPropagation(),n.style.display=n.style.display==="block"?"none":"block"}),window.addEventListener("click",function(){n.style.display="none"}),o.forEach(e=>{e.addEventListener("click",function(){n.style.display="none"})}))});</script>  </header> <main class="grow"> <section> <div class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24"> <div> <div class="relative mx-auto max-w-[40rem] pt-20 pb-24"> <h1 class="text-4xl tracking-tight font-medium text-black md:text-5xl font-display">
-Terms and conditions
-</h1> <p class="mt-4 text-base leading-7 text-base-500">
-Last updated on January 01, 2023
-</p> </div> </div> <div> <div class="mx-auto max-w-[40rem] prose-base prose text-base-500 prose-h3:text-black prose-a:font-semibold prose-a:text-accent-300 hover:prose-a:text-black"> <p>
-This privacy policy sets out how Unwrapped AB collects, processes and
-          uses your Personal Information through your use of our Services.
-</p> <h3>Definitions</h3> <h3>DPO</h3> <p>
-DPO means Data Protection Officer, and is the person specifically
-          appointed by us to deal with your enquiries with respect to this
-          privacy policy and your Personal Information.
-</p> <p>
-Personal Information means any identifying information about you. This
-          includes, but is not limited to, the following: cookies and usage
-          data.
-</p> <p>
-Services means all services provided by Web Agency
-          to you, including (but not limited to) this Website.
-</p> <p>
-Website means this website and all websites, applications and
-          communications that post a link to this Privacy Policy.
-</p> <h3>Personal Information Collection</h3> <p>
-We only collect and use Personal Information to the extent necessary
-          to provide you with the Services. We collect Personal Information for
-          the Website to provide you with a better online experience.
-</p> <h3>Personal Information Retention</h3> <p>
-We keep Personal Information for the shortest time necessary to
-          provide you with Services and to meet all our legal and compliance
-          obligations. To determine this retention period, we take into account
-          (i) the nature of the Personal Information gathered; and (ii) the
-          nature of our legal and compliance obligations. All Personal
-          Information no longer required by us is destroyed and/or erased.
-</p> <h3>Personal Data from Third Parties</h3> <p>
-We may, from time to time, obtain Personal Information from third
-          parties to enable us to better tailor our Services to you (Third Party
-          Personal Information). When we obtain Third Party Personal
-          Information, we will notify you within one month. If we use or share
-          Third Party Personal Information, we will notify you immediately.
-</p> <h3>Your Rights</h3> <p>
-With respect to Personal Information we hold, you have the following
-          rights:
-</p> <ul> <li>
-Access: You may request from us access to your data that we hold on
-            you.
-<p></p> li
-</li> <li>
-Rectification: If the data we hold on you is inaccurate, you may
-            request that we correct it. If the data we hold is incomplete, you
-            may request that we complete it.
-</li> <li>
-Erasure: Subject to certain conditions, you may request that we
-            erase all of the data we hold on you. li Restrictions: Subject to
-            certain conditions, you may request that we restrict the processing
-            of data we hold on you.
-</li> <li>
-Portability: Subject to certain conditions, you may request that we
-            transfer all the data we hold on you to a third party (including
-            yourself).
-</li> <li>
-Objections: Subject to certain conditions, you may object to us
-            processing the data we hold on you.
-</li> </ul> <h3>Social Media</h3> <p>
-You may choose to engage with our Services through a variety of social
-          media sites and platforms, for example Facebook, Instagram and
-          Twitter. When you interact with our Services through these social
-          media platforms, you may allow us to receive Personal Information on
-          how you are interacting with our Services. This will depend on your
-          privacy settings on each social media site and platform. The data we
-          are provided by you through your interaction with our Services on
-          social media sites and platforms will be used by us subject to the
-          terms of this privacy policy. Depending on your social media site’s
-          privacy settings, your Personal Information may become public to a
-          community of users if you choose to engage with our Services through
-          these platforms. For further information on how you can customize your
-          privacy settings on social media sites and how those sites handle your
-          privacy, please refer to the privacy policy of each particular social
-          media site.
-</p> <h3>Minors</h3> <p>
-We do not knowingly collect information on children under the age of
-          16 (“Child”). If you become aware that a Child has provided us with
-          Personal Information, please contact us. If we become aware that we
-          have collected Personal Information from a Child without their
-          parent's verifiable authorization to access our Services, we will take
-          steps to remove that information from our servers.
-</p> <h3>Third Party Links</h3> <p>
-Our website contains links to other third-party websites not owned or
-          managed by Unwrapped. This privacy policy applies to this website
-          only. If you click a link to a third-party website, the privacy policy
-          of that website will apply. We highly recommend that you read the
-          privacy policies of other websites as they may be different from ours.
-</p> <h3>Payment Vendors</h3> <p>
-You can make payments via our website. Our vendors are listed below:
-</p> <ul><li>Paypal</li></ul> <p>
-Their privacy policy can be viewed <a href="https://www.paypal.com/webapps/mpp/ua/privacy-full">here</a> </p> <h3>Merger, acquisition or asset sale</h3> <p>
-If we or our subsidiaries are involved in a merger, acquisition, or
-          asset sale, your Personal Information may be transferred.
-</p> <h3>Updates</h3> <p>
-We are constantly reviewing our privacy policy and procedures to
-          ensure that they meet best practices. This policy was last updated on
-          August 21, 2021.
-</p> <h3>Contact us</h3> <p>
-If you have any questions or suggestions about our privacy policy or
-          want to know more information about Personal Information we hold,
-          please contact us at support@unwrapped.design or write to us at
-          Mariehamn, Åland Islands..
-</p> <h3>Complaints</h3> <p>
-If you believe that we have breached our obligations to you under this
-          privacy policy or relevant privacy laws, please contact us at <a href="">email@example</a>
-If you are not satisfied with our response, you have the right to lodge
-          a complaint at any time to your relevant authority.
-</p> </div> </div> </div> </section> </main> <footer class="bg-gradient-to-br from-gray-300 via-white to-gray-400 border-base-200"> <div class="px-6 md:px-12 lg:px-24 py-20 max-w-7xl mx-auto"> <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16"> <div class="md:col-span-1"> <a href="/" class="inline-flex items-center gap-3"> <img width="50" src="/logomi.svg" alt="logo"> <img width="200" src="/miagent.svg" alt="logo"> </a> <p class="mt-4 text-sm text-gray-500">
-Enterprise AI offerings, a powerful agent platform, and the no-code tools to get value from AI.
-</p> </div> <div class="md:col-span-2"> <h3 class="text-lg font-semibold text-black mb-2">
-Ready to Build Your AI Dream Team?
-</h3> <p class="text-sm text-gray-500 mb-4">
-Let’s turn your ideas into working AI — fast, secure, and scalable.
-</p> <form class="flex flex-col sm:flex-row items-center gap-3 w-full" onsubmit="handleSubmit(event)"> <input id="email" type="email" placeholder="Your email address" required class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"> <input id="phone" type="tel" placeholder="Phone number" required class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"> <button type="submit" class="px-6 py-2 w-full md:w-auto rounded-md bg-black text-white hover:bg-blue-700 transition">
-Subscribe
-</button> </form> <p id="formSuccess" class="text-green-600 text-sm mt-2 hidden">Thank you! We’ll be in touch.</p> </div> </div> <div class="pt-12 mt-12 border-t border-base-200 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400"> <p>&copy; 2025 aihive.global. Originally by AHT Tech</p> <p>
-Additionally Development by
-<a href="https://chatx.vn/" class="underline text-blue-600 hover:text-blue-800">Chatx</a> </p> </div> </div> <script>
-    async function handleSubmit(e) {
-      e.preventDefault();
-      const email = document.getElementById("email").value.trim();
-      const phone = document.getElementById("phone").value.trim();
-
-      const content = `New Contact\\nEmail: ${email}\\nPhone: ${phone}`;
-
-      try {
-        await fetch("https://open.larksuite.com/open-apis/bot/v2/hook/e7acceee-c057-402f-9cad-974088e29d3b", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            msg_type: "text",
-            content: {
-              text: content,
-            },
-          }),
+-->
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <!---- Alpine  -->
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"
+    ></script>
+    <link rel="stylesheet" href="/_astro/pricing.DQpkTRCH.css" />
+  </head>
+  <body class="bg-white flex flex-col min-h-svh">
+    <header
+      class="sticky top-0 z-50 bg-white border-b border-black/5"
+      data-astro-cid-ieyx6y3k
+    >
+      <div
+        class="w-full mx-auto lg:px-12 px-8 max-w-7xl lg:px-16"
+        data-astro-cid-ieyx6y3k
+      >
+        <div
+          x-data="{ open: false }"
+          class="relative flex w-full py-5 mx-auto bg-white lg:items-center lg:flex-row"
+          data-astro-cid-ieyx6y3k
+        >
+          <div
+            class="flex flex-row items-center justify-between flex-shrink-0"
+            data-astro-cid-ieyx6y3k
+          >
+            <a
+              href="/"
+              class="text-black inline-flex items-center gap-3"
+              data-astro-cid-ieyx6y3k
+            >
+              <img
+                width="30"
+                src="/logomi.svg"
+                alt="logo"
+                data-astro-cid-ieyx6y3k
+              />
+              <img
+                width="125"
+                src="/miagent.svg"
+                alt="logo"
+                data-astro-cid-ieyx6y3k
+              />
+            </a>
+            <button
+              @click="open = !open"
+              :aria-expanded="open.toString()"
+              aria-controls="main-navigation"
+              aria-label="Toggle navigation menu"
+              class="inline-flex items-center justify-center p-2 text-gray-400 hover:text-black focus:outline-none focus:text-black lg:hidden"
+              data-astro-cid-ieyx6y3k
+            >
+              <svg
+                :class="{'rotate-90': open}"
+                class="w-6 h-6 transition-transform duration-300 ease-in-out"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                data-astro-cid-ieyx6y3k
+              >
+                <path
+                  x-show="!open"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                  data-astro-cid-ieyx6y3k
+                ></path>
+                <path
+                  x-show="open"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                  data-astro-cid-ieyx6y3k
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div
+            :class="{'flex': open, 'hidden': !open}"
+            class="flex-col w-full hidden lg:flex lg:flex-row lg:items-center"
+            data-astro-cid-ieyx6y3k
+          >
+            <nav
+              class="flex-col items-center gap-4 lg:gap-8 lg:pb-0 flex lg:flex-row lg:mx-auto"
+              data-astro-cid-ieyx6y3k
+            >
+              <a
+                class="text-sm text-black transition duration-300 hover:text-blue-600 bg-green-100 rounded-full px-3 py-1"
+                href="/#features"
+                data-astro-cid-ieyx6y3k
+              >
+                Về Miagent
+              </a>
+              <a
+                href="/pricing"
+                class="text-sm text-black transition duration-300 hover:text-blue-600 relative"
+                data-astro-cid-ieyx6y3k
+              >
+                Bảng Giá
+                <span
+                  class="bg-red-500 ms-1 text-white text-[10px] px-2 py-1 rounded-full"
+                  data-astro-cid-ieyx6y3k
+                  >NEW</span
+                >
+              </a>
+              <a
+                href="/"
+                class="text-sm text-black transition duration-300 hover:text-blue-600 relative"
+                data-astro-cid-ieyx6y3k
+              >
+                Liên Hệ
+                <sup
+                  class="ml-1 inline-block mt-1 w-1.5 h-1.5 bg-green-500 rounded-full"
+                  data-astro-cid-ieyx6y3k
+                ></sup>
+              </a>
+              <a
+                href="/faq"
+                class="text-sm text-black transition duration-300 hover:text-blue-600 relative"
+                data-astro-cid-ieyx6y3k
+              >
+                Blog
+              </a>
+              <div class="language-selector" data-astro-cid-ieyx6y3k>
+                <button class="language-toggle text-sm" data-astro-cid-ieyx6y3k>
+                  Language
+                </button>
+                <ul class="language-options" data-astro-cid-ieyx6y3k>
+                  <li data-astro-cid-ieyx6y3k>
+                    <a
+                      href="https://www.aihive.global/"
+                      target="_blank"
+                      data-astro-cid-ieyx6y3k
+                      >English</a
+                    >
+                  </li>
+                  <li data-astro-cid-ieyx6y3k>
+                    <a
+                      href="https://vi.aihive.global/"
+                      target="_blank"
+                      data-astro-cid-ieyx6y3k
+                      >Tiếng Việt</a
+                    >
+                  </li>
+                  <li data-astro-cid-ieyx6y3k>
+                    <a
+                      href="https://jp.aihive.global/"
+                      target="_blank"
+                      data-astro-cid-ieyx6y3k
+                      >日本語</a
+                    >
+                  </li>
+                  <li data-astro-cid-ieyx6y3k>
+                    <a
+                      href="https://kr.aihive.global/"
+                      target="_blank"
+                      data-astro-cid-ieyx6y3k
+                      >한국어</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div
+              class="inline-flex items-center gap-2 list-none"
+              data-astro-cid-ieyx6y3k
+            >
+              <a
+                href="https://app.oriagent.com/install"
+                target="_blank"
+                class="flex items-center justify-center transition-all duration-200 focus:ring-2 focus:outline-none text-white bg-green-500 rounded-full px-3 py-1 hover:text-white ring-1 ring-gray-200 focus:ring-blue-500 h-8 text-xs font-medium hover:bg-blue-500"
+                data-astro-cid-ieyx6y3k
+              >
+                Đăng Ký
+              </a>
+              <a
+                href="https://app.oriagent.com/signin"
+                target="_blank"
+                class="flex items-center justify-center transition-all duration-200 ring-1 focus:ring-2 ring-gray-100 focus:outline-none text-white bg-black hover:bg-white focus:ring-gray-500/50 h-8 text-xs font-medium rounded-full px-3 py-1"
+                data-astro-cid-ieyx6y3k
+              >
+                Đăng Nhập
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="module">
+        document.addEventListener("DOMContentLoaded", function () {
+          const t = document.querySelector(".language-toggle"),
+            n = document.querySelector(".language-options"),
+            o = document.querySelectorAll(".language-options li a");
+          t &&
+            n &&
+            (t.addEventListener("click", function (e) {
+              e.stopPropagation(),
+                (n.style.display =
+                  n.style.display === "block" ? "none" : "block");
+            }),
+            window.addEventListener("click", function () {
+              n.style.display = "none";
+            }),
+            o.forEach((e) => {
+              e.addEventListener("click", function () {
+                n.style.display = "none";
+              });
+            }));
         });
+      </script>
+    </header>
+    <main class="grow">
+      <section>
+        <div
+          class="mx-auto w-full lg:px-24 max-w-7xl md:px-12 items-center px-8 py-24"
+        >
+          <div>
+            <div class="relative mx-auto max-w-[40rem] pt-20 pb-24">
+              <h1
+                class="text-4xl tracking-tight font-medium text-black md:text-5xl font-display"
+              >
+                Terms and conditions
+              </h1>
+              <p class="mt-4 text-base leading-7 text-base-500">
+                Last updated on January 01, 2023
+              </p>
+            </div>
+          </div>
+          <div>
+            <div
+              class="mx-auto max-w-[40rem] prose-base prose text-base-500 prose-h3:text-black prose-a:font-semibold prose-a:text-accent-300 hover:prose-a:text-black"
+            >
+              <p>
+                This privacy policy sets out how Unwrapped AB collects,
+                processes and uses your Personal Information through your use of
+                our Services.
+              </p>
+              <h3>Definitions</h3>
+              <h3>DPO</h3>
+              <p>
+                DPO means Data Protection Officer, and is the person
+                specifically appointed by us to deal with your enquiries with
+                respect to this privacy policy and your Personal Information.
+              </p>
+              <p>
+                Personal Information means any identifying information about
+                you. This includes, but is not limited to, the following:
+                cookies and usage data.
+              </p>
+              <p>
+                Services means all services provided by Web Agency to you,
+                including (but not limited to) this Website.
+              </p>
+              <p>
+                Website means this website and all websites, applications and
+                communications that post a link to this Privacy Policy.
+              </p>
+              <h3>Personal Information Collection</h3>
+              <p>
+                We only collect and use Personal Information to the extent
+                necessary to provide you with the Services. We collect Personal
+                Information for the Website to provide you with a better online
+                experience.
+              </p>
+              <h3>Personal Information Retention</h3>
+              <p>
+                We keep Personal Information for the shortest time necessary to
+                provide you with Services and to meet all our legal and
+                compliance obligations. To determine this retention period, we
+                take into account (i) the nature of the Personal Information
+                gathered; and (ii) the nature of our legal and compliance
+                obligations. All Personal Information no longer required by us
+                is destroyed and/or erased.
+              </p>
+              <h3>Personal Data from Third Parties</h3>
+              <p>
+                We may, from time to time, obtain Personal Information from
+                third parties to enable us to better tailor our Services to you
+                (Third Party Personal Information). When we obtain Third Party
+                Personal Information, we will notify you within one month. If we
+                use or share Third Party Personal Information, we will notify
+                you immediately.
+              </p>
+              <h3>Your Rights</h3>
+              <p>
+                With respect to Personal Information we hold, you have the
+                following rights:
+              </p>
+              <ul>
+                <li>
+                  Access: You may request from us access to your data that we
+                  hold on you.
+                  <p></p>
+                  li
+                </li>
+                <li>
+                  Rectification: If the data we hold on you is inaccurate, you
+                  may request that we correct it. If the data we hold is
+                  incomplete, you may request that we complete it.
+                </li>
+                <li>
+                  Erasure: Subject to certain conditions, you may request that
+                  we erase all of the data we hold on you. li Restrictions:
+                  Subject to certain conditions, you may request that we
+                  restrict the processing of data we hold on you.
+                </li>
+                <li>
+                  Portability: Subject to certain conditions, you may request
+                  that we transfer all the data we hold on you to a third party
+                  (including yourself).
+                </li>
+                <li>
+                  Objections: Subject to certain conditions, you may object to
+                  us processing the data we hold on you.
+                </li>
+              </ul>
+              <h3>Social Media</h3>
+              <p>
+                You may choose to engage with our Services through a variety of
+                social media sites and platforms, for example Facebook,
+                Instagram and Twitter. When you interact with our Services
+                through these social media platforms, you may allow us to
+                receive Personal Information on how you are interacting with our
+                Services. This will depend on your privacy settings on each
+                social media site and platform. The data we are provided by you
+                through your interaction with our Services on social media sites
+                and platforms will be used by us subject to the terms of this
+                privacy policy. Depending on your social media site’s privacy
+                settings, your Personal Information may become public to a
+                community of users if you choose to engage with our Services
+                through these platforms. For further information on how you can
+                customize your privacy settings on social media sites and how
+                those sites handle your privacy, please refer to the privacy
+                policy of each particular social media site.
+              </p>
+              <h3>Minors</h3>
+              <p>
+                We do not knowingly collect information on children under the
+                age of 16 (“Child”). If you become aware that a Child has
+                provided us with Personal Information, please contact us. If we
+                become aware that we have collected Personal Information from a
+                Child without their parent's verifiable authorization to access
+                our Services, we will take steps to remove that information from
+                our servers.
+              </p>
+              <h3>Third Party Links</h3>
+              <p>
+                Our website contains links to other third-party websites not
+                owned or managed by Unwrapped. This privacy policy applies to
+                this website only. If you click a link to a third-party website,
+                the privacy policy of that website will apply. We highly
+                recommend that you read the privacy policies of other websites
+                as they may be different from ours.
+              </p>
+              <h3>Payment Vendors</h3>
+              <p>
+                You can make payments via our website. Our vendors are listed
+                below:
+              </p>
+              <ul>
+                <li>Paypal</li>
+              </ul>
+              <p>
+                Their privacy policy can be viewed
+                <a href="https://www.paypal.com/webapps/mpp/ua/privacy-full"
+                  >here</a
+                >
+              </p>
+              <h3>Merger, acquisition or asset sale</h3>
+              <p>
+                If we or our subsidiaries are involved in a merger, acquisition,
+                or asset sale, your Personal Information may be transferred.
+              </p>
+              <h3>Updates</h3>
+              <p>
+                We are constantly reviewing our privacy policy and procedures to
+                ensure that they meet best practices. This policy was last
+                updated on August 21, 2021.
+              </p>
+              <h3>Contact us</h3>
+              <p>
+                If you have any questions or suggestions about our privacy
+                policy or want to know more information about Personal
+                Information we hold, please contact us at
+                support@unwrapped.design or write to us at Mariehamn, Åland
+                Islands..
+              </p>
+              <h3>Complaints</h3>
+              <p>
+                If you believe that we have breached our obligations to you
+                under this privacy policy or relevant privacy laws, please
+                contact us at <a href="">email@example</a>
+                If you are not satisfied with our response, you have the right
+                to lodge a complaint at any time to your relevant authority.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="bg-gradient-to-br from-gray-300 via-white to-gray-400 border-base-200"
+    >
+      <div class="px-6 md:px-12 lg:px-24 py-20 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+          <div class="md:col-span-1">
+            <a href="/" class="inline-flex items-center gap-3">
+              <img width="50" src="/logomi.svg" alt="logo" />
+              <img width="200" src="/miagent.svg" alt="logo" />
+            </a>
+            <p class="mt-4 text-sm text-gray-500">
+              Enterprise AI offerings, a powerful agent platform, and the
+              no-code tools to get value from AI.
+            </p>
+          </div>
+          <div class="md:col-span-2">
+            <h3 class="text-lg font-semibold text-black mb-2">
+              Ready to Build Your AI Dream Team?
+            </h3>
+            <p class="text-sm text-gray-500 mb-4">
+              Let’s turn your ideas into working AI — fast, secure, and
+              scalable.
+            </p>
+            <form
+              class="flex flex-col sm:flex-row items-center gap-3 w-full"
+              onsubmit="handleSubmit(event)"
+            >
+              <input
+                id="email"
+                type="email"
+                placeholder="Your email address"
+                required
+                class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              />
+              <input
+                id="phone"
+                type="tel"
+                placeholder="Phone number"
+                required
+                class="w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              />
+              <button
+                type="submit"
+                class="px-6 py-2 w-full md:w-auto rounded-md bg-black text-white hover:bg-blue-700 transition"
+              >
+                Subscribe
+              </button>
+            </form>
+            <p id="formSuccess" class="text-green-600 text-sm mt-2 hidden">
+              Thank you! We’ll be in touch.
+            </p>
+          </div>
+        </div>
+        <div
+          class="pt-12 mt-12 border-t border-base-200 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400"
+        >
+          <p>&copy; 2025 aihive.global. Originally by AHT Tech</p>
+          <p>
+            Additionally Development by
+            <a
+              href="https://chatx.vn/"
+              class="underline text-blue-600 hover:text-blue-800"
+              >Chatx</a
+            >
+          </p>
+        </div>
+      </div>
+      <script>
+        async function handleSubmit(e) {
+          e.preventDefault();
+          const email = document.getElementById("email").value.trim();
+          const phone = document.getElementById("phone").value.trim();
 
-        // Hiển thị thông báo thành công
-        document.getElementById("formSuccess").classList.remove("hidden");
+          const content = `New Contact\\nEmail: ${email}\\nPhone: ${phone}`;
 
-        // Reset form
-        document.getElementById("email").value = "";
-        document.getElementById("phone").value = "";
+          try {
+            await fetch(
+              "https://open.larksuite.com/open-apis/bot/v2/hook/e7acceee-c057-402f-9cad-974088e29d3b",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                  msg_type: "text",
+                  content: {
+                    text: content,
+                  },
+                }),
+              }
+            );
 
-      } catch (error) {
-        alert("There was an error submitting the form. Please try again later.");
-        console.error(error);
-      }
-    }
-  </script> </footer> <!-- ✅ Chatbot script --> <script type="module">window.oriagentChatbotConfig={token:"4Um3UkjFflTnMUuD",baseUrl:"https://app.oriagent.com"};</script> <script src="https://app.oriagent.com/embed.min.js" id="4Um3UkjFflTnMUuD" defer>
-    </script> </body> </html>
+            // Hiển thị thông báo thành công
+            document.getElementById("formSuccess").classList.remove("hidden");
+
+            // Reset form
+            document.getElementById("email").value = "";
+            document.getElementById("phone").value = "";
+          } catch (error) {
+            alert(
+              "There was an error submitting the form. Please try again later."
+            );
+            console.error(error);
+          }
+        }
+      </script>
+    </footer>
+    <!-- ✅ Chatbot script -->
+    <script type="module">
+      window.oriagentChatbotConfig = {
+        token: "4Um3UkjFflTnMUuD",
+        baseUrl: "https://app.oriagent.com",
+      };
+    </script>
+    <script
+      src="https://app.oriagent.com/embed.min.js"
+      id="4Um3UkjFflTnMUuD"
+      defer
+    ></script>
+  </body>
+</html>

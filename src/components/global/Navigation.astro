@@ -1,10 +1,19 @@
-<header x-data="{ open: false }" class="sticky top-0 z-50 bg-white border-b border-black/5">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-    <div class="relative flex w-full py-5 mx-auto bg-white lg:items-center lg:flex-row">
-      <div class="flex flex-row items-center justify-between flex-shrink-0 w-full lg:w-auto">
+<header
+  x-data="{ open: false }"
+  class="sticky top-0 z-50 bg-white border-b border-black/5"
+>
+  <div
+    class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between"
+  >
+    <div
+      class="relative flex w-full py-5 mx-auto bg-white lg:items-center lg:flex-row"
+    >
+      <div
+        class="flex flex-row items-center justify-between flex-shrink-0 w-full lg:w-auto"
+      >
         <a href="/" class="text-black inline-flex items-center gap-3">
-          <img width="30" src="/logomi.svg" alt="logo" />
-          <img width="125" src="/miagent.svg" alt="logo" />
+          <img width="30" src="/logomi.svg" alt="logo miagent" />
+          <img width="125" src="/miagent.svg" alt="miagent logo" />
         </a>
 
         <button
@@ -26,43 +35,48 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
+              d="M4 6h16M4 12h16M4 18h16"></path>
             <path
               x-show="open"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            ></path>
+              d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
       </div>
 
       <div class="hidden lg:flex flex-col w-full lg:flex-row lg:items-center">
-        <nav class="flex flex-col lg:flex-row items-center gap-4 lg:gap-8 lg:mx-auto">
+        <nav
+          class="flex flex-col lg:flex-row items-center gap-4 lg:gap-8 lg:mx-auto"
+        >
           <a
-            class="text-sm  text-black transition duration-300 hover:text-blue-600 bg-green-100 rounded-full px-3 py-1"
-            href="/#features"
+            class="text-sm text-black transition duration-300 hover:text-blue-600 rounded-full px-3 py-1"
+            href="/"
           >
-            Về Miagent
+            Về MiAgent
           </a>
           <a
-            href="/banggia"
+            href="/pricing"
             class="text-sm text-black transition duration-300 hover:text-blue-600 relative"
           >
             Bảng Giá
-            <span class="bg-red-500 ms-1 text-white text-[10px] px-2 py-1 rounded-full">NEW</span>
+            <span
+              class="bg-red-500 ms-1 text-white text-[10px] px-2 py-1 rounded-full"
+              >NEW</span
+            >
           </a>
           <a
-            href="/lienhe"
+            href="/contact"
             class="text-sm text-black transition duration-300 hover:text-blue-600 relative"
           >
             Liên Hệ
-            <sup class="ml-1 inline-block mt-1 w-1.5 h-1.5 bg-green-500 rounded-full"></sup>
+            <sup
+              class="ml-1 inline-block mt-1 w-1.5 h-1.5 bg-green-500 rounded-full"
+            ></sup>
           </a>
           <a
-            href="/blog" 
+            href="/blog"
             class="text-sm text-black transition duration-300 hover:text-blue-600 relative"
           >
             Blog
@@ -71,15 +85,17 @@
 
         <div class="inline-flex items-center gap-2 list-none">
           <a
-            href="https://app.miagent.io/install"
+            href="https://app.miagent.io/signup"
             target="_blank"
-            class="flex items-center justify-center transition-all duration-200 text-white bg-green-500 rounded-full px-3 py-1 hover:text-white ring-1 ring-gray-200 focus:ring-2 focus:ring-blue-500 h-8 text-xs font-medium hover:bg-blue-500"
+            rel="noopener noreferrer"
+            class="flex items-center justify-center transition-all duration-200 text-black bg-green-500 rounded-full px-3 py-1 hover:text-white ring-1 ring-gray-200 focus:ring-2 focus:ring-blue-500 h-8 text-xs font-medium hover:bg-blue-500"
           >
             Đăng Ký
           </a>
           <a
             href="https://app.miagent.io/signin"
             target="_blank"
+            rel="noopener noreferrer"
             class="flex items-center justify-center transition-all duration-200 ring-1 focus:ring-2 ring-gray-100 focus:outline-none text-white bg-black hover:bg-blue-500 focus:ring-gray-500/50 h-8 text-xs font-medium rounded-full px-3 py-1"
           >
             Đăng Nhập
@@ -100,8 +116,8 @@
     x-transition:leave-end="opacity-0 translate-y-5"
     class="fixed inset-0 z-50 bg-white flex flex-col items-center justify-center space-y-6 text-center text-lg font-medium lg:hidden"
   >
-    <button 
-      @click="open = false" 
+    <button
+      @click="open = false"
       class="absolute top-6 right-6 text-gray-600 text-2xl"
       aria-label="Đóng menu"
     >
@@ -109,10 +125,26 @@
     </button>
 
     <nav class="flex flex-col items-center gap-6">
-      <a class="text-xl text-black transition duration-300 hover:text-blue-600" @click="open = false" href="/#features">Về Miagent</a>
-      <a class="text-xl text-black transition duration-300 hover:text-blue-600" @click="open = false" href="/banggia">Bảng Giá</a>
-      <a class="text-xl text-black transition duration-300 hover:text-blue-600" @click="open = false" href="/lienhe">Liên Hệ</a>
-      <a class="text-xl text-black transition duration-300 hover:text-blue-600" @click="open = false" href="/blog">Blog</a>  
+      <a
+        class="text-xl text-black transition duration-300 hover:text-blue-600"
+        @click="open = false"
+        href="/#features">Về Miagent</a
+      >
+      <a
+        class="text-xl text-black transition duration-300 hover:text-blue-600"
+        @click="open = false"
+        href="/pricing">Bảng Giá</a
+      >
+      <a
+        class="text-xl text-black transition duration-300 hover:text-blue-600"
+        @click="open = false"
+        href="/contact">Liên Hệ</a
+      >
+      <a
+        class="text-xl text-black transition duration-300 hover:text-blue-600"
+        @click="open = false"
+        href="/blog">Blog</a
+      >
       <a
         href="https://app.miagent.io/signin"
         target="_blank"
@@ -129,5 +161,7 @@
     }
   </style>
 
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    defer></script>
 </header>

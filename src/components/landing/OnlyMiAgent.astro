@@ -1,82 +1,141 @@
 ---
-import { ChatWidget } from '@/components/landing/ChatWidget';
-import { ChatWidget2 } from '@/components/landing/ChatWidget2';
-import { ChatWidget3 } from '@/components/landing/ChatWidget3';
-import { ChatWidget4 } from '@/components/landing/ChatWidget4';
+import { ChatWidget } from "@/components/landing/ChatWidget";
+import { ChatWidget2 } from "@/components/landing/ChatWidget2";
+import { ChatWidget3 } from "@/components/landing/ChatWidget3";
+import { ChatWidget4 } from "@/components/landing/ChatWidget4";
 import RotatingIcons from "@/components/landing/Rotating-icon";
 ---
 
+<section id="cong-nghe-doc-quyen" class="bg-white pb-32 sm:pb-24 pt-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="relative text-center max-w-3xl mx-auto mb-16">
+      <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-green-400/20 blur-[100px] rounded-full -z-10"
+      >
+      </div>
 
+      <h2
+        class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight mb-6"
+      >
+        Công Nghệ
+        <span
+          class="bg-clip-text text-transparent bg-gradient-to-r from-gray-900 via-green-600 to-gray-900"
+        >
+          Độc Quyền
+        </span>
+        Tại MiAgent
+      </h2>
 
-
-
-<section class="bg-white pb-32   sm:pb-24 pt-12">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
-    
-    <div class="text-center max-w-4xl mx-auto top-0">
-      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 tracking-wide uppercase">CHỈ MI-AGENT MỚI CÓ</h2>
-      <p class="mt-4 text-lg text-gray-600">
-        Bạn có thể thấy rất nhiều tính năng quảng cáo của AI Agent nhưng ở AI Agent có phá bỏ giới hạn được những điều này
+      <p
+        class="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto"
+      >
+        Vượt qua giới hạn của Chatbot truyền thống,
+        <span class="text-green-600 font-medium underline underline-offset-2"
+          >MiAgent</span
+        > mang đến khả năng xử lý
+        <span class="relative inline-block">
+          đa phương thức
+          <span
+            class="absolute bottom-0 left-0 w-full h-1 bg-green-200/60 -z-10"
+          ></span>
+        </span>
+        chưa từng có.
       </p>
     </div>
 
-    <div class="mt-16 sm:mt-24 space-y-16 sm:space-y-24 ">
-
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start
-         bg-no-repeat 
+    <div class="mt-16 sm:mt-24 space-y-16 sm:space-y-24">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start
+         bg-no-repeat
          bg-[url('/Map.png'),_url('/Circle2.png')]
          bg-[length:60%_auto,40%_auto]
-         bg-[position:center,_80%_center]">
-
-        <div class="space-y-5 bg-no-repeat ">
+         bg-[position:center,_80%_center]"
+      >
+        <div class="space-y-5 bg-no-repeat">
           <div class="flex items-start gap-4">
-            <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 bg-black text-white font-bold text-xl rounded-full">
+            <div
+              class="flex-shrink-0 flex items-center justify-center h-12 w-12 bg-black text-white font-bold text-xl rounded-full"
+            >
               1
             </div>
-            <h3 class="text-xl font-bold text-gray-900">Nhận diện hình ảnh khách hàng gửi tìm kiếm mã sản phẩm trên CRM để trả lời chính xác</h3>
+            <h3 class="text-xl font-bold text-gray-900">
+              Nhận diện hình ảnh khách hàng gửi tìm kiếm mã sản phẩm trên CRM để
+              trả lời chính xác
+            </h3>
           </div>
-          <p class="text-black ">
-            Miagent có thể nhận diện được hình ảnh khách gửi và tư vấn dựa trên hình ảnh, gửi hình ảnh cho khách hàng và nhiều hơn thế nữa nhờ việc có Model AI nhận diện hình ảnh riêng biệt!
+          <p class="text-black">
+            Mi Agent có thể nhận diện được hình ảnh khách gửi và tư vấn dựa trên
+            hình ảnh, gửi hình ảnh cho khách hàng và nhiều hơn thế nữa nhờ việc
+            có Model AI nhận diện hình ảnh riêng biệt!
           </p>
           <div class="w-full max-w-md p-4">
             <ul class="relative">
-              <div 
-                aria-hidden="true" 
-                class="absolute left-3 top-3 bottom-3 w-px bg-repeat-y bg-[length:1px_8px] bg-[linear-gradient(to_bottom,theme(colors.gray.300)_4px,transparent_4px)]">
+              <div
+                aria-hidden="true"
+                class="absolute left-3 top-3 bottom-3 w-px bg-repeat-y bg-[length:1px_8px] bg-[linear-gradient(to_bottom,theme(colors.gray.300)_4px,transparent_4px)]"
+              >
               </div>
 
               <div class="space-y-4">
-
                 <li class="relative pl-10">
                   <div class="absolute left-0 top-0 z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-green-500" viewBox="0 0 16 16">
-                      <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="text-green-500"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                      ></path>
                     </svg>
                   </div>
                   <div class="bg-green-50 p-3 rounded-lg">
                     <span class="text-gray-800">
-                      AI đọc hiểu hình ảnh sản phẩm và tìm ra mã sản phẩm trên hình ảnh để tư vấn
+                      AI đọc hiểu hình ảnh sản phẩm và tìm ra mã sản phẩm trên
+                      hình ảnh để tư vấn
                     </span>
                   </div>
                 </li>
 
                 <li class="relative pl-10">
                   <div class="absolute left-0 top-0 z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-green-500" viewBox="0 0 16 16">
-                      <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="text-green-500"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                      ></path>
                     </svg>
                   </div>
                   <div class="bg-green-50 p-3 rounded-lg">
                     <span class="text-gray-800">
-                      AI hiểu nội dung cuộc trò chuyện theo cách người thật đang nói
+                      AI hiểu nội dung cuộc trò chuyện theo cách người thật đang
+                      nói
                     </span>
                   </div>
                 </li>
 
                 <li class="relative pl-10">
                   <div class="absolute left-0 top-0 z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-green-500" viewBox="0 0 16 16">
-                      <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="text-green-500"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                      ></path>
                     </svg>
                   </div>
                   <div class="bg-green-50 p-3 rounded-lg">
@@ -88,8 +147,17 @@ import RotatingIcons from "@/components/landing/Rotating-icon";
 
                 <li class="relative pl-10">
                   <div class="absolute left-0 top-0 z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-green-500" viewBox="0 0 16 16">
-                      <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="text-green-500"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                      ></path>
                     </svg>
                   </div>
                   <div class="bg-green-50 p-3 rounded-lg">
@@ -98,69 +166,125 @@ import RotatingIcons from "@/components/landing/Rotating-icon";
                     </span>
                   </div>
                 </li>
-
-                </div>
+              </div>
             </ul>
           </div>
           <a
             href="https://app.miagent.io/signin"
             target="_blank"
-            class="inline-flex  items-center justify-center transition-all duration-200 focus:ring-2 focus:outline-none 
-                  text-white bg-black hover:bg-gray-800 focus:ring-gray-700/50 
+            class="inline-flex items-center justify-center transition-all duration-200 focus:ring-2 focus:outline-none
+                  text-white bg-black hover:bg-gray-800 focus:ring-gray-700/50
                   h-10 px-4 py-2 text-base font-medium rounded-xl group"
           >
             Xem Video Hướng Dẫn Thiết Lập
-            <span class="ml-4 flex items-center justify-center 
-                         p-1 w-9 h-9  rounded-xl
-                        transform transition-transform duration-200 group-hover:scale-110">
-              <img src="\muiten.svg" alt="icon" class="w-full h-full object-contain" />
+            <span
+              class="ml-4 flex items-center justify-center
+                         p-1 w-9 h-9 rounded-xl
+                        transform transition-transform duration-200 group-hover:scale-110"
+            >
+              <img
+                src="\square_right.svg"
+                alt="icon"
+                class="w-full h-full object-contain"
+              />
             </span>
           </a>
         </div>
-        <div class="flex justify-center relative flex-col 
-          w-[80%] mx-auto sm:w-80 
-          border border-green-500 rounded-4xl p-2 
-          h-[500px] max-h-[600px] lg:h-auto lg:max-h-full">
-        
-          
-        
-          <div class="w-40 h-4 border border-green-300 rounded-full bg-green-50 mx-auto my-3 shrink-0"></div>
+        <div
+          class="flex justify-center relative flex-col
+          w-[80%] mx-auto sm:w-80
+          border border-green-500 rounded-4xl p-2
+          h-[500px] max-h-[600px] lg:h-auto lg:max-h-full"
+        >
+          <div
+            class="w-40 h-4 border border-green-300 rounded-full bg-green-50 mx-auto my-3 shrink-0"
+          >
+          </div>
           <div class="flex-1 overflow-y-auto">
             <ChatWidget2 client:visible />
           </div>
-        
         </div>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         <!-- CỘT TRÁI -->
-        <div class="bg-no-repeat flex flex-col lg:flex-row bg-center bg-[length:80%_auto] bg-[url('Circle.svg')] items-center justify-center">
-
+        <div
+          class="bg-no-repeat flex flex-col lg:flex-row bg-center bg-[length:80%_auto] bg-[url('Circle.svg')] items-center justify-center"
+        >
           <!-- LOGO + ICONS -->
-          <div class="order-1 lg:order-3 flex flex-col items-center space-y-6 mb-6 lg:mb-0 ">
-            
-            <div class="border-2 border-green-500 rounded-2xl p-4 w-full min-h-[auto] flex flex-row flex-wrap justify-center lg:flex lg:flex-col lg:justify-around lg:w-40 lg:min-h-[30rem]">
-
-              <div class="text-center p-2"><img src="\odoo.svg" alt="odoo Logo" class="w-auto h-12 mx-auto"></div>
-              <div class="text-center p-2"><img src="\kiotviet2.svg" alt="KiotViet Logo" class="w-64 h-12 mx-auto"></div>
-              <div class="text-center p-2"><img src="\haravan.svg" alt="Havaran Logo" class="w-64 h-8 mx-auto"></div>
-              <div class="text-center p-2"><img src="nhanh.svg" alt="Nhanh.vn Logo" class="w-auto h-8 mx-auto"></div>
-              <div class="text-center p-2"><img src="tuha.png" alt="Tuha Logo" class="w-auto h-8 mx-auto"></div>
-              <div class="text-center p-2"><img src="\pos2.svg" alt="POS Logo" class="w-auto h-8 mx-auto"></div>
+          <div
+            class="order-1 lg:order-3 flex flex-col items-center space-y-6 mb-6 lg:mb-0"
+          >
+            <div
+              class="border-2 border-green-500 rounded-2xl p-4 w-full min-h-[auto] flex flex-row flex-wrap justify-center lg:flex lg:flex-col lg:justify-around lg:w-40 lg:min-h-[30rem]"
+            >
+              <div class="text-center p-2">
+                <img
+                  src="\odoo.svg"
+                  alt="odoo Logo"
+                  class="w-auto h-12 mx-auto"
+                />
+              </div>
+              <div class="text-center p-2">
+                <img
+                  src="\kiotviet2.svg"
+                  alt="KiotViet Logo"
+                  class="w-64 h-12 mx-auto"
+                />
+              </div>
+              <div class="text-center p-2">
+                <img
+                  src="\haravan.svg"
+                  alt="Havaran Logo"
+                  class="w-64 h-8 mx-auto"
+                />
+              </div>
+              <div class="text-center p-2">
+                <img
+                  src="nhanh.svg"
+                  alt="Nhanh.vn Logo"
+                  class="w-auto h-8 mx-auto"
+                />
+              </div>
+              <div class="text-center p-2">
+                <img
+                  src="tuha.png"
+                  alt="Tuha Logo"
+                  class="w-auto h-8 mx-auto"
+                />
+              </div>
+              <div class="text-center p-2">
+                <img
+                  src="\pos2.svg"
+                  alt="POS Logo"
+                  class="w-auto h-8 mx-auto"
+                />
+              </div>
             </div>
           </div>
 
           <!-- MŨI TÊN -->
-          <div class="order-2 lg:order-2 flex items-center justify-center rotate-90 lg:rotate-0 transition-transform duration-300 my-6 lg:my-0">
-            <div class="flex flex-col items-center space-y-16 text-sm font-semibold text-gray-700">
+          <div
+            class="order-2 lg:order-2 flex items-center justify-center rotate-90 lg:rotate-0 transition-transform duration-300 my-6 lg:my-0"
+          >
+            <div
+              class="flex flex-col items-center space-y-16 text-sm font-semibold text-gray-700"
+            >
               <!-- GET API -->
               <div class="flex items-center">
                 <div class="relative flex items-center">
                   <!-- Mũi tên trái -->
-                  <div class="w-0 h-0 border-t-[9px] border-b-[9px] border-r-[12px] border-t-transparent border-b-transparent border-r-green-500"></div>
+                  <div
+                    class="w-0 h-0 border-t-[9px] border-b-[9px] border-r-[12px] border-t-transparent border-b-transparent border-r-green-500"
+                  >
+                  </div>
                   <!-- Thân + chữ -->
-                  <div class="w-28 h-[2px] bg-green-500 relative flex items-center justify-center">
-                    <span class="absolute -translate-y-3 px-2 text-gray-700">GET API</span>
+                  <div
+                    class="w-28 h-[2px] bg-green-500 relative flex items-center justify-center"
+                  >
+                    <span class="absolute -translate-y-3 px-2 text-gray-700"
+                      >GET API</span
+                    >
                   </div>
                 </div>
               </div>
@@ -169,85 +293,125 @@ import RotatingIcons from "@/components/landing/Rotating-icon";
               <div class="flex items-center">
                 <div class="relative flex items-center">
                   <!-- Thân + chữ -->
-                  <div class="w-28 h-[2px] bg-green-500 relative flex items-center justify-center">
-                    <span class="absolute -translate-y-3 px-2 text-gray-700">POST API</span>
+                  <div
+                    class="w-28 h-[2px] bg-green-500 relative flex items-center justify-center"
+                  >
+                    <span class="absolute -translate-y-3 px-2 text-gray-700"
+                      >POST API</span
+                    >
                   </div>
                   <!-- Mũi tên phải -->
-                  <div class="w-0 h-0 border-t-[9px] border-b-[9px] border-l-[12px] border-t-transparent border-b-transparent border-l-green-500"></div>
+                  <div
+                    class="w-0 h-0 border-t-[9px] border-b-[9px] border-l-[12px] border-t-transparent border-b-transparent border-l-green-500"
+                  >
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- CHAT BOX -->
-          <div class="order-3 lg:order-1 flex justify-center relative flex-col 
-            w-[80%] mx-auto sm:w-80 
-            border border-green-500 rounded-4xl p-2 
-            h-[500px] max-h-[600px] lg:h-auto lg:max-h-full">
-            
-            <div class="w-40 h-4 border border-green-300 rounded-full bg-green-50 mx-auto my-3 shrink-0"></div>
+          <div
+            class="order-3 lg:order-1 flex justify-center relative flex-col
+            w-[80%] mx-auto sm:w-80
+            border border-green-500 rounded-4xl p-2
+            h-[500px] max-h-[600px] lg:h-auto lg:max-h-full"
+          >
+            <div
+              class="w-40 h-4 border border-green-300 rounded-full bg-green-50 mx-auto my-3 shrink-0"
+            >
+            </div>
             <div class="flex-1 overflow-y-auto">
               <ChatWidget3 client:visible />
             </div>
           </div>
         </div>
 
-
-
-
-
-
-
-
-        <div class="space-y-5 lg:order-last ">
+        <div class="space-y-5 lg:order-last">
           <div class="flex items-start gap-4">
-            <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 bg-black text-white font-bold text-xl rounded-full">
+            <div
+              class="flex-shrink-0 flex items-center justify-center h-12 w-12 bg-black text-white font-bold text-xl rounded-full"
+            >
               2
             </div>
-            <h3 class="text-xl font-bold text-gray-900">Lấy thông tin sản phẩm realtime trên CRM và lên đơn hàng trên CRM/ ERP</h3>
+            <h3 class="text-xl font-bold text-gray-900">
+              Lấy thông tin sản phẩm realtime trên CRM và lên đơn hàng trên CRM/
+              ERP
+            </h3>
           </div>
           <p class="text-gray-600">
-           Miagent có thể tích hợp vào các phần mềm CRM hoặc ERP một cách dễ dàng để lấy thông tin sản phẩm để tư vấn đồng thời có thể lên đơn hàng kiểm tra trạng thái đơn hàng một cách tự động.
+            Mi Agent có thể tích hợp vào các phần mềm CRM hoặc ERP một cách dễ
+            dàng để lấy thông tin sản phẩm để tư vấn đồng thời có thể lên đơn
+            hàng kiểm tra trạng thái đơn hàng một cách tự động.
           </p>
           <div class="w-full max-w-md p-4">
             <ul class="relative">
-              <div 
-                aria-hidden="true" 
-                class="absolute left-3 top-3 bottom-3 w-px bg-repeat-y bg-[length:1px_8px] bg-[linear-gradient(to_bottom,theme(colors.gray.300)_4px,transparent_4px)]">
+              <div
+                aria-hidden="true"
+                class="absolute left-3 top-3 bottom-3 w-px bg-repeat-y bg-[length:1px_8px] bg-[linear-gradient(to_bottom,theme(colors.gray.300)_4px,transparent_4px)]"
+              >
               </div>
 
               <div class="space-y-4">
-
                 <li class="relative pl-10">
                   <div class="absolute left-0 top-0 z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-green-500" viewBox="0 0 16 16">
-                      <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="text-green-500"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                      ></path>
                     </svg>
                   </div>
                   <div class="bg-green-50 p-3 rounded-lg">
                     <span class="text-gray-800">
-                      Lấy thông tin sản phẩm từ CRM để tư vấn báo giá chính xác sản phẩm theo thời gian thực
+                      Lấy thông tin sản phẩm từ CRM để tư vấn báo giá chính xác
+                      sản phẩm theo thời gian thực
                     </span>
                   </div>
                 </li>
 
                 <li class="relative pl-10">
                   <div class="absolute left-0 top-0 z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-green-500" viewBox="0 0 16 16">
-                      <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="text-green-500"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                      ></path>
                     </svg>
                   </div>
                   <div class="bg-green-50 p-3 rounded-lg">
                     <span class="text-gray-800">
-                      Tự động lên đơn hàng trên phần mềm CRM gắn nhãn cho khách hàng:quan tâm - đã chốt đơn
+                      Tự động lên đơn hàng trên phần mềm CRM gắn nhãn cho khách
+                      hàng:quan tâm - đã chốt đơn
                     </span>
                   </div>
                 </li>
 
                 <li class="relative pl-10">
                   <div class="absolute left-0 top-0 z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-green-500" viewBox="0 0 16 16">
-                      <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="text-green-500"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                      ></path>
                     </svg>
                   </div>
                   <div class="bg-green-50 p-3 rounded-lg">
@@ -259,191 +423,272 @@ import RotatingIcons from "@/components/landing/Rotating-icon";
 
                 <li class="relative pl-10">
                   <div class="absolute left-0 top-0 z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-green-500" viewBox="0 0 16 16">
-                      <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="text-green-500"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                      ></path>
                     </svg>
                   </div>
                   <div class="bg-green-50 p-3 rounded-lg">
                     <span class="text-gray-800">
-                      Có thể tùy biến tích hợp theo đặc thù ngành: Giáo dục, ngân hàng, nhà hàng
-
+                      Có thể tùy biến tích hợp theo đặc thù ngành: Giáo dục,
+                      ngân hàng, nhà hàng
                     </span>
                   </div>
                 </li>
-
-                </div>
+              </div>
             </ul>
           </div>
           <a
             href="https://app.miagent.io/signin"
             target="_blank"
-            class="inline-flex  items-center justify-center transition-all duration-200 focus:ring-2 focus:outline-none 
-                  text-white bg-black hover:bg-gray-800 focus:ring-gray-700/50 
+            class="inline-flex items-center justify-center transition-all duration-200 focus:ring-2 focus:outline-none
+                  text-white bg-black hover:bg-gray-800 focus:ring-gray-700/50
                   h-10 px-4 py-2 text-base font-medium rounded-xl group"
           >
             Xem Video Hướng Dẫn Thiết Lập
-            <span class="ml-4 flex items-center justify-center 
-                         p-1 w-9 h-9  rounded-xl
-                        transform transition-transform duration-200 group-hover:scale-110">
-              <img src="\muiten.svg" alt="icon" class="w-full h-full object-contain" />
+            <span
+              class="ml-4 flex items-center justify-center
+                         p-1 w-9 h-9 rounded-xl
+                        transform transition-transform duration-200 group-hover:scale-110"
+            >
+              <img
+                src="\square_right.svg"
+                alt="icon square right"
+                class="w-full h-full object-contain"
+              />
             </span>
           </a>
         </div>
       </div>
-      
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start
-         bg-no-repeat 
+
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start
+         bg-no-repeat
          bg-[url('/Map.png'),_url('/Circle2.png')]
          bg-[length:60%_auto,38%_auto]
-         bg-[position:center,_94%_center]">
+         bg-[position:center,_94%_center]"
+      >
         <div class="space-y-5">
           <div class="flex items-start gap-4">
-            <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 bg-black text-white font-bold text-xl rounded-full">
+            <div
+              class="flex-shrink-0 flex items-center justify-center h-12 w-12 bg-black text-white font-bold text-xl rounded-full"
+            >
               3
             </div>
-            <h3 class="text-xl font-bold text-gray-900">Hiểu ngữ cảnh cuộc hội thoại khách hàng chat xong đủ ý mới trả lời</h3>
+            <h3 class="text-xl font-bold text-gray-900">
+              Hiểu ngữ cảnh cuộc hội thoại khách hàng chat xong đủ ý mới trả lời
+            </h3>
           </div>
           <p class="text-gray-600">
-            Khi khách hàng nhắn 1 tin Ai sẽ trả lời 1 tin nhưng với AI bán hàng điều đó k tự nhiên chút nào khách chát nhiều tin mới đủ ý.
+            Khi khách hàng nhắn 1 tin Ai sẽ trả lời 1 tin nhưng với AI bán hàng
+            điều đó không tự nhiên chút nào khách chat nhiều tin mới đủ ý.
           </p>
           <div class="w-full max-w-md p-4">
             <ul class="relative">
-              <div 
-                aria-hidden="true" 
-                class="absolute left-3 top-3 bottom-3 w-px bg-repeat-y bg-[length:1px_8px] bg-[linear-gradient(to_bottom,theme(colors.gray.300)_4px,transparent_4px)]">
+              <div
+                aria-hidden="true"
+                class="absolute left-3 top-3 bottom-3 w-px bg-repeat-y bg-[length:1px_8px] bg-[linear-gradient(to_bottom,theme(colors.gray.300)_4px,transparent_4px)]"
+              >
               </div>
 
               <div class="space-y-4">
-
                 <li class="relative pl-10">
                   <div class="absolute left-0 top-0 z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-green-500" viewBox="0 0 16 16">
-                      <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="text-green-500"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                      ></path>
                     </svg>
                   </div>
                   <div class="bg-green-50 p-3 rounded-lg">
                     <span class="text-gray-800">
-                      Chờ khách hàng nhập đủ ý mới trả lời khách hàng trọn vẹn tránh spam
+                      Chờ khách hàng nhập đủ ý mới trả lời khách hàng trọn vẹn
+                      tránh spam
                     </span>
                   </div>
                 </li>
 
                 <li class="relative pl-10">
                   <div class="absolute left-0 top-0 z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-green-500" viewBox="0 0 16 16">
-                      <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="text-green-500"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                      ></path>
                     </svg>
                   </div>
                   <div class="bg-green-50 p-3 rounded-lg">
                     <span class="text-gray-800">
-                      Giao tiếp trôi chảy dù khách đổi chủ đề giữa chừng không trả lời ngoài nội dung bán hàng
+                      Giao tiếp trôi chảy dù khách đổi chủ đề giữa chừng không
+                      trả lời ngoài nội dung bán hàng
                     </span>
                   </div>
                 </li>
 
                 <li class="relative pl-10">
                   <div class="absolute left-0 top-0 z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-green-500" viewBox="0 0 16 16">
-                      <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="text-green-500"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                      ></path>
                     </svg>
                   </div>
                   <div class="bg-green-50 p-3 rounded-lg">
                     <span class="text-gray-800">
                       Gợi ý sản phẩm phù hợp hoặc nhắc lại ưu đãi chưa dùng
-
                     </span>
                   </div>
                 </li>
 
                 <li class="relative pl-10">
                   <div class="absolute left-0 top-0 z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-green-500" viewBox="0 0 16 16">
-                      <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="text-green-500"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                      ></path>
                     </svg>
                   </div>
                   <div class="bg-green-50 p-3 rounded-lg">
                     <span class="text-gray-800">
                       Ghi nhớ tên, lịch sử, sản phẩm đã hỏi/đặt trước đó
-
                     </span>
                   </div>
                 </li>
-
-                </div>
+              </div>
             </ul>
           </div>
           <a
             href="https://app.miagent.io/signin"
             target="_blank"
-            class="inline-flex  items-center justify-center transition-all duration-200 focus:ring-2 focus:outline-none 
-                  text-white bg-black hover:bg-gray-800 focus:ring-gray-700/50 
+            class="inline-flex items-center justify-center transition-all duration-200 focus:ring-2 focus:outline-none
+                  text-white bg-black hover:bg-gray-800 focus:ring-gray-700/50
                   h-10 px-4 py-2 text-base font-medium rounded-xl group"
           >
             Xem Video Hướng Dẫn Thiết Lập
-            <span class="ml-4 flex items-center justify-center 
-                         p-1 w-9 h-9  rounded-xl
-                        transform transition-transform duration-200 group-hover:scale-110">
-              <img src="\muiten.svg" alt="icon" class="w-full h-full object-contain" />
+            <span
+              class="ml-4 flex items-center justify-center
+                         p-1 w-9 h-9 rounded-xl
+                        transform transition-transform duration-200 group-hover:scale-110"
+            >
+              <img
+                src="\square_right.svg"
+                alt="icon square right"
+                class="w-full h-full object-contain"
+              />
             </span>
           </a>
         </div>
-        <div class="flex justify-center relative flex-col 
-          w-[80%] mx-auto sm:w-80 
-          border border-green-500 rounded-4xl p-2 
-          h-[500px] max-h-[600px] lg:h-auto lg:max-h-full">
-        
-          
-        
-          <div class="w-40 h-4 border border-green-300 rounded-full bg-green-50 mx-auto my-3 shrink-0"></div>
+        <div
+          class="flex justify-center relative flex-col
+          w-[80%] mx-auto sm:w-80
+          border border-green-500 rounded-4xl p-2
+          h-[500px] max-h-[600px] lg:h-auto lg:max-h-full"
+        >
+          <div
+            class="w-40 h-4 border border-green-300 rounded-full bg-green-50 mx-auto my-3 shrink-0"
+          >
+          </div>
           <div class="flex-1 overflow-y-auto">
             <ChatWidget4 client:visible />
           </div>
-        
         </div>
-      </div>
-
-    </div>
-
-    <div class="mt-16 sm:mt-24 relative bg-zinc-900 text-white rounded-3xl overflow-visible text-center">
-
-    <div aria-hidden="true" class="absolute inset-x-0 top-1/2 -translate-y-1/2 h-64 bg-gradient-to-r from-rose-500 via-violet-500 to-sky-500 blur-3xl"></div>
-
-
-    <div class="mt-16 sm:mt-24 rounded-3xl p-px bg-gradient-to-br from-gray-700 via-gray-900 to-gray-900
-              transition-transform duration-300 hover:scale-105 group">
-
-    <div class="relative bg-zinc-900 text-white rounded-[23px] overflow-visible text-center">
-
-      <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-r from-gray-500/20 to-transparent blur-3xl opacity-50
-                                    transition-opacity duration-300 group-hover:opacity-100 -z-10"></div>
-
-
-      <div class="relative z-10 py-16 lg:py-20 px-6 space-y-4 lg:space-y-6">
-        
-        <div class="flex items-center justify-center gap-x-2">
-          <img src="/logomi.svg" alt="Miagent Logo" class="h-8 w-auto brightness-0 invert">
-          <img src="/miagent.svg" alt="Miagent Logo" class="h-8 w-auto brightness-0 invert">
-        </div>
-
-        <p class="text-xl font-medium text-gray-300">
-          AI Agent - Tư vấn bán hàng thay cho nhân viên của bạn!
-        </p>
-
-        <p class="text-4xl lg:text-6xl font-extrabold text-white leading-tight">
-          TĂNG 60% DOANH THU
-        </p>
-
-        <p class="text-lg text-gray-300">
-          Giảm 80% chi phí vận hành đội ngũ sale bán hàng
-        </p>
-      </div>
-
-      <div class="absolute bottom-0 right-0 lg:right-10 h-[115%] hidden lg:block z-20">
-        <img src="/person.png" alt="Person" class="h-full w-auto">
-      </div>
-
       </div>
     </div>
 
+    <div
+      class="mt-16 sm:mt-24 relative bg-zinc-900 text-white rounded-4xl overflow-visible text-center"
+    >
+      <div
+        aria-hidden="true"
+        class="absolute inset-x-0 top-1/2 -translate-y-1/2 h-64 bg-gradient-to-r from-rose-500 via-violet-500 to-sky-500 blur-3xl"
+      >
+      </div>
+
+      <div
+        class="mt-16 sm:mt-24 rounded-3xl p-px bg-gradient-to-br from-gray-700 via-gray-900 to-gray-900
+              transition-transform duration-300 hover:scale-105 group"
+      >
+        <div
+          class="relative bg-zinc-900 text-white rounded-[23px] overflow-visible text-center"
+        >
+          <div
+            aria-hidden="true"
+            class="absolute inset-0 bg-gradient-to-r from-gray-500/20 to-transparent blur-3xl opacity-50
+                                    transition-opacity duration-300 group-hover:opacity-100 -z-10"
+          >
+          </div>
+
+          <div class="relative z-10 py-16 lg:py-20 px-6 space-y-4 lg:space-y-6">
+            <div class="flex items-center justify-center gap-x-2">
+              <img
+                src="/logomi.svg"
+                alt="Miagent Logo"
+                class="h-8 w-auto brightness-0 invert"
+              />
+              <img
+                src="/miagent.svg"
+                alt="Miagent Logo"
+                class="h-8 w-auto brightness-0 invert"
+              />
+            </div>
+
+            <p class="text-xl font-medium text-gray-300">
+              AI Agent - Tư vấn bán hàng thay cho nhân viên của bạn!
+            </p>
+
+            <p
+              class="text-4xl lg:text-6xl font-extrabold text-white leading-tight"
+            >
+              TĂNG 60% DOANH THU
+            </p>
+
+            <p class="text-lg text-gray-300">
+              Giảm 80% chi phí vận hành đội ngũ sale bán hàng
+            </p>
+          </div>
+
+          <div
+            class="absolute bottom-0 right-0 lg:right-10 h-[115%] hidden lg:block z-20"
+          >
+            <img src="/person.png" alt="Person" class="h-full w-auto" />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

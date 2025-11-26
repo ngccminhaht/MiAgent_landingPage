@@ -1,30 +1,32 @@
-<section class="bg-gray-50 py-16 sm:py-12 px-4 sm:px-6 lg:px-8" x-data="{ activeImage: 1 }">
+<section
+  class="bg-gray-50 py-16 sm:py-12 px-4 sm:px-6 lg:px-8"
+  x-data="{ activeImage: 1 }"
+>
   <div class="max-w-7xl mx-auto text-center">
-
     <!-- Nút chọn ảnh -->
     <div class="flex justify-center space-x-4 mb-8">
-      <button 
+      <button
         class="px-4 py-2 rounded-xl text-sm font-medium transition-all"
         :class="activeImage === 1 ? 'bg-black text-white' : 'bg-gray-300 text-black border border-gray-300 hover:bg-gray-100 font-semibold rounded-4xl'"
         @click="activeImage = 1"
       >
         AI Studio
       </button>
-      <button 
+      <button
         class="px-4 py-2 rounded-xl text-sm font-medium transition-all"
         :class="activeImage === 2 ? 'bg-black text-white' : 'bg-gray-300 text-black border border-gray-300 hover:bg-gray-100 font-semibold rounded-4xl'"
         @click="activeImage = 2"
       >
         Trainning kiến thức
       </button>
-      <button 
+      <button
         class="px-4 py-2 rounded-xl text-sm font-medium transition-all"
         :class="activeImage === 3 ? 'bg-black text-white' : 'bg-gray-300 text-black border border-gray-300 hover:bg-gray-100 font-semibold rounded-4xl'"
         @click="activeImage = 3"
       >
         Tích hợp CRM
       </button>
-      <button 
+      <button
         class="px-4 py-2 rounded-xl text-sm font-medium transition-all"
         :class="activeImage === 4 ? 'bg-black text-white' : 'bg-gray-300 text-black border border-gray-300 hover:bg-gray-100 font-semibold rounded-4xl'"
         @click="activeImage = 4"
@@ -35,20 +37,51 @@
 
     <!-- Hình ảnh hiển thị -->
     <template x-if="activeImage === 1">
-      <img class="w-full h-auto rounded-2xl" src="/page2.svg" alt="Ảnh 1">
+      <img
+        class="w-full h-auto rounded-2xl"
+        src="/page2.svg"
+        alt="Ảnh 1"
+        width="1200"
+        height="800"
+        loading="eager"
+        decoding="async"
+      />
     </template>
 
     <template x-if="activeImage === 2">
-      <img class="w-full h-auto rounded-2xl" src="/page2.svg" alt="Ảnh 2">
+      <img
+        class="w-full h-auto rounded-2xl"
+        src="/page2.svg"
+        alt="Ảnh 2"
+        width="1200"
+        height="800"
+        loading="lazy"
+        decoding="async"
+      />
     </template>
 
     <template x-if="activeImage === 3">
-      <img class="w-full h-auto rounded-2xl" src="/page2.svg" alt="Ảnh 3">
+      <img
+        class="w-full h-auto rounded-2xl"
+        src="/page2.svg"
+        alt="Ảnh 3"
+        width="1200"
+        height="800"
+        loading="lazy"
+        decoding="async"
+      />
     </template>
 
     <template x-if="activeImage === 4">
-      <img class="w-full h-auto rounded-2xl" src="/page2.svg" alt="Ảnh 4">
+      <img
+        class="w-full h-auto rounded-2xl"
+        src="/page2.svg"
+        alt="Ảnh 4"
+        width="1200"
+        height="800"
+        loading="lazy"
+        decoding="async"
+      />
     </template>
-
   </div>
 </section>

@@ -1,8 +1,9 @@
 ---
-import BaseHead from "../components/BaseHead.astro";
+import BaseHead from "../layouts/BaseHead.astro";
 import Navigation from "../components/global/Navigation.astro";
 import Footer from "../components/global/Footer.astro";
 ---
+
 <html
   lang="en"
   class="scroll-smooth selection:bg-accent-500 selection:text-white no-touchevents hydrated"
@@ -11,10 +12,8 @@ import Footer from "../components/global/Footer.astro";
     <BaseHead />
   </head>
   <body class="bg-white flex flex-col min-h-svh">
-    <Navigation/>
+    <Navigation />
     <main class="grow"><slot /></main>
-    <Footer/>
-
-    
+    <Footer />
   </body>
 </html>

@@ -1,0 +1,58 @@
+---
+import "../styles/global.css";
+
+// CẤU HÌNH DOMAIN CHÍNH THỨC
+// Lưu ý: Không thêm dấu "/" ở cuối
+const SITE_URL = "https://MiAgent.io";
+const SITE_TITLE = "MiAgent - Giải pháp AI Agent dành cho nhà bán lẻ";
+const SITE_DESCRIPTION =
+  "AI Chatbot MiAgent: Giải pháp AI Agent bán hàng đa kênh, tự động CSKH 24/7, xử lý đơn hàng và đồng bộ CRM/ERP. Giúp doanh nghiệp bán lẻ tăng năng suất & giảm chi phí.";
+const SOCIAL_IMAGE_URL = `${SITE_URL}/og-image.png`; // Bạn cần file ảnh này trong folder /public
+---
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>{SITE_TITLE}</title>
+<meta name="description" content={SITE_DESCRIPTION} />
+<meta
+  name="keywords"
+  content="AI Agent, AI Chatbot, Bán Hàng Đa Kênh, Bán Hàng Online, Bán lẻ, MiAgent, CSKH tự động, CRM, ERP, AHT Tech"
+/>
+<meta name="author" content="MiAgent Team" />
+
+<link rel="icon" href="/favicon.ico" sizes="any" />
+<link rel="icon" href="/logomi.svg" type="image/svg+xml" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="shortcut icon" href="/logomi.svg" type="image/x-icon" />
+
+<link rel="canonical" href={SITE_URL} />
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content={SITE_URL} />
+<meta property="og:title" content="MiAgent - Trợ lý AI Bán Hàng Đa Kênh" />
+<meta
+  property="og:description"
+  content="Tự động CSKH 24/7, chốt đơn và đồng bộ dữ liệu. Giải pháp AI tối ưu chi phí cho doanh nghiệp."
+/>
+<meta property="og:image" content={SOCIAL_IMAGE_URL} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={SITE_URL} />
+<meta property="twitter:title" content="MiAgent - Trợ lý AI Bán Hàng Đa Kênh" />
+<meta
+  property="twitter:description"
+  content="Tự động CSKH 24/7, chốt đơn và đồng bộ dữ liệu. Giải pháp AI tối ưu chi phí."
+/>
+<meta property="twitter:image" content={SOCIAL_IMAGE_URL} />
+
+<meta name="robots" content="index, follow" />
+<meta name="googlebot" content="index, follow" />
+<meta name="theme-color" content="#ffffff" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<link rel="preconnect" href="https://rsms.me/" />
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+<script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>

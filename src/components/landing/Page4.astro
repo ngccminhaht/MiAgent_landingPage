@@ -1,14 +1,16 @@
 ---
-import { ChatWidget } from '@/components/landing/ChatWidget';
+import { ChatWidget } from "@/components/landing/ChatWidget";
 import RotatingIcons from "@/components/landing/Rotating-icon";
 ---
+
 <section class="bg-slate-50 overflow-hidden py-16 sm:py-24">
-  <div class="container mx-auto px-6">
+  <div class="container mx-auto max-w-7xl px-6">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-      
       <div class="space-y-4">
         <div class="flex items-center gap-x-4">
-          <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 bg-black text-white font-bold text-xl rounded-full">
+          <div
+            class="flex-shrink-0 flex items-center justify-center h-12 w-12 bg-black text-white font-bold text-xl rounded-full"
+          >
             4
           </div>
           <h2 class="text-3xl font-bold text-black">
@@ -16,106 +18,154 @@ import RotatingIcons from "@/components/landing/Rotating-icon";
           </h2>
         </div>
         <p class="text-black">
-          Tích hợp AI của bạn vào đa nền tảng tư vấn khách hàng ở mọi nơi mọi lúc một cách thuận tiện.
+          Tích hợp AI của bạn vào đa nền tảng tư vấn khách hàng ở mọi nơi mọi
+          lúc một cách thuận tiện.
         </p>
         <div class="w-full max-w-md p-4">
-            <ul class="relative">
-              <div 
-                aria-hidden="true" 
-                class="absolute left-3 top-3 bottom-3 w-px bg-repeat-y bg-[length:1px_8px] bg-[linear-gradient(to_bottom,theme(colors.gray.300)_4px,transparent_4px)]">
-              </div>
+          <ul class="relative">
+            <div
+              aria-hidden="true"
+              class="absolute left-3 top-3 bottom-3 w-px bg-repeat-y bg-[length:1px_8px] bg-[linear-gradient(to_bottom,theme(colors.gray.300)_4px,transparent_4px)]"
+            >
+            </div>
 
-              <div class="space-y-4">
-
-                <li class="relative pl-10">
-                  <div class="absolute left-0 top-0 z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-green-500" viewBox="0 0 16 16">
-                      <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
-                    </svg>
-                  </div>
-                  <div class="bg-green-50 p-3 rounded-lg">
-                    <span class="text-gray-800">
-                      Quản lý tập trung mọi cuộc trò chuyện từ các nền tảng phổ biến tại một nơi duy nhất.
-                    </span>
-                  </div>
-                </li>
-
-                <li class="relative pl-10">
-                  <div class="absolute left-0 top-0 z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-green-500" viewBox="0 0 16 16">
-                      <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
-                    </svg>
-                  </div>
-                  <div class="bg-green-50 p-3 rounded-lg">
-                    <span class="text-gray-800">
-                      Phản hồi khách hàng tức thì 24/7, mang lại trải nghiệm đồng nhất trên mọi nền tảng bán hàng.
-                    </span>
-                  </div>
-                </li>
-
-                <li class="relative pl-10">
-                  <div class="absolute left-0 top-0 z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-green-500" viewBox="0 0 16 16">
-                      <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
-                    </svg>
-                  </div>
-                  <div class="bg-green-50 p-3 rounded-lg">
-                    <span class="text-gray-800">
-                      Tự động chốt đơn và thu thập thông tin của khách hàng tiềm năng ngay trong cuộc trò chuyện.
-                    </span>
-                  </div>
-                </li>
-
-                <li class="relative pl-10">
-                  <div class="absolute left-0 top-0 z-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-green-500" viewBox="0 0 16 16">
-                      <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
-                    </svg>
-                  </div>
-                  <div class="bg-green-50 p-3 rounded-lg">
-                    <span class="text-gray-800">
-                      Mở rộng quy mô bán hàng và CSKH hiệu quả mà không cần tăng thêm chi phí nhân sự.
-                    </span>
-                  </div>
-                </li>
-
+            <div class="space-y-4">
+              <li class="relative pl-10">
+                <div class="absolute left-0 top-0 z-10">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="text-green-500"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                    ></path>
+                  </svg>
                 </div>
-            </ul>
-          </div>
-        
+                <div class="bg-green-50 p-3 rounded-lg">
+                  <span class="text-gray-800">
+                    Quản lý tập trung mọi cuộc trò chuyện từ các nền tảng phổ
+                    biến tại một nơi duy nhất.
+                  </span>
+                </div>
+              </li>
+
+              <li class="relative pl-10">
+                <div class="absolute left-0 top-0 z-10">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="text-green-500"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="bg-green-50 p-3 rounded-lg">
+                  <span class="text-gray-800">
+                    Phản hồi khách hàng tức thì 24/7, mang lại trải nghiệm đồng
+                    nhất trên mọi nền tảng bán hàng.
+                  </span>
+                </div>
+              </li>
+
+              <li class="relative pl-10">
+                <div class="absolute left-0 top-0 z-10">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="text-green-500"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="bg-green-50 p-3 rounded-lg">
+                  <span class="text-gray-800">
+                    Tự động chốt đơn và thu thập thông tin của khách hàng tiềm
+                    năng ngay trong cuộc trò chuyện.
+                  </span>
+                </div>
+              </li>
+
+              <li class="relative pl-10">
+                <div class="absolute left-0 top-0 z-10">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="text-green-500"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="bg-green-50 p-3 rounded-lg">
+                  <span class="text-gray-800">
+                    Mở rộng quy mô bán hàng và CSKH hiệu quả mà không cần tăng
+                    thêm chi phí nhân sự.
+                  </span>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </div>
+
         <a
-            href="https://app.miagent.io/signin"
-            target="_blank"
-            class="inline-flex  items-center justify-center transition-all duration-200 focus:ring-2 focus:outline-none 
-                  text-white bg-black hover:bg-gray-800 focus:ring-gray-700/50 
+          href="https://app.miagent.io/signin"
+          target="_blank"
+          class="inline-flex items-center justify-center transition-all duration-200 focus:ring-2 focus:outline-none
+                  text-white bg-black hover:bg-gray-800 focus:ring-gray-700/50
                   h-10 px-4 py-2 text-base font-medium rounded-xl group"
+        >
+          Xem Video Hướng Dẫn Thiết Lập
+          <span
+            class="ml-4 flex items-center justify-center
+                         p-1 w-9 h-9 rounded-xl
+                        transform transition-transform duration-200 group-hover:scale-110"
           >
-            Xem Video Hướng Dẫn Thiết Lập
-            <span class="ml-4 flex items-center justify-center 
-                         p-1 w-9 h-9  rounded-xl
-                        transform transition-transform duration-200 group-hover:scale-110">
-              <img src="\muiten.svg" alt="icon" class="w-full h-full object-contain" />
-            </span>
-          </a>
+            <img
+              src="\square_right.svg"
+              alt="icon"
+              class="w-full h-full object-contain"
+            />
+          </span>
+        </a>
       </div>
 
-      <div class="relative min-h-[280px] sm:min-h-[400px] md:min-h-[450px] flex items-center justify-center">
+      <div
+        class="relative min-h-[280px] sm:min-h-[400px] md:min-h-[450px] flex items-center justify-center"
+      >
         <!-- Nền gradient mờ -->
         <div
-          class="absolute inset-0 
+          class="absolute inset-0
                 bg-gradient-to-tr from-blue-200/70 via-pink-200/70 to-sky-200/70
                 rounded-[80px] sm:rounded-[120px] md:rounded-full
                 blur-2xl sm:blur-3xl md:blur-[80px]"
-        ></div>
+        >
+        </div>
 
         <!-- Vùng chứa icon xoay -->
-        <div class="relative flex items-center justify-center min-h-[220px] sm:min-h-[340px] md:min-h-[400px]">
+        <div
+          class="relative flex items-center justify-center min-h-[220px] sm:min-h-[340px] md:min-h-[400px]"
+        >
           <RotatingIcons client:load />
         </div>
       </div>
-
-
-
     </div>
   </div>
 </section>

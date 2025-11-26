@@ -1,28 +1,42 @@
 ---
-import { ChatWidget } from '@/components/landing/ChatWidget';
+import { ChatWidget } from "@/components/landing/ChatWidget";
 ---
 
-
-<section class="overflow-hidden bg-[url('/background.png')]"> <div class="px-8 py-5 mx-auto md:px-12 lg:px-24 max-w-7xl relative">
+<section class="overflow-hidden bg-[url('/background.png')]">
+  <div class="px-8 py-8 mx-auto md:px-12 lg:px-24 max-w-7xl relative">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      
       <div class="lg:col-span-1">
-        <h2 class="text-3xl font-bold text-black sm:text-2xl md:text-3xl leading-tight">
-          Giải pháp AI Chatbot - Agentic AI
-        </h2>
+        <h1
+          class="text-3xl font-bold text-black sm:text-4xl md:text-5xl leading-tight mb-4"
+        >
+          Giải pháp <span class="text-green-600">AI Chatbot Bán Hàng</span> & Agentic
+          AI
+        </h1>
         <p class="mt-4 text-lg text-gray-700">
-          Giúp doanh nghiệp  <span class="text-green-400">tư vấn,bán hàng</span> & chăm sóc khách hàng
+          Tự động hóa quy trình <span class="text-green-500 font-semibold"
+            >tư vấn, chốt đơn</span
+          > & CSKH 24/7.
         </p>
-        <p class="mt-2 text-xl font-semibold text-black">
-          Bằng hội thoại <span class="text-green-400">đa kênh</span> toàn diện
+        <p class="mt-2 text-lg text-gray-600">
+          Tích hợp sâu <strong>CRM/ERP</strong>, đồng bộ dữ liệu hội thoại <span
+            class="text-green-500 font-semibold">đa kênh</span
+          > (Facebook, Zalo, Web,...)
         </p>
 
         <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
           <!-- Box 1 -->
           <div class="flex items-center gap-3 p-5 rounded-2xl bg-green-200">
             <div class="flex-shrink-0 -ml-8 -translate-y-13">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#16a34a" class="w-8 h-8">
-                <path fill-rule="evenodd" d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#16a34a"
+                class="w-8 h-8"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                  clip-rule="evenodd"></path>
               </svg>
             </div>
             <p class="text-lg font-semibold text-black leading-snug text-start">
@@ -33,8 +47,16 @@ import { ChatWidget } from '@/components/landing/ChatWidget';
           <!-- Box 2 -->
           <div class="flex items-center gap-3 p-5 rounded-2xl bg-orange-200">
             <div class="flex-shrink-0 -ml-8 -translate-y-13">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#16a34a" class="w-8 h-8">
-                <path fill-rule="evenodd" d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#16a34a"
+                class="w-8 h-8"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                  clip-rule="evenodd"></path>
               </svg>
             </div>
             <p class="text-lg font-semibold text-black leading-snug">
@@ -45,8 +67,16 @@ import { ChatWidget } from '@/components/landing/ChatWidget';
           <!-- Box 3 -->
           <div class="flex items-center gap-3 p-5 rounded-2xl bg-blue-200">
             <div class="flex-shrink-0 -ml-8 -translate-y-13">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#16a34a" class="w-8 h-8">
-                <path fill-rule="evenodd" d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#16a34a"
+                class="w-8 h-8"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                  clip-rule="evenodd"></path>
               </svg>
             </div>
             <p class="text-lg font-semibold text-black leading-snug">
@@ -57,8 +87,16 @@ import { ChatWidget } from '@/components/landing/ChatWidget';
           <!-- Box 4 -->
           <div class="flex items-center gap-3 p-5 rounded-2xl bg-purple-200">
             <div class="flex-shrink-0 -ml-8 -translate-y-13">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#16a34a" class="w-8 h-8">
-                <path fill-rule="evenodd" d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#16a34a"
+                class="w-8 h-8"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.516 2.17a.75.75 0 0 0-1.032 0 11.209 11.209 0 0 1-7.877 3.08.75.75 0 0 0-.722.515A12.74 12.74 0 0 0 2.25 9.75c0 5.942 4.064 10.933 9.563 12.348a.749.749 0 0 0 .374 0c5.499-1.415 9.563-6.406 9.563-12.348 0-1.39-.223-2.73-.635-3.985a.75.75 0 0 0-.722-.516l-.143.001c-2.996 0-5.717-1.17-7.734-3.08Zm3.094 8.016a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z"
+                  clip-rule="evenodd"></path>
               </svg>
             </div>
             <p class="text-lg font-semibold text-gray-900 leading-snug">
@@ -67,71 +105,88 @@ import { ChatWidget } from '@/components/landing/ChatWidget';
           </div>
         </div>
 
-
         <div class="flex flex-wrap items-center gap-4 mt-8">
           <a
             href="https://app.miagent.io/signin"
             target="_blank"
-            class="flex items-center justify-between transition-all duration-200 focus:ring-2 focus:outline-none 
-                  text-white bg-black hover:bg-gray-800 focus:ring-gray-700/50 
+            class="flex items-center justify-between transition-all duration-200 focus:ring-2 focus:outline-none
+                  text-white bg-black hover:bg-gray-800 focus:ring-gray-700/50
                   h-10 px-4 py-2 text-base font-medium rounded-xl group"
           >
             Đăng Kí Miễn Phí Trọn Đời
-            <span class="ml-4 flex items-center justify-center 
-                         p-1 w-8 h-8  rounded-xl
-                        transform transition-transform duration-200 group-hover:scale-110">
-              <img src="\muiten.svg" alt="icon" class="w-full h-full object-contain" />
+            <span
+              class="ml-4 flex items-center justify-center
+                         p-1 w-8 h-8 rounded-xl
+                        transform transition-transform duration-200 group-hover:scale-110"
+            >
+              <img
+                src="\square_right.svg"
+                alt="icon-square-right"
+                class="w-full h-full object-contain"
+              />
             </span>
           </a>
           <a
-            href="/lienhe"
+            href="/contact"
             target="_blank"
-            class="flex items-center justify-between transition-all duration-200 focus:ring-2 focus:outline-none 
-                  text-white bg-black hover:bg-gray-800 focus:ring-gray-700/50 
+            class="flex items-center justify-between transition-all duration-200 focus:ring-2 focus:outline-none
+                  text-white bg-black hover:bg-gray-800 focus:ring-gray-700/50
                   h-10 px-4 py-2 text-base font-medium rounded-xl group"
           >
             Liên Hệ Tư Vấn
-            <span class="ml-4 flex items-center justify-center 
-                        bg-white rounded-lg p-1 w-7 h-7 
-                        transform transition-transform duration-200 group-hover:scale-110">
-              <img src="\hearphone.svg" alt="icon" class="w-full h-full object-contain" />
+            <span
+              class="ml-4 flex items-center justify-center
+                        bg-white rounded-lg p-1 w-7 h-7
+                        transform transition-transform duration-200 group-hover:scale-110"
+            >
+              <img
+                src="\hearphone.svg"
+                alt="icon hearphone"
+                class="w-full h-full object-contain"
+              />
             </span>
           </a>
         </div>
       </div>
 
-      <div x-data="{ open: false }" 
-          class="relative lg:col-span-1 pl-4 pr-4 pb-8 lg:pl-16 lg:pr-20">
-          
+      <div
+        x-data="{ open: false }"
+        class="relative lg:col-span-1 pl-4 pr-4 pb-8 lg:pl-16 lg:pr-20"
+      >
         <!-- BÊN TRÁI (ẩn trên mobile) -->
-        <div class="hidden lg:flex flex-col items-center justify-center absolute top-92 left-2 -translate-y-1/2 space-y-4">
-          <img src="/pic1.svg" alt="Odoo" class="w-17 h-auto">
+        <div
+          class="hidden lg:flex flex-col items-center justify-center absolute top-92 left-2 -translate-y-1/2 space-y-4"
+        >
+          <img src="/pos_kiot_odoo.svg" alt="ảnh kết hợp" class="w-17 h-auto" />
         </div>
 
         <!-- KHUNG CHAT -->
-        <div class="flex justify-center relative flex-col 
-          w-full mx-auto sm:w-80 
-          border border-green-500 rounded-4xl p-2 
-          h-[500px] max-h-[600px] lg:h-auto lg:max-h-full">
-        
-          <div class="w-40 h-4 border border-green-300 rounded-full bg-green-50 mx-auto my-3 shrink-0"></div>
+        <div
+          class="flex justify-center relative flex-col
+          w-full mx-auto sm:w-80
+          border border-green-500 rounded-4xl p-2
+          h-[500px] max-h-[600px] lg:h-auto lg:max-h-full"
+        >
+          <div
+            class="w-40 h-4 border border-green-300 rounded-full bg-green-50 mx-auto my-3 shrink-0"
+          >
+          </div>
           <div class="flex-1 overflow-y-auto">
             <ChatWidget client:visible />
           </div>
         </div>
 
         <!-- BÊN PHẢI (ẩn trên mobile) -->
-        <div class="hidden lg:flex flex-col items-center justify-center w-11 h-70 absolute top-35 right-12 -translate-y-1/2 space-y-4 rounded-xl shadow-lg ring-1 ring-green-500 max-w-xl">
-          <img src="/messeger.svg" alt="Messeger" class="w-9 h-9">
-          <img src="/zalo.png" alt="Zalo" class="w-11 h-11">
-          <img src="shopee.png" alt="Shopee" class="w-11 h-11">
-          <img src="/shopify.svg" alt="Shopify" class="w-12 h-12">
-          <img src="/tiktok.png" alt="Tiktok" class="w-11 h-11">
+        <div
+          class="hidden lg:flex flex-col items-center justify-center w-11 h-72 absolute top-50 right-12 -translate-y-1/2 space-y-4 rounded-xl shadow-lg ring-1 ring-green-500 max-w-xl"
+        >
+          <img src="/messeger.svg" alt="Messeger" class="w-9 h-9" />
+          <img src="/zalo.png" alt="Zalo" class="w-11 h-11" />
+          <img src="shopee.png" alt="Shopee" class="w-11 h-11" />
+          <img src="/shopify.svg" alt="Shopify" class="w-12 h-12" />
+          <img src="/tiktok.png" alt="Tiktok" class="w-12 h-12" />
         </div>
-
       </div>
-
-      
     </div>
   </div>
 </section>
