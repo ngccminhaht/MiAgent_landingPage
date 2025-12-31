@@ -7,7 +7,7 @@ const {
   months = "0",
   addon = "0",
   total = 0,
-  transferContent
+  transferContent,
 } = Astro.props;
 
 // đảm bảo total là number
@@ -19,16 +19,22 @@ function formatCurrency(num) {
   return Number(num).toLocaleString("vi-VN") + " đ";
 }
 ---
-<section class="py-16 bg-gray-50">
-  <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
 
+<section class="py-16 bg-gray-50">
+  <div
+    class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-8"
+  >
     <!-- Cột trái -->
     <div class="lg:col-span-2 bg-white rounded-2xl shadow p-6 space-y-6">
       <h2 class="text-xl font-semibold">Chuyển khoản</h2>
 
       <!-- QR -->
       <div class="flex justify-center">
-        <img src="/QRimg.png" alt="QR code" class="w-60 h-60 rounded-lg shadow" />
+        <img
+          src="/QRimg.png"
+          alt="QR code"
+          class="w-60 h-60 rounded-lg shadow"
+        />
       </div>
 
       <!-- Thông tin -->
@@ -36,12 +42,22 @@ function formatCurrency(num) {
         <div class="grid grid-cols-2 gap-4">
           <div>
             <label class="block text-sm text-gray-500">Ngân hàng</label>
-            <input type="text" value="MBBank" disabled class="w-full border rounded-lg px-3 py-2 bg-gray-100" />
+            <input
+              type="text"
+              value="MBBank"
+              disabled
+              class="w-full border rounded-lg px-3 py-2 bg-gray-100"
+            />
           </div>
           <div>
             <label class="block text-sm text-gray-500">Số tài khoản</label>
             <div class="flex items-center">
-              <input type="text" value="2222233666666" disabled class="flex-1 border rounded-lg px-3 py-2 bg-gray-100" />
+              <input
+                type="text"
+                value="2222233666666"
+                disabled
+                class="flex-1 border rounded-lg px-3 py-2 bg-gray-100"
+              />
               <button
                 class="ml-2 text-blue-600 text-sm"
                 type="button"
@@ -55,7 +71,9 @@ function formatCurrency(num) {
 
         <div class="grid grid-cols-2 gap-4">
           <div>
-            <label class="block text-sm text-gray-500">Số tiền chuyển khoản</label>
+            <label class="block text-sm text-gray-500"
+              >Số tiền chuyển khoản</label
+            >
             <!-- data-* để fallback JS có thể tìm và sửa nếu cần -->
             <input
               data-pilling-total
@@ -78,7 +96,7 @@ function formatCurrency(num) {
               <button
                 class="ml-2 text-blue-600 text-sm"
                 type="button"
-                onclick={`navigator.clipboard.writeText('${transferText.replace(/'/g,"\\'")}')`}
+                onclick={`navigator.clipboard.writeText('${transferText.replace(/'/g, "\\'")}')`}
               >
                 Copy
               </button>
@@ -88,18 +106,27 @@ function formatCurrency(num) {
 
         <div>
           <label class="block text-sm text-gray-500">Chủ tài khoản</label>
-          <input type="text" value="NGUYEN HAI LONG" disabled class="w-full border rounded-lg px-3 py-2 bg-gray-100" />
+          <input
+            type="text"
+            value="NGUYEN HAI LONG"
+            disabled
+            class="w-full border rounded-lg px-3 py-2 bg-gray-100"
+          />
         </div>
       </div>
 
       <!-- Lưu ý -->
       <p class="text-sm text-yellow-700 bg-yellow-100 p-3 rounded-lg">
-        Vui lòng quét mã QR hoặc nhập đúng thông tin chuyển khoản để việc thanh toán được ghi nhận chính xác.
+        Vui lòng quét mã QR hoặc nhập đúng thông tin chuyển khoản để việc thanh
+        toán được ghi nhận chính xác.
       </p>
       <p class="text-xs text-gray-600">
-        Trong trường hợp bạn đã thanh toán nhưng chưa nhận được tín hiệu thành công,
-        <a href="/checkout" class="text-blue-600 underline">bấm vào đây để xác nhận thanh toán</a>
-        hoặc liên hệ 092 885 3399.
+        Trong trường hợp bạn đã thanh toán nhưng chưa nhận được tín hiệu thành
+        công,
+        <a href="/checkout" class="text-blue-600 underline"
+          >bấm vào đây để xác nhận thanh toán</a
+        >
+        hoặc liên hệ 0708207777.
       </p>
     </div>
 
@@ -115,19 +142,20 @@ function formatCurrency(num) {
           <span>Thời hạn</span>
           <span data-pilling-months>{months} tháng</span>
         </div>
-        {addonText && (
-          <div class="flex justify-between">
-            <span>Build Bot AI</span>
-            <span data-pilling-addon>{addonText}</span>
-          </div>
-        )}
+        {
+          addonText && (
+            <div class="flex justify-between">
+              <span>Build Bot AI</span>
+              <span data-pilling-addon>{addonText}</span>
+            </div>
+          )
+        }
         <div class="flex justify-between font-semibold border-t pt-2">
           <span>Tổng tiền thanh toán</span>
           <span data-pilling-total-text>{formatCurrency(totalNumber)}</span>
         </div>
       </div>
     </aside>
-
   </div>
 </section>
 
@@ -137,44 +165,66 @@ function formatCurrency(num) {
   (function () {
     try {
       const qs = new URLSearchParams(window.location.search);
-      const tEl = document.querySelector('[data-pilling-total]');
-      const tText = document.querySelector('[data-pilling-total-text]');
-      const pSpan = document.querySelector('[data-pilling-plan]');
-      const mSpan = document.querySelector('[data-pilling-months]');
-      const aSpan = document.querySelector('[data-pilling-addon]');
-      const transferInput = document.querySelector('[data-pilling-transfer]');
+      const tEl = document.querySelector("[data-pilling-total]");
+      const tText = document.querySelector("[data-pilling-total-text]");
+      const pSpan = document.querySelector("[data-pilling-plan]");
+      const mSpan = document.querySelector("[data-pilling-months]");
+      const aSpan = document.querySelector("[data-pilling-addon]");
+      const transferInput = document.querySelector("[data-pilling-transfer]");
 
-      const qTotal = qs.get('total');
-      const qPlan = qs.get('plan');
-      const qMonths = qs.get('months');
-      const qAddon = qs.get('addon');
+      const qTotal = qs.get("total");
+      const qPlan = qs.get("plan");
+      const qMonths = qs.get("months");
+      const qAddon = qs.get("addon");
 
-      if (qTotal && (tEl && (!tEl.value || /^0+(?:[^\d]|$)/.test(tEl.value)))) {
-        const formatted = new Intl.NumberFormat('vi-VN').format(Number(qTotal)) + ' đ';
+      if (qTotal && tEl && (!tEl.value || /^0+(?:[^\d]|$)/.test(tEl.value))) {
+        const formatted =
+          new Intl.NumberFormat("vi-VN").format(Number(qTotal)) + " đ";
         if (tEl) tEl.value = formatted;
         if (tText) tText.textContent = formatted;
       }
 
-      if (qPlan && pSpan && (!pSpan.textContent || pSpan.textContent.trim() === '')) {
+      if (
+        qPlan &&
+        pSpan &&
+        (!pSpan.textContent || pSpan.textContent.trim() === "")
+      ) {
         pSpan.textContent = qPlan;
       }
 
-      if (qMonths && mSpan && (!mSpan.textContent || mSpan.textContent.trim() === '')) {
-        mSpan.textContent = qMonths + ' tháng';
+      if (
+        qMonths &&
+        mSpan &&
+        (!mSpan.textContent || mSpan.textContent.trim() === "")
+      ) {
+        mSpan.textContent = qMonths + " tháng";
       }
 
-      if (qAddon && aSpan && (!aSpan.textContent || aSpan.textContent.trim() === '')) {
-        aSpan.textContent = qAddon + ' × 10,000,000 đ';
+      if (
+        qAddon &&
+        aSpan &&
+        (!aSpan.textContent || aSpan.textContent.trim() === "")
+      ) {
+        aSpan.textContent = qAddon + " × 10,000,000 đ";
       }
 
-      if (qPlan && transferInput && (!transferInput.value || transferInput.value.trim() === '')) {
-        transferInput.value = 'Thanh toán ' + qPlan;
+      if (
+        qPlan &&
+        transferInput &&
+        (!transferInput.value || transferInput.value.trim() === "")
+      ) {
+        transferInput.value = "Thanh toán " + qPlan;
       }
 
       // debug
-      console.log('[Pilling fallback] url params', { qTotal, qPlan, qMonths, qAddon });
+      console.log("[Pilling fallback] url params", {
+        qTotal,
+        qPlan,
+        qMonths,
+        qAddon,
+      });
     } catch (e) {
-      console.warn('Pilling fallback error', e);
+      console.warn("Pilling fallback error", e);
     }
   })();
 </script>

@@ -4,8 +4,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <BaseLayout>
   <section class="py-16 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
-
+    <div
+      class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-8"
+    >
       <!-- Cột trái -->
       <div class="lg:col-span-2 bg-white rounded-2xl shadow p-6 space-y-6">
         <h2 class="text-xl font-semibold">Chuyển khoản</h2>
@@ -22,12 +23,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
         <!-- Lưu ý -->
         <p class="text-sm text-yellow-700 bg-yellow-100 p-3 rounded-lg">
-          Vui lòng quét mã QR hoặc nhập đúng thông tin chuyển khoản để việc thanh toán được ghi nhận chính xác.
+          Vui lòng quét mã QR hoặc nhập đúng thông tin chuyển khoản để việc
+          thanh toán được ghi nhận chính xác.
         </p>
         <p class="text-xs text-gray-600">
-          Trong trường hợp bạn đã thanh toán nhưng chưa nhận được tín hiệu thành công, 
-          <a href="/checkout" class="text-blue-600 underline">bấm vào đây để xác nhận thanh toán</a> 
-          hoặc liên hệ 092 885 3399.
+          Trong trường hợp bạn đã thanh toán nhưng chưa nhận được tín hiệu thành
+          công,
+          <a href="/checkout" class="text-blue-600 underline"
+            >bấm vào đây để xác nhận thanh toán</a
+          >
+          hoặc liên hệ 0708207777.
         </p>
       </div>
 
@@ -36,7 +41,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <h3 class="font-semibold text-lg mb-4">Chi tiết hóa đơn</h3>
         <p>Đang tải...</p>
       </aside>
-
     </div>
   </section>
 
@@ -58,9 +62,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     // ✅ Render QR link động
     const qrUrl =
       "https://img.vietqr.io/image/mbbank-2222233666666-compact2.png" +
-      "?amount=" + total +
-      "&addInfo=" + encodeURIComponent(transferContent) +
-      "&accountName=" + encodeURIComponent("NGUYEN HAI LONG");
+      "?amount=" +
+      total +
+      "&addInfo=" +
+      encodeURIComponent(transferContent) +
+      "&accountName=" +
+      encodeURIComponent("NGUYEN HAI LONG");
     document.getElementById("qrImg").src = qrUrl;
 
     // Render cột trái (thông tin chuyển khoản)
@@ -111,11 +118,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           <span>Thời hạn</span>
           <span>${months} tháng</span>
         </div>
-        ${addonText ? `
+        ${
+          addonText
+            ? `
           <div class="flex justify-between">
             <span>Build Bot AI</span>
             <span>${addonText}</span>
-          </div>` : ""}
+          </div>`
+            : ""
+        }
         <div class="flex justify-between font-semibold border-t pt-2">
           <span>Tổng tiền thanh toán</span>
           <span>${formatCurrency(total)}</span>
