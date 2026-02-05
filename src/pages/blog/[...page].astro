@@ -24,9 +24,9 @@ export const getStaticPaths = async ({ paginate }: GetStaticPathsOptions) => {
   const { featuredPost, remainingPosts } = await getProcessedBlogData();
 
   // 2. Chỉ phân trang cho 'remainingPosts' (ví dụ: 49 bài)
-  //    Chúng ta sẽ đặt 9 bài/trang (bạn có thể đổi thành 10 hoặc 12)
+  //    Chúng ta sẽ đặt số lượng bài lớn để hiển thị tất cả trên 1 trang
   return paginate(remainingPosts, {
-    pageSize: 6,
+    pageSize: 1000,
     // 3. Truyền 'featuredPost' vào TẤT CẢ các trang
     props: { featuredPost }
   });
@@ -37,52 +37,30 @@ export const getStaticPaths = async ({ paginate }: GetStaticPathsOptions) => {
 // =======================================================
 const { page, featuredPost } = Astro.props;
 
-const isPageOne = page.currentPage === 1;
+// const isPageOne = page.currentPage === 1; // Luôn là trang 1 vì đã bỏ phân trang
 const postsForCurrentPage = page.data;
 ---
 
 <BaseLayout title="Danh Sách Blog | MiAgent">
-  <main class="container px-12 py-12">
+  <main class="container mx-auto px-4 md:px-8 lg:px-12 py-8 md:py-12">
     
-    {isPageOne && featuredPost && <FeaturedPost post={featuredPost} />}
+    {featuredPost && <FeaturedPost post={featuredPost} />}
 
     {postsForCurrentPage.length > 0 && (
-      <div class="mt-16">
-        <h2 class="text-3xl font-bold mb-8">
-          {isPageOne ? "Top Articles" : `Bài viết (Trang ${page.currentPage})`}
-        </h2> 
+      <div class="mt-8 md:mt-16">
+        <h2 class="text-3xl font-bold mb-8">Tất cả bài viết</h2>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {postsForCurrentPage.map(post => (
+          {postsForCurrentPage.map((post: any) => (
             <BlogPostCard post={post} /> 
           ))}
         </div>
       </div>
     )}
     
-    <div class="pagination-nav mt-16 flex justify-center">
-      <div class="btn-group">
-        
-        {page.url.prev ? (
-          <a href={page.url.prev} class="btn btn-outline">«</a>
-        ) : (
-          <button class="btn btn-outline btn-disabled">«</button>
-        )}
+    {/* Đã bỏ Pagination theo yêu cầu */}
 
-        <button class="btn btn-active">
-          Trang {page.currentPage} / {page.lastPage}
-        </button>
-
-        {page.url.next ? (
-          <a href={page.url.next} class="btn btn-outline">»</a>
-        ) : (
-          <button class="btn btn-outline btn-disabled">»</button>
-        )}
-
-      </div>
-    </div>
-
-    {isPageOne && !featuredPost && postsForCurrentPage.length === 0 && (
+    {!featuredPost && postsForCurrentPage.length === 0 && (
        <p class="text-lg col-span-full text-center mt-16">
            Hiện chưa có bài viết nào được xuất bản.
        </p>
