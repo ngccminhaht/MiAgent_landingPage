@@ -1,25 +1,23 @@
 ---
 import "../styles/global.css";
+import i18next from "../i18n";
 
 // CẤU HÌNH DOMAIN CHÍNH THỨC
 // Lưu ý: Không thêm dấu "/" ở cuối
 const SITE_URL = "https://MiAgent.io";
-const SITE_TITLE = "MiAgent - Giải pháp AI Agent dành cho nhà bán lẻ";
-const SITE_DESCRIPTION =
-  "AI Chatbot MiAgent: Giải pháp AI Agent bán hàng đa kênh, tự động CSKH 24/7, xử lý đơn hàng và đồng bộ CRM/ERP. Giúp doanh nghiệp bán lẻ tăng năng suất & giảm chi phí.";
 const SOCIAL_IMAGE_URL = `${SITE_URL}/og-image.png`; // Bạn cần file ảnh này trong folder /public
 ---
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>{SITE_TITLE}</title>
-<meta name="description" content={SITE_DESCRIPTION} />
+<title>{i18next.t("meta.defaults.title")}</title>
+<meta name="description" content={i18next.t("meta.defaults.description")} />
 <meta
   name="keywords"
-  content="AI Agent, AI Chatbot, Bán Hàng Đa Kênh, Bán Hàng Online, Bán lẻ, MiAgent, CSKH tự động, CRM, ERP, AHT Tech"
+  content={i18next.t("meta.defaults.keywords")}
 />
-<meta name="author" content="MiAgent Team" />
+<meta name="author" content={i18next.t("meta.defaults.author")} />
 
 <link rel="icon" href="/favicon.ico" sizes="any" />
 <link rel="icon" href="/logomi.svg" type="image/svg+xml" />
@@ -30,10 +28,10 @@ const SOCIAL_IMAGE_URL = `${SITE_URL}/og-image.png`; // Bạn cần file ảnh n
 
 <meta property="og:type" content="website" />
 <meta property="og:url" content={SITE_URL} />
-<meta property="og:title" content="MiAgent - Trợ lý AI Bán Hàng Đa Kênh" />
+<meta property="og:title" content={i18next.t("meta.defaults.og_title")} />
 <meta
   property="og:description"
-  content="Tự động CSKH 24/7, chốt đơn và đồng bộ dữ liệu. Giải pháp AI tối ưu chi phí cho doanh nghiệp."
+  content={i18next.t("meta.defaults.og_description")}
 />
 <meta property="og:image" content={SOCIAL_IMAGE_URL} />
 <meta property="og:image:width" content="1200" />
@@ -41,10 +39,10 @@ const SOCIAL_IMAGE_URL = `${SITE_URL}/og-image.png`; // Bạn cần file ảnh n
 
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={SITE_URL} />
-<meta property="twitter:title" content="MiAgent - Trợ lý AI Bán Hàng Đa Kênh" />
+<meta property="twitter:title" content={i18next.t("meta.defaults.twitter_title")} />
 <meta
   property="twitter:description"
-  content="Tự động CSKH 24/7, chốt đơn và đồng bộ dữ liệu. Giải pháp AI tối ưu chi phí."
+  content={i18next.t("meta.defaults.twitter_description")}
 />
 <meta property="twitter:image" content={SOCIAL_IMAGE_URL} />
 

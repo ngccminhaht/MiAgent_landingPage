@@ -1,15 +1,19 @@
+---
+import i18next from "../../i18n";
+const currentLang = i18next.language;
+const baseUrl = currentLang === "en" ? "/en" : "/vi";
+---
 <section class="py-12 md:py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-12 md:mb-16">
-      <h2 class="text-4xl font-bold text-black pb-1">MiAgent Việt Nam</h2>
+      <h2 class="text-4xl font-bold text-black pb-1">{i18next.t('contact.title')}</h2>
       <div class="mx-auto **w-1/2** h-1 bg-green-600 mt-2"></div>
 
       <p class="mt-4 text-xl text-gray-800 max-w-3xl mx-auto">
-        Liên hệ với chúng tôi
+        {i18next.t('contact.subtitle')}
       </p>
       <p class="mt-2 text-gray-600 max-w-4xl mx-auto">
-        Chúng tôi luôn sẵn lòng lắng nghe và hỗ trợ bạn. Vui lòng liên hệ qua
-        các kênh dưới đây hoặc điền vào form để được phản hồi sớm nhất.
+        {i18next.t('contact.description')}
       </p>
     </div>
 
@@ -33,10 +37,9 @@
             ></path><circle cx="12" cy="10" r="3"></circle></svg
           >
         </div>
-        <h3 class="text-xl font-semibold text-gray-800">Địa chỉ</h3>
+        <h3 class="text-xl font-semibold text-gray-800">{i18next.t('contact.info.address.title')}</h3>
         <p class="mt-2 text-gray-600 text-sm">
-          Tầng 8, Tòa nhà Mitec, Yên Hoà, Cầu Giấy, Hà Nội, Quận Cầu Giấy, Hà
-          Nội.
+          {i18next.t('contact.info.address.value')}
         </p>
       </div>
 
@@ -60,7 +63,7 @@
             ></path><polyline points="22,6 12,13 2,6"></polyline></svg
           >
         </div>
-        <h3 class="text-xl font-semibold text-gray-800">Email</h3>
+        <h3 class="text-xl font-semibold text-gray-800">{i18next.t('contact.info.email.title')}</h3>
         <p class="mt-2 text-gray-600 text-sm font-medium">info@miagent.io</p>
       </div>
 
@@ -84,7 +87,7 @@
             ></path></svg
           >
         </div>
-        <h3 class="text-xl font-semibold text-gray-800">Hotline</h3>
+        <h3 class="text-xl font-semibold text-gray-800">{i18next.t('contact.info.hotline.title')}</h3>
         <p class="mt-2 text-gray-600 text-sm font-medium">0708207777</p>
       </div>
     </div>
@@ -106,22 +109,22 @@
       </div>
 
       <div class="order-1 lg:order-2 p-4">
-        <h3 class="text-2xl font-bold text-gray-800 mb-2">Liên hệ</h3>
+        <h3 class="text-2xl font-bold text-gray-800 mb-2">{i18next.t('contact.form.title')}</h3>
         <p class="text-gray-500 mb-6">
-          Chúng tôi sẽ liên hệ lại cho bạn trong thời gian sớm nhất !
+          {i18next.t('contact.form.subtitle')}
         </p>
 
         <form class="space-y-4">
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <input
               type="text"
-              placeholder="Họ và tên (*)"
+              placeholder={i18next.t('contact.form.fields.name')}
               required
               class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
             />
             <input
               type="email"
-              placeholder="Email (*)"
+              placeholder={i18next.t('contact.form.fields.email')}
               required
               class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
             />
@@ -130,19 +133,19 @@
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <input
               type="tel"
-              placeholder="Số điện thoại(*)"
+              placeholder={i18next.t('contact.form.fields.phone')}
               required
               class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
             />
             <input
               type="text"
-              placeholder="Tiêu đề"
+              placeholder={i18next.t('contact.form.fields.title')}
               class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"
             />
           </div>
 
           <textarea
-            placeholder="Lời nhắn"
+            placeholder={i18next.t('contact.form.fields.message')}
             rows="5"
             class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 resize-none"
           ></textarea>
@@ -151,7 +154,7 @@
             type="submit"
             class="w-full py-3 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors duration-200"
           >
-            GỬI
+            {i18next.t('contact.form.submit')}
           </button>
         </form>
       </div>
@@ -195,22 +198,21 @@
             </div>
 
             <p class="text-xl font-medium text-gray-300">
-              Mi Agent giúp doanh nghiệp tự động hóa quy trình và phục vụ khách
-              hàng nhanh chóng
+              {i18next.t('contact.footer_banner.description')}
             </p>
 
             <div class="flex items-center justify-center gap-4">
               <a
-                href="/contact"
+                href={baseUrl + "/contact"}
                 class="bg-green-400 text-white font-semibold rounded-lg py-2 px-6 hover:bg-green-500 transition"
               >
-                Đặt lịch tư vấn
+                {i18next.t('contact.footer_banner.buttons.consult')}
               </a>
               <a
-                href="/pricing"
+                href={baseUrl + "/pricing"}
                 class="bg-green-400 text-white font-semibold rounded-lg py-2 px-6 hover:bg-green-500 transition"
               >
-                Tham khảo giá
+                {i18next.t('contact.footer_banner.buttons.pricing')}
               </a>
             </div>
           </div>

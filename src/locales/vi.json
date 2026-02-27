@@ -1,0 +1,582 @@
+{
+    "common": {
+        "navigation": {
+            "about": "Về MiAgent",
+            "pricing": "Bảng Giá",
+            "contact": "Liên Hệ",
+            "blog": "Blog",
+            "register": "Đăng Ký",
+            "login": "Đăng Nhập",
+            "start": "Bắt Đầu"
+        },
+        "footer": {
+            "description": "Giải pháp AI Agent toàn diện giúp doanh nghiệp tự động hóa quy trình bán hàng và chăm sóc khách hàng đa kênh.",
+            "sections": {
+                "about": {
+                    "title": "Về MiAgent",
+                    "links": {
+                        "us": "Về chúng tôi",
+                        "contact": "Liên hệ "
+                    }
+                },
+                "product": {
+                    "title": "Sản phẩm",
+                    "links": {
+                        "pricing": "Bảng giá",
+                        "integration": "Tích hợp CRM/ERP"
+                    }
+                },
+                "support": {
+                    "title": "Hỗ trợ & Pháp lý",
+                    "links": {
+                        "privacy": "Chính sách bảo mật",
+                        "terms": "Điều khoản sử dụng",
+                        "payment": "Chính sách thanh toán"
+                    }
+                },
+                "form": {
+                    "title": "Đăng ký tư vấn giải pháp",
+                    "subtitle": "Để lại thông tin để nhận demo và báo giá chi tiết từ đội ngũ chuyên gia của chúng tôi.",
+                    "email_placeholder": "Email doanh nghiệp của bạn",
+                    "phone_placeholder": "Số điện thoại liên hệ",
+                    "submit_button": "Gửi yêu cầu",
+                    "success": "Đã gửi thành công! Chúng tôi sẽ liên hệ lại ngay.",
+                    "loadding": "Đang gửi..."
+                }
+            },
+            "copyright": "© {{year}} Miagent Global. All rights reserved.",
+            "links": {
+                "privacy": "Bảo mật",
+                "terms": "Điều khoản",
+                "sitemap": "Sitemap"
+            }
+        }
+    },
+    "landing": {
+        "hero": {
+            "title": "Giải pháp <span class=\"text-green-600\">AI Chatbot Bán Hàng</span> & Agentic AI",
+            "subtitle": "Tự động hóa quy trình <span class=\"text-green-500 font-semibold\">tư vấn, chốt đơn</span> & CSKH 24/7.",
+            "description": "Tích hợp sâu <strong>CRM/ERP</strong>, đồng bộ dữ liệu hội thoại <span class=\"text-green-500 font-semibold\">đa kênh</span> (Facebook, Zalo, Web,...)",
+            "features": {
+                "auto_sales": "Tự động tư vấn bán hàng chốt đơn 24/7",
+                "image_recognition": "Hiểu ngữ cảnh nhận diện hình ảnh sản phẩm",
+                "crm_integration": "Kết nối thông luồng với nền tảng CRM/ERP",
+                "omnichannel": "Kết nối đa nền tảng bằng hội thoại chat đa kênh"
+            },
+            "buttons": {
+                "register": "Đăng Kí Miễn Phí Trọn Đời",
+                "contact": "Liên Hệ Tư Vấn"
+            }
+        },
+        "why_choose_us": {
+            "title": "Hơn <span class=\"text-white font-bold\">5000+ doanh nghiệp</span> đã dùng MiAgent để <span class=\"text-green-400 font-semibold\">tăng doanh số</span> trên đa nền tảng."
+        },
+        "only_mi_agent": {
+            "title": "Công Nghệ <span class=\"bg-clip-text text-transparent bg-gradient-to-r from-gray-900 via-green-600 to-gray-900\">Độc Quyền</span> Tại MiAgent",
+            "subtitle": "Vượt qua giới hạn của Chatbot truyền thống, <span class=\"text-green-600 font-medium underline underline-offset-2\">MiAgent</span> mang đến khả năng xử lý <span class=\"relative inline-block\">đa phương thức <span class=\"absolute bottom-0 left-0 w-full h-1 bg-green-200/60 -z-10\"></span></span> chưa từng có.",
+            "button_video": "Xem Video Hướng Dẫn Thiết Lập",
+            "feature_1": {
+                "title": "Nhận diện hình ảnh khách hàng gửi tìm kiếm mã sản phẩm trên CRM để trả lời chính xác",
+                "description": "Mi Agent có thể nhận diện được hình ảnh khách gửi và tư vấn dựa trên hình ảnh, gửi hình ảnh cho khách hàng và nhiều hơn thế nữa nhờ việc có Model AI nhận diện hình ảnh riêng biệt!",
+                "benefits": [
+                    "AI đọc hiểu hình ảnh sản phẩm và tìm ra mã sản phẩm trên hình ảnh để tư vấn",
+                    "AI hiểu nội dung cuộc trò chuyện theo cách người thật đang nói",
+                    "Gợi ý phản hồi phù hợp với tone và nội dung đang diễn ra",
+                    "Hiểu cả những câu hỏi gián tiếp, câu hỏi dài, lắt léo"
+                ]
+            },
+            "feature_2": {
+                "title": "Lấy thông tin sản phẩm realtime trên CRM và lên đơn hàng trên CRM/ ERP",
+                "description": "Mi Agent có thể tích hợp vào các phần mềm CRM hoặc ERP một cách dễ dàng để lấy thông tin sản phẩm để tư vấn đồng thời có thể lên đơn hàng kiểm tra trạng thái đơn hàng một cách tự động.",
+                "benefits": [
+                    "Lấy thông tin sản phẩm từ CRM để tư vấn báo giá chính xác sản phẩm theo thời gian thực",
+                    "Tự động lên đơn hàng trên phần mềm CRM gắn nhãn cho khách hàng: quan tâm - đã chốt đơn",
+                    "Kết nối hệ thống đặt hàng, thanh toán, lịch học, lịch hẹn…",
+                    "Có thể tùy biến tích hợp theo đặc thù ngành: Giáo dục, ngân hàng, nhà hàng"
+                ]
+            },
+            "feature_3": {
+                "title": "Hiểu ngữ cảnh cuộc hội thoại khách hàng chat xong đủ ý mới trả lời",
+                "description": "Khi khách hàng nhắn 1 tin Ai sẽ trả lời 1 tin nhưng với AI bán hàng điều đó không tự nhiên chút nào khách chat nhiều tin mới đủ ý.",
+                "benefits": [
+                    "Chờ khách hàng nhập đủ ý mới trả lời khách hàng trọn vẹn tránh spam",
+                    "Giao tiếp trôi chảy dù khách đổi chủ đề giữa chừng không trả lời ngoài nội dung bán hàng",
+                    "Gợi ý sản phẩm phù hợp hoặc nhắc lại ưu đãi chưa dùng",
+                    "Ghi nhớ tên, lịch sử, sản phẩm đã hỏi/đặt trước đó"
+                ]
+            },
+            "banner": {
+                "subtitle": "AI Agent - Tư vấn bán hàng thay cho nhân viên của bạn!",
+                "title": "TĂNG 60% DOANH THU",
+                "description": "Giảm 80% chi phí vận hành đội ngũ sale bán hàng"
+            }
+        },
+        "page4": {
+            "title": "Tích hợp đa nền tảng chat đa kênh",
+            "description": "Tích hợp AI của bạn vào đa nền tảng tư vấn khách hàng ở mọi nơi mọi lúc một cách thuận tiện.",
+            "benefits": [
+                "Quản lý tập trung mọi cuộc trò chuyện từ các nền tảng phổ biến tại một nơi duy nhất.",
+                "Phản hồi khách hàng tức thì 24/7, mang lại trải nghiệm đồng nhất trên mọi nền tảng bán hàng.",
+                "Tự động chốt đơn và thu thập thông tin của khách hàng tiềm năng ngay trong cuộc trò chuyện.",
+                "Mở rộng quy mô bán hàng và CSKH hiệu quả mà không cần tăng thêm chi phí nhân sự."
+            ],
+            "cta": "Xem Video Hướng Dẫn Thiết Lập"
+        },
+        "ai_for_work": {
+            "tabs": {
+                "ai_studio": "AI Studio",
+                "training": "Training kiến thức",
+                "crm": "Tích hợp CRM",
+                "model": "Chọn Model AI"
+            },
+            "alts": {
+                "ai_studio": "Ảnh AI Studio",
+                "training": "Ảnh Training kiến thức",
+                "model": "Ảnh Chọn Model",
+                "crm": "Ảnh CRM"
+            }
+        },
+        "chat_messenger": {
+            "facebook_alt": "Facebook Logo",
+            "messenger_alt": "Messenger Logo"
+        },
+        "json_ld": {
+            "organization": {
+                "name": "MiAgent Global",
+                "contact_type": "customer service"
+            },
+            "application": {
+                "name": "MiAgent",
+                "description": "Giải pháp AI Chatbot bán hàng và chăm sóc khách hàng tự động đa kênh, tích hợp CRM/ERP."
+            },
+            "faq": [
+                {
+                    "question": "MiAgent có tích hợp được với CRM không?",
+                    "answer": "Có, MiAgent tích hợp sâu với các hệ thống CRM/ERP phổ biến để đồng bộ thông tin đơn hàng và khách hàng theo thời gian thực."
+                },
+                {
+                    "question": "AI của MiAgent có nhận diện được hình ảnh không?",
+                    "answer": "Có, MiAgent sở hữu công nghệ độc quyền giúp nhận diện hình ảnh sản phẩm khách gửi để tìm kiếm mã hàng và tư vấn chính xác."
+                },
+                {
+                    "question": "Tôi có thể dùng thử MiAgent miễn phí không?",
+                    "answer": "MiAgent cung cấp gói dùng thử miễn phí để bạn trải nghiệm các tính năng cốt lõi trước khi quyết định nâng cấp."
+                }
+            ]
+        }
+    },
+    "pricing": {
+        "title": "Bảng giá dịch vụ",
+        "subtitle": "Dịch vụ và các tính năng mở rộng",
+        "plans": {
+            "trial": {
+                "name": "DÙNG THỬ",
+                "description": "Dành cho những doanh nghiệp vừa và nhỏ muốn làm việc với AI Agent",
+                "price": "Miễn Phí",
+                "details_title": "Chi tiết Gói Dùng Thử:",
+                "features": [
+                    "Tài khoản truy cập: 1",
+                    "Tin nhắn AI xử lý / tháng: 200",
+                    "Trang hội thoại đa kênh: 1",
+                    "AI trả lời phản hồi cơ bản: Có",
+                    "AI trả lời bằng hình ảnh: Không",
+                    "AI xử lý Ticket đa kênh: Không",
+                    "Phân tích cảm xúc & chủ đề: Không hỗ trợ",
+                    "Tác vụ mở rộng AI: Không",
+                    "Chuyên viên hỗ trợ: Không hỗ trợ",
+                    "Thiết lập & huấn luyện AI: Hạn chế",
+                    "Chiến dịch tự động: Không hỗ trợ",
+                    "Ngôn ngữ & nền tảng: Đa ngôn ngữ"
+                ]
+            },
+            "startup": {
+                "name": "KHỞI ĐẦU",
+                "description": "Dành cho những doanh nghiệp vừa và nhỏ muốn làm việc với AI Agent",
+                "price": "980,000đ",
+                "unit": "/tháng",
+                "details_title": "Chi tiết Gói Khởi Đầu:",
+                "features": [
+                    "Tài khoản truy cập: 3",
+                    "Tin nhắn AI xử lý / tháng: 1,500",
+                    "Trang hội thoại đa kênh: 5",
+                    "AI trả lời phản hồi cơ bản: Có",
+                    "AI trả lời bằng hình ảnh: Không",
+                    "AI xử lý Ticket đa kênh: Có",
+                    "Phân tích cảm xúc & chủ đề: Không hỗ trợ",
+                    "Tác vụ mở rộng AI: Không",
+                    "Chuyên viên hỗ trợ: Không",
+                    "Thiết lập & huấn luyện AI: Có",
+                    "Chiến dịch tự động: Có",
+                    "Ngôn ngữ & nền tảng: Đa ngôn ngữ"
+                ]
+            },
+            "pro": {
+                "name": "CHUYÊN NGHIỆP",
+                "description": "Dành cho doanh nghiệp vừa và lớn, cần AI Agent chuyên nghiệp",
+                "price": "2,390,000đ",
+                "unit": "/tháng",
+                "details_title": "Chi tiết Gói Chuyên Nghiệp:",
+                "features": [
+                    "Tài khoản truy cập: 5",
+                    "Tin nhắn AI xử lý / tháng: 5,000",
+                    "Trang hội thoại đa kênh: 10",
+                    "AI trả lời phản hồi cơ bản: Có",
+                    "AI trả lời bằng hình ảnh: Có",
+                    "AI xử lý Ticket đa kênh: Có",
+                    "Phân tích cảm xúc & chủ đề: Có hỗ trợ",
+                    "Tác vụ mở rộng AI: Không",
+                    "Chuyên viên hỗ trợ: Có",
+                    "Thiết lập & huấn luyện AI: Có",
+                    "Chiến dịch tự động: Có",
+                    "Ngôn ngữ & nền tảng: Đa ngôn ngữ"
+                ]
+            },
+            "scale": {
+                "name": "MỞ RỘNG",
+                "badge": "Phổ biến",
+                "description": "Dành cho doanh nghiệp lớn, cần AI Agent chuyên nghiệp mở rộng hệ thống",
+                "price": "6,900,000đ",
+                "unit": "/tháng",
+                "details_title": "Chi tiết Gói Mở Rộng:",
+                "features": [
+                    "Tài khoản truy cập: 10",
+                    "Tin nhắn AI xử lý / tháng: 15,000",
+                    "Trang hội thoại đa kênh: 50",
+                    "AI trả lời phản hồi cơ bản: Có",
+                    "AI trả lời bằng hình ảnh: Có",
+                    "AI xử lý Ticket đa kênh: Có",
+                    "Phân tích cảm xúc & chủ đề: Có hỗ trợ",
+                    "Tác vụ mở rộng AI: 5 tác vụ",
+                    "Chuyên viên hỗ trợ: Ưu tiên",
+                    "Thiết lập & huấn luyện AI: Có",
+                    "Chiến dịch tự động: Có",
+                    "Ngôn ngữ & nền tảng: Đa ngôn ngữ"
+                ]
+            },
+            "enterprise": {
+                "name": "DOANH NGHIỆP LỚN",
+                "description": "Dành cho doanh nghiệp lớn, cần AI Agent cho các mục đích phức tạp.",
+                "price": "LIÊN HỆ",
+                "details_title": "Chi tiết Gói Doanh Nghiệp Lớn:",
+                "features": [
+                    "Tài khoản truy cập: tùy chỉnh",
+                    "Tin nhắn AI xử lý / tháng: tùy chỉnh",
+                    "Trang hội thoại đa kênh: tùy chỉnh",
+                    "AI trả lời phản hồi cơ bản: Có",
+                    "AI trả lời bằng hình ảnh: Có",
+                    "AI xử lý Ticket đa kênh: Có",
+                    "Phân tích cảm xúc & chủ đề: Có hỗ trợ",
+                    "Tác vụ mở rộng AI: tùy chỉnh",
+                    "Chuyên viên hỗ trợ: Ưu tiên",
+                    "Thiết lập & huấn luyện AI: Có",
+                    "Chiến dịch tự động: Có",
+                    "Ngôn ngữ & nền tảng: tùy chỉnh"
+                ]
+            },
+            "buttons": {
+                "buy_now": "Mua ngay",
+                "contact_now": "Liên hệ ngay"
+            }
+        },
+        "comparison": {
+            "title": "MiAgent KHÁC BIỆT SO VỚI ĐỐI THỦ",
+            "headers": {
+                "feature": "Tính năng nổi bật",
+                "detail": "Mô tả chi tiết",
+                "diff": "Giá trị khác biệt so với đối thủ"
+            },
+            "rows": [
+                {
+                    "feature": "Nhận diện & xử lý hình ảnh sản phẩm",
+                    "detail": "• Gửi và phân tích hình ảnh trực tiếp trong cuộc trò chuyện.<br />• AI tự động nhận diện hình ảnh khách hàng gửi để xác định sản phẩm họ đang quan tâm.",
+                    "diff": "• Đa số nền tảng chỉ hỗ trợ chat văn bản.<br />• MiAgent hiểu hình ảnh như con người, cho phép khách hàng chỉ cần chụp sản phẩm là AI đã nhận ra và tư vấn đúng nhu cầu."
+                },
+                {
+                    "feature": "Hiểu & phân tích nội dung video",
+                    "detail": "• Cho phép gửi video sản phẩm ngay trong khung chat.<br />• AI có thể đọc hiểu, trích xuất nội dung và phân tích video khách hàng gửi lại.",
+                    "diff": "• Các đối thủ gần như không xử lý video.<br />• MiAgent phân tích cả nội dung và cảm xúc trong video để xác định mức độ quan tâm hoặc vấn đề khách hàng đang gặp."
+                },
+                {
+                    "feature": "Hiểu ý định & kế thừa hội thoại tự nhiên",
+                    "detail": "• Nhận diện chính xác ý định của khách hàng và chỉ phản hồi khi đủ ngữ cảnh.<br />• AI kế thừa toàn bộ lịch sử hội thoại để tiếp tục tư vấn liền mạch như con người.",
+                    "diff": "• Đối thủ thường mất ngữ cảnh khi đổi người chat hoặc khi khách quay lại sau vài ngày.<br />• MiAgent giữ mạch hội thoại xuyên suốt, giúp trải nghiệm tự nhiên và chuyên nghiệp hơn."
+                },
+                {
+                    "feature": "Kết nối hệ thống & tự động hóa toàn chuỗi bán hàng",
+                    "detail": "• Tích hợp CRM, ERP cùng các nền tảng Facebook, Zalo OA, Shopee, Amazon, TikTok Shop, Spotify…<br />• Remarketing thông minh: tự động gửi tin chăm sóc theo hành vi mua hàng, cảnh báo nhân viên khi có tín hiệu xấu.",
+                    "diff": "• Trong khi các nền tảng khác chỉ dừng ở chatbot chăm sóc khách hàng,<br />• MiAgent hoạt động như một hệ thống AI Sales – tự động hóa toàn chuỗi bán hàng, từ tương tác, phân tích đến chốt đơn."
+                }
+            ]
+        },
+        "footer_banner": {
+            "description": "MiAgent giúp doanh nghiệp tự động hóa quy trình và phục vụ khách hàng nhanh chóng",
+            "buttons": {
+                "consult": "Đặt lịch tư vấn",
+                "pricing": "Tham khảo giá"
+            }
+        }
+    },
+    "about": {
+        "title": "Về MiAgent AI",
+        "subtitle": "Trợ Lý AI Chuyên Nghiệp Cho Doanh Nghiệp và Các Nhà Bán Lẻ",
+        "mission": {
+            "title": "Sứ Mệnh Của Chúng Tôi: Khai Phóng Tiềm Năng Bán Hàng",
+            "content": "Sứ mệnh cốt lõi của MiAgent AI là: Cách mạng hóa cách doanh nghiệp tương tác và bán hàng thông qua ứng dụng Trí tuệ Nhân tạo. Chúng tôi tin rằng, với sự hỗ trợ của công nghệ AI Agent độc quyền, mọi doanh nghiệp đều có khả năng đạt được hiệu suất bán hàng vượt trội, tiết kiệm đáng kể chi phí vận hành, và cung cấp trải nghiệm khách hàng nhất quán, không gián đoạn (24/7). Chúng tôi hướng tới việc chuyển đổi Chatbot truyền thống thành các AI Sales Agent thực sự tự nhiên như con người."
+        },
+        "who_we_are": {
+            "title": "Chúng Tôi Là Ai?",
+            "description": "MiAgent AI được thành lập bởi một đội ngũ đa ngành, bao gồm các kỹ sư phần mềm hàng đầu, chuyên gia về Học máy (Machine Learning) và các chiến lược gia kinh doanh giàu kinh nghiệm. Tất cả chúng tôi đều có chung một mục tiêu: Phát triển một Trợ lý AI có khả năng bán hàng và giao tiếp phức tạp như một nhân viên sales chuyên nghiệp.",
+            "capabilities_title": "Agent AI của chúng tôi không chỉ đơn thuần là công cụ hỏi đáp, mà còn có khả năng:",
+            "capabilities": [
+                {
+                    "title": "Hiểu ngữ cảnh sâu sắc (Contextual Understanding):",
+                    "description": "Nhận diện chính xác ý định mua hàng, các câu hỏi gián tiếp, và cả cảm xúc hoặc tone giọng của khách hàng."
+                },
+                {
+                    "title": "Thực hiện hành động thông minh (Actionable Intelligence):",
+                    "description": "Tích hợp khả năng lên đơn hàng, kiểm tra trạng thái tồn kho, và tương tác với các hệ thống backend (CRM/ERP) trong thời gian thực."
+                },
+                {
+                    "title": "Xử lý đa phương thức (Multimodal Capability):",
+                    "description": "Xử lý và tư vấn dựa trên nhiều loại dữ liệu, bao gồm văn bản và hình ảnh sản phẩm do khách hàng gửi."
+                }
+            ]
+        },
+        "values": {
+            "title": "Giá Trị Cốt Lõi Tạo Nên Sự Khác Biệt",
+            "items": [
+                {
+                    "title": "1. Công Nghệ Độc Quyền",
+                    "description": "Chúng tôi vượt qua giới hạn của các công cụ AI generic. MiAgent phát triển và sở hữu các mô hình AI riêng biệt, được tinh chỉnh chuyên sâu cho đặc thù ngành nghề và ngữ cảnh giao tiếp của thị trường Việt Nam. Điều này đảm bảo tốc độ phản hồi nhanh, độ chính xác cao và khả năng xử lý các cuộc hội thoại lắt léo vượt trội."
+                },
+                {
+                    "title": "2. Tích Hợp Sâu (Deep Integration)",
+                    "description": "MiAgent được thiết kế để trở thành trung tâm điều hành của hệ sinh thái doanh nghiệp bạn. Khả năng kết nối API Real-time với các hệ thống quản lý hiện có (như PanCake, Odoo, KiotViet, Haravan, và các phần mềm CRM/ERP khác) là cam kết của chúng tôi nhằm cung cấp một giải pháp AI thực sự hữu dụng, không chỉ là công cụ đứng độc lập."
+                },
+                {
+                    "title": "3. Hiệu suất Định hướng",
+                    "description": "Mọi tính năng và cải tiến mà chúng tôi thực hiện đều hướng tới mục tiêu cuối cùng của khách hàng: đạt được Hiệu suất Kinh doanh vượt trội. MiAgent AI là một khoản đầu tư được thiết kế để mang lại kết quả rõ ràng: <strong class=\"text-red-600\">Tăng 60% Doanh thu</strong> và <strong class=\"text-red-600\">Giảm 80% Chi phí</strong> vận hành đội ngũ sale bán hàng."
+                }
+            ]
+        },
+        "vision": {
+            "title": "Tầm Nhìn Tương Lai",
+            "content_1": "Chúng tôi hình dung ra một tương lai nơi các MiAgent AI làm việc hài hòa và hiệu quả với đội ngũ nhân viên của bạn. MiAgent sẽ đảm nhận tất cả các nhiệm vụ bán hàng và hỗ trợ khách hàng lặp đi lặp lại hoặc có khối lượng lớn, giúp giải phóng nhân viên của bạn để họ có thể tập trung vào những tương tác chiến lược, xây dựng mối quan hệ lâu dài, và các hoạt động sáng tạo, cần sự can thiệp của con người.",
+            "content_2": "Chúng tôi sẽ liên tục mở rộng khả năng của Agent AI để thích nghi với mọi yêu cầu đặc thù của ngành: từ Giáo dục, Ngân hàng, đến Nhà hàng, đảm bảo MiAgent luôn là giải pháp dẫn đầu về AI Agent chuyên nghiệp."
+        }
+    },
+    "contact": {
+        "title": "MiAgent Việt Nam",
+        "subtitle": "Liên hệ với chúng tôi",
+        "description": "Chúng tôi luôn sẵn lòng lắng nghe và hỗ trợ bạn. Vui lòng liên hệ qua các kênh dưới đây hoặc điền vào form để được phản hồi sớm nhất.",
+        "info": {
+            "address": {
+                "title": "Địa chỉ",
+                "value": "Tầng 8, Tòa nhà Mitec, Yên Hoà, Cầu Giấy, Hà Nội, Quận Cầu Giấy, Hà Nội."
+            },
+            "email": {
+                "title": "Email"
+            },
+            "hotline": {
+                "title": "Hotline"
+            }
+        },
+        "form": {
+            "title": "Liên hệ",
+            "subtitle": "Chúng tôi sẽ liên hệ lại cho bạn trong thời gian sớm nhất !",
+            "fields": {
+                "name": "Họ và tên (*)",
+                "email": "Email (*)",
+                "phone": "Số điện thoại(*)",
+                "title": "Tiêu đề",
+                "message": "Lời nhắn"
+            },
+            "submit": "GỬI"
+        },
+        "footer_banner": {
+            "description": "MiAgent giúp doanh nghiệp tự động hóa quy trình và phục vụ khách hàng nhanh chóng",
+            "buttons": {
+                "consult": "Đặt lịch tư vấn",
+                "pricing": "Tham khảo giá"
+            }
+        }
+    },
+    "blog": {
+        "list": {
+            "meta_title": "Danh Sách Blog | MiAgent",
+            "all_posts": "Tất cả bài viết",
+            "no_posts": "Hiện chưa có bài viết nào được xuất bản.",
+            "read_more": "Đọc thêm"
+        },
+        "post": {
+            "published_at": "Ngày đăng:",
+            "category": "Danh mục:",
+            "back_to_list": "← Quay lại danh sách blog"
+        }
+    },
+    "auth": {
+        "login": {
+            "title": "Đăng nhập vào tài khoản của bạn",
+            "subtitle": "Chào mừng trở lại! Vui lòng nhập email và mật khẩu để đăng nhập.",
+            "submit": "Đăng nhập",
+            "no_account": "Bạn chưa có tài khoản?",
+            "signup_link": "Đăng ký"
+        },
+        "signup": {
+            "title": "Tham gia cộng đồng của chúng tôi",
+            "subtitle": "Đăng ký để tham gia cộng đồng và bắt đầu xây dựng thương hiệu của bạn.",
+            "submit": "Đăng ký",
+            "has_account": "Bạn đã có tài khoản?",
+            "signin_link": "Đăng nhập",
+            "agreement": {
+                "text": "Bạn đồng ý với",
+                "terms": "Điều khoản dịch vụ",
+                "and": "và",
+                "privacy": "Chính sách bảo mật"
+            }
+        },
+        "fields": {
+            "email": {
+                "label": "Email",
+                "placeholder": "Địa chỉ email của bạn",
+                "error": "Vui lòng nhập địa chỉ email hợp lệ."
+            },
+            "firstname": {
+                "label": "Tên của bạn",
+                "placeholder": "Nhập tên của bạn",
+                "error": "Vui lòng nhập tên của bạn."
+            }
+        }
+    },
+    "legal": {
+        "payment": {
+            "title": "Chính sách thanh toán",
+            "effective_date": "Hiệu lực từ ngày: 01 tháng 01 năm 2025",
+            "intro": "Chính sách này quy định về các phương thức thanh toán, quy trình gia hạn, xuất hóa đơn và các điều kiện hoàn tiền khi sử dụng phần mềm Mi Agent.",
+            "sections": [
+                {
+                    "title": "1. Cước phí và Chu kỳ thanh toán",
+                    "content": "Cước phí sử dụng phần mềm được tính theo gói dịch vụ (Subscription) dựa trên số lượng tính năng và thời gian sử dụng:",
+                    "items": [
+                        "<strong>Gói tháng:</strong> Thanh toán từng tháng, tự động gia hạn vào cùng ngày của tháng tiếp theo.",
+                        "<strong>Gói năm:</strong> Thanh toán 1 lần cho 12 tháng (thường có ưu đãi giảm giá), tự động gia hạn sau khi hết hạn.",
+                        "<strong>Thay đổi gói:</strong> Khách hàng có thể nâng cấp (Upgrade) gói cước bất kỳ lúc nào. Chi phí chênh lệch sẽ được hệ thống tính toán tự động dựa trên thời gian còn lại."
+                    ]
+                },
+                {
+                    "title": "2. Hình thức thanh toán",
+                    "content": "MiAgent hỗ trợ 3 hình thức thanh toán chính:",
+                    "method1": {
+                        "title": "Hình thức 1: Chuyển khoản ngân hàng (Ưu tiên)",
+                        "description": "Áp dụng cho tất cả các gói dịch vụ. Dịch vụ được kích hoạt trong vòng <strong>2h làm việc</strong> sau khi nhận được tiền.",
+                        "bank_info": {
+                            "bank": "Ngân hàng",
+                            "bank_name": "MB BANK (Quân Đội)",
+                            "account_number": "Số tài khoản",
+                            "account_number_value": "2222233666666",
+                            "account_holder": "Chủ tài khoản",
+                            "account_holder_value": "NGUYEN HAI LONG"
+                        },
+                        "note": "* Nội dung chuyển khoản: <strong>[Tên Khách Hàng/SĐT] - [Gói Dịch Vụ]</strong>"
+                    },
+                    "method2": {
+                        "title": "Hình thức 2: Thanh toán Online (Visa/Mastercard/Ví điện tử)",
+                        "description": "Thanh toán trực tiếp trên website thông qua cổng thanh toán bảo mật. Dịch vụ sẽ được kích hoạt <strong>ngay lập tức</strong> sau khi giao dịch thành công."
+                    },
+                    "method3": {
+                        "title": "Hình thức 3: Thanh toán trực tiếp tại văn phòng",
+                        "description": "Khách hàng tại Hà Nội có thể đến văn phòng để được tư vấn, ký hợp đồng và thanh toán:",
+                        "items": [
+                            "<strong>Địa chỉ:</strong> Tầng 8, Tòa nhà Mitec, Phường Yên Hoà, Quận Cầu Giấy, Hà Nội.",
+                            "<strong>Giờ làm việc:</strong> 08:30 - 17:30 (Thứ 2 - Thứ 6)."
+                        ]
+                    }
+                },
+                {
+                    "title": "3. Chính sách hoàn tiền (Refund Policy)",
+                    "content": "Chúng tôi cam kết bảo vệ quyền lợi khách hàng:",
+                    "items": [
+                        "<strong>Hoàn tiền trong 7 ngày:</strong> Nếu quý khách không hài lòng với dịch vụ trong 7 ngày đầu tiên đăng ký mới, chúng tôi sẽ hoàn lại 100% chi phí.",
+                        "<strong>Lỗi hệ thống:</strong> Hoàn tiền tương ứng với thời gian gián đoạn nếu lỗi xuất phát từ máy chủ MiAgent quá 24h.",
+                        "<strong>Không hoàn tiền:</strong> Đối với việc đơn phương chấm dứt hợp đồng trước thời hạn hoặc vi phạm điều khoản sử dụng (spam, lừa đảo...)."
+                    ]
+                },
+                {
+                    "title": "4. Quy định về Hóa đơn (VAT)",
+                    "items": [
+                        "Giá niêm yết trên website chưa bao gồm 10% VAT.",
+                        "Để lấy hóa đơn GTGT, quý khách vui lòng điền thông tin Mã số thuế tại bước thanh toán hoặc liên hệ bộ phận kế toán trong vòng <strong>3 ngày</strong> kể từ khi thanh toán.",
+                        "Hóa đơn điện tử (e-invoice) sẽ được gửi qua email đăng ký."
+                    ]
+                },
+                {
+                    "title": "5. Hỗ trợ thanh toán",
+                    "contact_info": {
+                        "title": "Mọi thắc mắc về thanh toán xin liên hệ:",
+                        "hotline": "Tổng đài hỗ trợ:",
+                        "email": "Email:"
+                    }
+                }
+            ],
+            "footer": "Xin chân thành cảm ơn quý khách hàng đã tin tưởng sử dụng dịch vụ của Mi Agent!"
+        },
+        "privacy": {
+            "title": "Chính sách bảo mật",
+            "effective_date": "Hiệu lực từ ngày: 01 tháng 01 năm 2025"
+        },
+        "terms": {
+            "title": "Điều khoản sử dụng",
+            "effective_date": "Cập nhật lần cuối: Ngày 01 tháng 01 năm 2025"
+        }
+    },
+    "faq": {
+        "title": "Câu hỏi thường gặp",
+        "subtitle": "Giải đáp các thắc mắc về nền tảng của chúng tôi",
+        "items": [
+            {
+                "q": "Mi Agent là gì?",
+                "a": "Mi Agent là một nền tảng no-code cho phép bạn dễ dàng xây dựng và triển khai các AI Agent để bán hàng, hỗ trợ khách hàng và tự động hóa tác vụ — mà không cần viết một dòng mã nào."
+            },
+            {
+                "q": "Tôi có cần biết lập trình để sử dụng Mi Agent không?",
+                "a": "Hoàn toàn không. Mi Agent được xây dựng cho người dùng không chuyên kỹ thuật. Bạn có thể tạo AI Agent trong vài phút bằng giao diện kéo thả đơn giản — không yêu cầu kỹ năng lập trình."
+            },
+            {
+                "q": "AI Agent có thể học từ tài liệu của tôi không?",
+                "a": "Có. Bạn có thể tải lên PDF, dán văn bản, liên kết đến trang web hoặc kết nối Google Drive của bạn. Mi Agent sẽ huấn luyện AI Agent dựa trên nội dung tùy chỉnh của bạn."
+            },
+            {
+                "q": "Mi Agent có thể tích hợp với những nền tảng nào?",
+                "a": "Mi Agent hỗ trợ tích hợp với website, Facebook Messenger, Telegram, Zalo (sắp ra mắt) và các hệ thống nội bộ thông qua API hoặc Webhooks."
+            },
+            {
+                "q": "AI Agent hỗ trợ những ngôn ngữ nào?",
+                "a": "AI Agent của Mi Agent hỗ trợ nhiều ngôn ngữ bao gồm tiếng Anh, tiếng Việt, tiếng Tây Ban Nha, tiếng Đức, tiếng Pháp và nhiều ngôn ngữ khác. Bạn có thể đặt ngôn ngữ ưa thích hoặc để AI tự động phát hiện."
+            },
+            {
+                "q": "Dữ liệu của tôi được lưu trữ ở đâu?",
+                "a": "Dữ liệu của bạn được lưu trữ an toàn trong hạ tầng đám mây được mã hóa, tuân thủ các tiêu chuẩn toàn cầu như GDPR và ISO27001."
+            },
+            {
+                "q": "Tôi có thể dùng thử Mi Agent miễn phí không?",
+                "a": "Có. Mi Agent cung cấp bản dùng thử miễn phí cho phép truy cập các tính năng thiết yếu để bạn có thể xây dựng và ra mắt AI Agent đầu tiên của mình một cách nhanh chóng."
+            },
+            {
+                "q": "Mi Agent khác biệt thế nào so với các công cụ chatbot AI khác?",
+                "a": "Mi Agent chú trọng vào việc triển khai nhanh chóng, đơn giản không cần code, huấn luyện kiến thức riêng tư và tập trung vào các doanh nghiệp vừa & nhỏ. Bạn có thể đưa hệ thống đi vào hoạt động chỉ trong 5–10 phút."
+            }
+        ]
+    },
+    "meta": {
+        "defaults": {
+            "title": "MiAgent - Giải pháp AI Agent dành cho nhà bán lẻ",
+            "description": "AI Chatbot MiAgent: Giải pháp AI Agent bán hàng đa kênh, tự động CSKH 24/7, xử lý đơn hàng và đồng bộ CRM/ERP. Giúp doanh nghiệp bán lẻ tăng năng suất & giảm chi phí.",
+            "keywords": "AI Agent, AI Chatbot, Bán Hàng Đa Kênh, Bán Hàng Online, Bán lẻ, MiAgent, CSKH tự động, CRM, ERP, AHT Tech",
+            "author": "MiAgent Team",
+            "og_title": "MiAgent - Trợ lý AI Bán Hàng Đa Kênh",
+            "og_description": "Tự động CSKH 24/7, chốt đơn và đồng bộ dữ liệu. Giải pháp AI tối ưu chi phí cho doanh nghiệp.",
+            "twitter_title": "MiAgent - Trợ lý AI Bán Hàng Đa Kênh",
+            "twitter_description": "Tự động CSKH 24/7, chốt đơn và đồng bộ dữ liệu. Giải pháp AI tối ưu chi phí."
+        }
+    }
+}

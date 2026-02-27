@@ -1,0 +1,105 @@
+---
+import i18next from "../../i18n";
+---
+<section>
+  <div class="px-8 py-32 mx-auto md:px-12 lg:px-24 max-w-7xl ">
+    <div class="max-w-lg mx-auto text-center">
+      <h2
+        class="text-xl leading-tight tracking-tight sm:text-2xl md:text-3xl capitalize lg:text-4xl font-semibold text-base-900 lg:text-balance"
+      >
+        {i18next.t('auth.signup.title')}
+      </h2>
+      <p class="text-base leading-normal mt-4 text-base-500 font-medium">
+        {i18next.t('auth.signup.subtitle')}
+      </p>
+    </div>
+    <form action="#" method="POST" class="mx-auto mt-12 max-w-lg">
+      <div class="flex flex-col gap-y-6">
+        <div>
+          <label class="text-base leading-normal text-base-500 font-medium">
+            {i18next.t('auth.fields.firstname.label')}
+          </label>
+          <div class="mt-2.5">
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              autocomplete="given-name"
+              required
+              aria-required="true"
+              aria-describedby="first-name-error"
+              placeholder={i18next.t('auth.fields.firstname.placeholder')}
+              class="block w-full h-10 px-4 py-2 text-sm text-accent-700 duration-300 bg-white border border-transparent rounded-lg appearance-none ring-1 ring-base-200 placeholder-base-400 focus:border-base-300 focus:bg-transparent focus:outline-none focus:ring-accent-500 focus:ring-offset-2 focus:ring-2 sm:text-sm"
+            />
+            <span id="first-name-error" class="text-red-600 text-sm hidden">
+              {i18next.t('auth.fields.firstname.error')}
+            </span>
+          </div>
+        </div>
+        <div>
+          <label class="text-base leading-normal text-base-500 font-medium">
+            {i18next.t('auth.fields.email.label')}
+          </label>
+          <div class="mt-2.5">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="email"
+              required
+              aria-required="true"
+              aria-describedby="email-error"
+              placeholder={i18next.t('auth.fields.email.placeholder')}
+              class="block w-full h-10 px-4 py-2 text-sm text-accent-700 duration-300 bg-white border border-transparent rounded-lg appearance-none ring-1 ring-base-200 placeholder-base-400 focus:border-base-300 focus:bg-transparent focus:outline-none focus:ring-accent-500 focus:ring-offset-2 focus:ring-2 sm:text-sm"
+            />
+            <span id="email-error" class="text-red-600 text-sm hidden">
+              {i18next.t('auth.fields.email.error')}
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center mt-4 gap-3">
+        <input
+          id="agreement"
+          name="agreement"
+          type="checkbox"
+          class="size-4 rounded border-base-300 text-accent-600 focus:ring-accent-600 shadow"
+        />
+        <label class="undefined block text-sm text-base-500 font-medium">
+          {i18next.t('auth.signup.agreement.text')}
+          <a
+            class="text-base leading-normal text-accent-500 font-medium hover:text-base-500"
+            href="#_"
+          >
+            {i18next.t('auth.signup.agreement.terms')}
+          </a>
+          {i18next.t('auth.signup.agreement.and')}
+          <a
+            class="text-base leading-normal text-accent-500 font-medium hover:text-base-500"
+            href="#_"
+          >
+            {i18next.t('auth.signup.agreement.privacy')}
+          </a>
+        </label>
+      </div>
+      <div class="mt-10">
+        <button
+          class="flex items-center justify-center transition-all duration-200 focus:ring-2 focus:outline-none text-white bg-accent-600 hover:bg-accent-700 focus:ring-accent-500/50 h-10 px-6 py-3 text-base font-medium rounded-lg w-full"
+        >
+          {i18next.t('auth.signup.submit')}
+        </button>
+      </div>
+      <div class="flex items-center mt-4">
+        <p class="text-sm leading-normal text-base-500 font-medium">
+          {i18next.t('auth.signup.has_account')}
+          <a
+            class="text-base leading-normal text-accent-500 font-medium hover:text-base-500"
+            href="#_"
+          >
+            {i18next.t('auth.signup.signin_link')}
+          </a>
+        </p>
+      </div>
+    </form>
+  </div>
+</section>

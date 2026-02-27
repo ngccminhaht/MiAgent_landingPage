@@ -1,5 +1,9 @@
 ---
-import { ChatWidget } from "@/components/landing/ChatWidget";
+import { ChatWidget } from "@/components/features/chat/ChatWidget";
+import i18next from "../../i18n";
+
+const currentLang = i18next.language;
+const baseUrl = currentLang === "en" ? "/en" : "/vi";
 ---
 
 <section class="overflow-hidden bg-[url('/background.png')]">
@@ -8,20 +12,10 @@ import { ChatWidget } from "@/components/landing/ChatWidget";
       <div class="lg:col-span-1">
         <h1
           class="text-3xl font-bold text-black sm:text-4xl md:text-5xl leading-tight mb-4"
-        >
-          Giải pháp <span class="text-green-600">AI Chatbot Bán Hàng</span> & Agentic
-          AI
-        </h1>
-        <p class="mt-4 text-lg text-gray-700">
-          Tự động hóa quy trình <span class="text-green-500 font-semibold"
-            >tư vấn, chốt đơn</span
-          > & CSKH 24/7.
-        </p>
-        <p class="mt-2 text-lg text-gray-600">
-          Tích hợp sâu <strong>CRM/ERP</strong>, đồng bộ dữ liệu hội thoại <span
-            class="text-green-500 font-semibold">đa kênh</span
-          > (Facebook, Zalo, Web,...)
-        </p>
+          set:html={i18next.t("landing.hero.title")}
+        />
+        <p class="mt-4 text-lg text-gray-700" set:html={i18next.t("landing.hero.subtitle")} />
+        <p class="mt-2 text-lg text-gray-600" set:html={i18next.t("landing.hero.description")} />
 
         <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
           <!-- Box 1 -->
@@ -40,7 +34,7 @@ import { ChatWidget } from "@/components/landing/ChatWidget";
               </svg>
             </div>
             <p class="text-lg font-semibold text-black leading-snug text-start">
-              Tự động tư vấn bán hàng chốt đơn 24/7
+              {i18next.t("landing.hero.features.auto_sales")}
             </p>
           </div>
 
@@ -60,7 +54,7 @@ import { ChatWidget } from "@/components/landing/ChatWidget";
               </svg>
             </div>
             <p class="text-lg font-semibold text-black leading-snug">
-              Hiểu ngữ cảnh nhận diện hình ảnh sản phẩm
+              {i18next.t("landing.hero.features.image_recognition")}
             </p>
           </div>
 
@@ -80,7 +74,7 @@ import { ChatWidget } from "@/components/landing/ChatWidget";
               </svg>
             </div>
             <p class="text-lg font-semibold text-black leading-snug">
-              Kết nối thông luồng với nền tảng CRM/ERP
+              {i18next.t("landing.hero.features.crm_integration")}
             </p>
           </div>
 
@@ -100,7 +94,7 @@ import { ChatWidget } from "@/components/landing/ChatWidget";
               </svg>
             </div>
             <p class="text-lg font-semibold text-gray-900 leading-snug">
-              Kết nối đa nền tảng bằng hội thoại chat đa kênh
+              {i18next.t("landing.hero.features.omnichannel")}
             </p>
           </div>
         </div>
@@ -113,34 +107,34 @@ import { ChatWidget } from "@/components/landing/ChatWidget";
                   text-white bg-black hover:bg-gray-800 focus:ring-gray-700/50
                   h-10 px-4 py-2 text-base font-medium rounded-xl group"
           >
-            Đăng Kí Miễn Phí Trọn Đời
+            {i18next.t("landing.hero.buttons.register")}
             <span
               class="ml-4 flex items-center justify-center
                          p-1 w-8 h-8 rounded-xl
                         transform transition-transform duration-200 group-hover:scale-110"
             >
               <img
-                src="\square_right.svg"
+                src="/square_right.svg"
                 alt="icon-square-right"
                 class="w-full h-full object-contain"
               />
             </span>
           </a>
           <a
-            href="/contact"
+            href={baseUrl + "/contact"}
             target="_blank"
             class="flex items-center justify-between transition-all duration-200 focus:ring-2 focus:outline-none
                   text-white bg-black hover:bg-gray-800 focus:ring-gray-700/50
                   h-10 px-4 py-2 text-base font-medium rounded-xl group"
           >
-            Liên Hệ Tư Vấn
+            {i18next.t("landing.hero.buttons.contact")}
             <span
               class="ml-4 flex items-center justify-center
                         bg-white rounded-lg p-1 w-7 h-7
                         transform transition-transform duration-200 group-hover:scale-110"
             >
               <img
-                src="\hearphone.svg"
+                src="/hearphone.svg"
                 alt="icon hearphone"
                 class="w-full h-full object-contain"
               />
@@ -182,7 +176,7 @@ import { ChatWidget } from "@/components/landing/ChatWidget";
         >
           <img src="/messeger.svg" alt="Messeger" class="w-9 h-9" />
           <img src="/zalo.png" alt="Zalo" class="w-11 h-11" />
-          <img src="shopee.png" alt="Shopee" class="w-11 h-11" />
+          <img src="/shopee.png" alt="Shopee" class="w-11 h-11" />
           <img src="/shopify.svg" alt="Shopify" class="w-12 h-12" />
           <img src="/tiktok.png" alt="Tiktok" class="w-12 h-12" />
         </div>

@@ -4,6 +4,7 @@ const { post } = Astro.props;
 
 // Định nghĩa đường dẫn
 const postUrl = `/blog/${post.slug}`;
+import i18next from "../../i18n";
 ---
 <section class="mb-16 pt-6 pb-0 ">
     <!-- Bố cục 2 cột cho Desktop -->
@@ -31,7 +32,7 @@ const postUrl = `/blog/${post.slug}`;
 
             <!-- Nút Đọc thêm -->
             <a href={postUrl} class="inline-flex items-center text-black underline hover:text-blue-600 font-semibold hover:underline">
-                Read more 
+                {i18next.t('blog.list.read_more')}
                 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
         </div>

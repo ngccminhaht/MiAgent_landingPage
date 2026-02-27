@@ -1,3 +1,6 @@
+---
+import i18next from "../../i18n";
+---
 <section
   class="bg-gray-50 py-16 sm:py-12 px-4 sm:px-6 lg:px-8"
   x-data="{ activeImage: 1 }"
@@ -10,28 +13,28 @@
         :class="activeImage === 1 ? 'bg-stone-400 text-white' : 'bg-slate-300 text-black border border-gray-300 hover:bg-gray-100 font-semibold rounded-4xl'"
         @click="activeImage = 1"
       >
-        AI Studio
+        {i18next.t('landing.ai_for_work.tabs.ai_studio')}
       </button>
       <button
         class="px-4 py-2 rounded-xl text-sm font-medium transition-all"
         :class="activeImage === 2 ? 'bg-stone-400 text-white' : 'bg-slate-300 text-black border border-gray-300 hover:bg-gray-100 font-semibold rounded-4xl'"
         @click="activeImage = 2"
       >
-        Trainning kiến thức
+        {i18next.t('landing.ai_for_work.tabs.training')}
       </button>
       <button
         class="px-4 py-2 rounded-xl text-sm font-medium transition-all"
         :class="activeImage === 3 ? 'bg-stone-400 text-white' : 'bg-slate-300 text-black border border-gray-300 hover:bg-gray-100 font-semibold rounded-4xl'"
         @click="activeImage = 3"
       >
-        Tích hợp CRM
+        {i18next.t('landing.ai_for_work.tabs.crm')}
       </button>
       <button
         class="px-4 py-2 rounded-xl text-sm font-medium transition-all"
         :class="activeImage === 4 ? 'bg-stone-400 text-white' : 'bg-slate-300 text-black border border-gray-300 hover:bg-gray-100 font-semibold rounded-4xl'"
         @click="activeImage = 4"
       >
-        Chọn Model AI
+        {i18next.t('landing.ai_for_work.tabs.model')}
       </button>
     </div>
 
@@ -40,7 +43,7 @@
       <img
         class="w-full h-auto rounded-4xl border-5 shadow-xl"
         src="/page_ai_studio.webp"
-        alt="Ảnh ai studio"
+        alt={i18next.t('landing.ai_for_work.alts.ai_studio')}
         width="1200"
         height="800"
         loading="eager"
@@ -52,7 +55,7 @@
       <img
         class="w-full h-auto rounded-4xl border-5 shadow-xl"
         src="/page_ai_studio.png"
-        alt="Ảnh training kiến thức"
+        alt={i18next.t('landing.ai_for_work.alts.training')}
         width="1200"
         height="800"
         loading="lazy"
@@ -64,7 +67,7 @@
       <img
         class="w-full h-auto rounded-4xl border-5 shadow-xl"
         src="/page_ai_crm.webp"
-        alt="Ảnh chọn model"
+        alt={i18next.t('landing.ai_for_work.alts.model')}
         width="1200"
         height="800"
         loading="lazy"
@@ -76,7 +79,7 @@
       <img
         class="w-full h-auto rounded-4xl border-5 shadow-xl"
         src="/page_ai_crm.png"
-        alt="Ảnh crm"
+        alt={i18next.t('landing.ai_for_work.alts.crm')}
         width="1200"
         height="800"
         loading="lazy"

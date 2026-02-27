@@ -15,7 +15,7 @@ const totalNumber = Number(total) || 0;
 const transferText = transferContent || `Thanh toán ${plan}`;
 const addonText = addon !== "0" ? `${addon} × 10,000,000 đ` : null;
 
-function formatCurrency(num) {
+function formatCurrency(num: any) {
   return Number(num).toLocaleString("vi-VN") + " đ";
 }
 ---
@@ -161,7 +161,7 @@ function formatCurrency(num) {
 
 <!-- Fallback client-side: nếu server không render đúng (ví dụ do bạn vẫn dùng component ở nơi khác),
      client-side script sẽ lấy từ window.location.search và ghi đè các ô rỗng/0 -->
-<script>
+<script is:inline>
   (function () {
     try {
       const qs = new URLSearchParams(window.location.search);

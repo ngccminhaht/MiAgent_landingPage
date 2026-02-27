@@ -1,13 +1,12 @@
+---
+import i18next from "../../i18n";
+---
 <section class="bg-[#051734] py-6 px-4 sm:px-6">
   <div class="max-w-7xl mx-auto flex flex-col items-center gap-5">
     <p
       class="text-sm sm:text-base text-gray-300 text-center max-w-2xl leading-relaxed"
-    >
-      Hơn <span class="text-white font-bold">5000+ doanh nghiệp</span> đã dùng MiAgent
-      để
-      <span class="text-green-400 font-semibold">tăng doanh số</span>
-      trên đa nền tảng.
-    </p>
+      set:html={i18next.t('landing.why_choose_us.title')}
+    />
 
     <div
       class="w-full flex flex-wrap items-center justify-center gap-x-6 gap-y-4 md:gap-x-10"

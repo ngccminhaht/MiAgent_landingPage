@@ -1,6 +1,7 @@
 ---
-import { ChatWidget } from "@/components/landing/ChatWidget";
-import RotatingIcons from "@/components/landing/Rotating-icon";
+import { ChatWidget } from "@/components/features/chat/ChatWidget";
+import RotatingIcons from "@/components/features/interactive/Rotating-icon";
+import i18next from "../../i18n";
 ---
 
 <section class="bg-slate-50 overflow-hidden py-16 sm:py-24">
@@ -14,12 +15,11 @@ import RotatingIcons from "@/components/landing/Rotating-icon";
             4
           </div>
           <h2 class="text-3xl font-bold text-black">
-            Tích hợp đa nền tảng chat đa kênh
+            {i18next.t('landing.page4.title')}
           </h2>
         </div>
         <p class="text-black">
-          Tích hợp AI của bạn vào đa nền tảng tư vấn khách hàng ở mọi nơi mọi
-          lúc một cách thuận tiện.
+          {i18next.t('landing.page4.description')}
         </p>
         <div class="w-full max-w-md p-4">
           <ul class="relative">
@@ -47,8 +47,7 @@ import RotatingIcons from "@/components/landing/Rotating-icon";
                 </div>
                 <div class="bg-green-50 p-3 rounded-lg">
                   <span class="text-gray-800">
-                    Quản lý tập trung mọi cuộc trò chuyện từ các nền tảng phổ
-                    biến tại một nơi duy nhất.
+                    {i18next.t('landing.page4.benefits.0')}
                   </span>
                 </div>
               </li>
@@ -70,8 +69,7 @@ import RotatingIcons from "@/components/landing/Rotating-icon";
                 </div>
                 <div class="bg-green-50 p-3 rounded-lg">
                   <span class="text-gray-800">
-                    Phản hồi khách hàng tức thì 24/7, mang lại trải nghiệm đồng
-                    nhất trên mọi nền tảng bán hàng.
+                    {i18next.t('landing.page4.benefits.1')}
                   </span>
                 </div>
               </li>
@@ -93,8 +91,7 @@ import RotatingIcons from "@/components/landing/Rotating-icon";
                 </div>
                 <div class="bg-green-50 p-3 rounded-lg">
                   <span class="text-gray-800">
-                    Tự động chốt đơn và thu thập thông tin của khách hàng tiềm
-                    năng ngay trong cuộc trò chuyện.
+                    {i18next.t('landing.page4.benefits.2')}
                   </span>
                 </div>
               </li>
@@ -116,8 +113,7 @@ import RotatingIcons from "@/components/landing/Rotating-icon";
                 </div>
                 <div class="bg-green-50 p-3 rounded-lg">
                   <span class="text-gray-800">
-                    Mở rộng quy mô bán hàng và CSKH hiệu quả mà không cần tăng
-                    thêm chi phí nhân sự.
+                    {i18next.t('landing.page4.benefits.3')}
                   </span>
                 </div>
               </li>
@@ -132,14 +128,14 @@ import RotatingIcons from "@/components/landing/Rotating-icon";
                   text-white bg-black hover:bg-gray-800 focus:ring-gray-700/50
                   h-10 px-4 py-2 text-base font-medium rounded-xl group"
         >
-          Xem Video Hướng Dẫn Thiết Lập
+          {i18next.t('landing.page4.cta')}
           <span
             class="ml-4 flex items-center justify-center
                          p-1 w-9 h-9 rounded-xl
                         transform transition-transform duration-200 group-hover:scale-110"
           >
             <img
-              src="\square_right.svg"
+              src="/square_right.svg"
               alt="icon"
               class="w-full h-full object-contain"
             />

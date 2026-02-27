@@ -1,5 +1,9 @@
 ---
 // src/pages/pricing.astro
+import i18next from "../../i18n";
+
+const currentLang = i18next.language;
+const baseUrl = currentLang === "en" ? "/en" : "/vi";
 ---
 
 <section class="py-20 space-y-10 rounded-2xl">
@@ -85,7 +89,7 @@
         </li>
       </ul>
       <a
-        href="/pricing"
+        href={baseUrl + "/pricing"}
         class="inline-block bg-orange-500 text-white font-semibold px-6 py-2 rounded-lg hover:bg-orange-600 transition"
       >
         Xem chi tiết tính năng
@@ -178,7 +182,7 @@
         </li>
       </ul>
       <a
-        href="/checkout"
+        href={baseUrl + "/checkout"}
         class="inline-block bg-green-500 text-white font-semibold px-6 py-2 rounded-lg hover:bg-orange-600 transition"
       >
         Yêu cầu báo giá
@@ -238,13 +242,13 @@
 
           <div class="flex items-center justify-center gap-4">
             <a
-              href="/contact"
+              href={baseUrl + "/contact"}
               class="bg-green-400 text-white font-semibold rounded-lg py-2 px-6 hover:bg-green-500 transition"
             >
               Đặt lịch tư vấn
             </a>
             <a
-              href="/"
+              href={baseUrl + "/"}
               class="bg-green-400 text-white font-semibold rounded-lg py-2 px-6 hover:bg-green-500 transition"
             >
               MI AGENT

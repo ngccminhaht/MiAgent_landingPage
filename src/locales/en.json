@@ -1,0 +1,582 @@
+{
+    "common": {
+        "navigation": {
+            "about": "About MiAgent",
+            "pricing": "Pricing",
+            "contact": "Contact",
+            "blog": "Blog",
+            "register": "Sign Up",
+            "login": "Login",
+            "start": "Get Started"
+        },
+        "footer": {
+            "description": "Comprehensive AI Agent solution helping businesses automate sales processes and omnichannel customer service.",
+            "sections": {
+                "about": {
+                    "title": "About MiAgent",
+                    "links": {
+                        "us": "About Us",
+                        "contact": "Contact"
+                    }
+                },
+                "product": {
+                    "title": "Product",
+                    "links": {
+                        "pricing": "Pricing",
+                        "integration": "CRM/ERP Integration"
+                    }
+                },
+                "support": {
+                    "title": "Support & Legal",
+                    "links": {
+                        "privacy": "Privacy Policy",
+                        "terms": "Terms of Service",
+                        "payment": "Payment Policy"
+                    }
+                },
+                "form": {
+                    "title": "Request Solution Consultation",
+                    "subtitle": "Leave your information to receive a demo and detailed quote from our expert team.",
+                    "email_placeholder": "Your business email",
+                    "phone_placeholder": "Contact phone number",
+                    "submit_button": "Send Request",
+                    "success": "Sent successfully! Will contact you soon.",
+                    "loadding": "Sending..."
+                }
+            },
+            "copyright": "© {{year}} Miagent Global. All rights reserved.",
+            "links": {
+                "privacy": "Privacy",
+                "terms": "Terms",
+                "sitemap": "Sitemap"
+            }
+        }
+    },
+    "landing": {
+        "hero": {
+            "title": "Solution <span class=\"text-green-600\">Sales AI Chatbot</span> & Agentic AI",
+            "subtitle": "Automate <span class=\"text-green-500 font-semibold\">consulting, closing sales</span> & 24/7 Customer Support.",
+            "description": "Deeply integrated with <strong>CRM/ERP</strong>, sync conversational data across <span class=\"text-green-500 font-semibold\">omnichannel</span> (Facebook, Zalo, Web,...)",
+            "features": {
+                "auto_sales": "Auto consult & close sales 24/7",
+                "image_recognition": "Contextual understanding & product image recognition",
+                "crm_integration": "Seamless integration with CRM/ERP platforms",
+                "omnichannel": "Connect multi-platforms with omnichannel chat"
+            },
+            "buttons": {
+                "register": "Sign Up Free Forever",
+                "contact": "Contact Sales"
+            }
+        },
+        "why_choose_us": {
+            "title": "Over <span class=\"text-white font-bold\">5000+ businesses</span> use MiAgent to <span class=\"text-green-400 font-semibold\">increase sales</span> across platforms."
+        },
+        "only_mi_agent": {
+            "title": "Technology <span class=\"bg-clip-text text-transparent bg-gradient-to-r from-gray-900 via-green-600 to-gray-900\">Exclusive</span> at MiAgent",
+            "subtitle": "Surpassing traditional Chatbots, <span class=\"text-green-600 font-medium underline underline-offset-2\">MiAgent</span> brings unprecedented <span class=\"relative inline-block\">multimodal processing <span class=\"absolute bottom-0 left-0 w-full h-1 bg-green-200/60 -z-10\"></span></span> capabilities.",
+            "button_video": "Watch Setup Video",
+            "feature_1": {
+                "title": "Recognize customer images to search product codes on CRM for accurate consulting",
+                "description": "Mi Agent can recognize images sent by customers and consult based on the image, send images to customers, and more thanks to its specialized Image Recognition AI Model!",
+                "benefits": [
+                    "AI reads and understands product images to find product codes for consulting",
+                    "AI understands conversation context like a real person",
+                    "Suggests responses matching the tone and ongoing content",
+                    "Understands indirect, long, and tricky questions"
+                ]
+            },
+            "feature_2": {
+                "title": "Get realtime product info from CRM and create orders on CRM/ERP",
+                "description": "Mi Agent can easily integrate into CRM or ERP software to retrieve product information for consulting and automatically create orders and check order status.",
+                "benefits": [
+                    "Get product info from CRM for accurate real-time quotes",
+                    "Automatically create orders on CRM tagging customers: interested - closed",
+                    "Connect ordering, payment, scheduling systems...",
+                    "Customizable integration for specific industries: Education, Banking, Restaurants"
+                ]
+            },
+            "feature_3": {
+                "title": "Understand conversation context, reply only when customer finishes their thought",
+                "description": "When a customer sends 1 message, AI usually replies 1 message, but for sales AI, that's unnatural as customers often send multiple messages to express a full thought.",
+                "benefits": [
+                    "Wait for customer to finish their thought before replying fully to avoid spamming",
+                    "Fluent communication even if customer changes topic mid-way, no off-topic answers",
+                    "Suggest suitable products or remind about unused offers",
+                    "Remember name, history, and previously asked/ordered products"
+                ]
+            },
+            "banner": {
+                "subtitle": "AI Agent - Sales consulting replacing your staff!",
+                "title": "INCREASE 60% REVENUE",
+                "description": "Reduce 80% operating costs for sales team"
+            }
+        },
+        "page4": {
+            "title": "Omnichannel Chat Integration",
+            "description": "Integrate your AI into multiple platforms to consult customers anywhere, anytime conveniently.",
+            "benefits": [
+                "Centralize all conversations from popular platforms in a single place.",
+                "Instant 24/7 customer response, delivering consistent experience across sales channels.",
+                "Auto-close orders and collect potential customer info right in the conversation.",
+                "Scale sales and support effectively without increasing personnel costs."
+            ],
+            "cta": "Watch Setup Video"
+        },
+        "ai_for_work": {
+            "tabs": {
+                "ai_studio": "AI Studio",
+                "training": "Knowledge Training",
+                "crm": "CRM Integration",
+                "model": "Select AI Model"
+            },
+            "alts": {
+                "ai_studio": "AI Studio Image",
+                "training": "Knowledge Training Image",
+                "model": "Select Model Image",
+                "crm": "CRM Image"
+            }
+        },
+        "chat_messenger": {
+            "facebook_alt": "Facebook Logo",
+            "messenger_alt": "Messenger Logo"
+        },
+        "json_ld": {
+            "organization": {
+                "name": "MiAgent Global",
+                "contact_type": "customer service"
+            },
+            "application": {
+                "name": "MiAgent",
+                "description": "Automated omnichannel sales and customer service AI Chatbot solution, integrated with CRM/ERP."
+            },
+            "faq": [
+                {
+                    "question": "Can MiAgent integrate with CRM?",
+                    "answer": "Yes, MiAgent integrates deeply with popular CRM/ERP systems to sync order and customer info in real-time."
+                },
+                {
+                    "question": "Can MiAgent's AI recognize images?",
+                    "answer": "Yes, MiAgent possesses exclusive technology to recognize product images sent by customers to find codes and consult accurately."
+                },
+                {
+                    "question": "Can I try MiAgent for free?",
+                    "answer": "MiAgent provides a free trial package for you to experience core features before deciding to upgrade."
+                }
+            ]
+        }
+    },
+    "pricing": {
+        "title": "Service Pricing",
+        "subtitle": "Services and extended features",
+        "plans": {
+            "trial": {
+                "name": "TRIAL",
+                "description": "For SMEs wanting to work with AI Agents",
+                "price": "Free",
+                "details_title": "Trial Plan Details:",
+                "features": [
+                    "Access accounts: 1",
+                    "AI messages processed / month: 200",
+                    "Omnichannel conversation pages: 1",
+                    "Basic AI responses: Yes",
+                    "AI image responses: No",
+                    "AI omnichannel ticket handling: No",
+                    "Sentiment & topic analysis: Not supported",
+                    "Extended AI tasks: No",
+                    "Support specialist: Not supported",
+                    "AI setup & training: Limited",
+                    "Automated campaigns: Not supported",
+                    "Languages & platforms: Multi-language"
+                ]
+            },
+            "startup": {
+                "name": "STARTUP",
+                "description": "For SMEs wanting to work with AI Agents",
+                "price": "980,000đ",
+                "unit": "/month",
+                "details_title": "Startup Plan Details:",
+                "features": [
+                    "Access accounts: 3",
+                    "AI messages processed / month: 1,500",
+                    "Omnichannel conversation pages: 5",
+                    "Basic AI responses: Yes",
+                    "AI image responses: No",
+                    "AI omnichannel ticket handling: Yes",
+                    "Sentiment & topic analysis: Not supported",
+                    "Extended AI tasks: No",
+                    "Support specialist: No",
+                    "AI setup & training: Yes",
+                    "Automated campaigns: Yes",
+                    "Languages & platforms: Multi-language"
+                ]
+            },
+            "pro": {
+                "name": "PROFESSIONAL",
+                "description": "For medium & large enterprises needing professional AI Agents",
+                "price": "2,390,000đ",
+                "unit": "/month",
+                "details_title": "Professional Plan Details:",
+                "features": [
+                    "Access accounts: 5",
+                    "AI messages processed / month: 5,000",
+                    "Omnichannel conversation pages: 10",
+                    "Basic AI responses: Yes",
+                    "AI image responses: Yes",
+                    "AI omnichannel ticket handling: Yes",
+                    "Sentiment & topic analysis: Supported",
+                    "Extended AI tasks: No",
+                    "Support specialist: Yes",
+                    "AI setup & training: Yes",
+                    "Automated campaigns: Yes",
+                    "Languages & platforms: Multi-language"
+                ]
+            },
+            "scale": {
+                "name": "SCALE",
+                "badge": "Popular",
+                "description": "For large enterprises needing professional AI Agents to scale systems",
+                "price": "6,900,000đ",
+                "unit": "/month",
+                "details_title": "Scale Plan Details:",
+                "features": [
+                    "Access accounts: 10",
+                    "AI messages processed / month: 15,000",
+                    "Omnichannel conversation pages: 50",
+                    "Basic AI responses: Yes",
+                    "AI image responses: Yes",
+                    "AI omnichannel ticket handling: Yes",
+                    "Sentiment & topic analysis: Supported",
+                    "Extended AI tasks: 5 tasks",
+                    "Support specialist: Priority",
+                    "AI setup & training: Yes",
+                    "Automated campaigns: Yes",
+                    "Languages & platforms: Multi-language"
+                ]
+            },
+            "enterprise": {
+                "name": "ENTERPRISE",
+                "description": "For large enterprises needing AI Agents for complex purposes.",
+                "price": "CONTACT",
+                "details_title": "Enterprise Plan Details:",
+                "features": [
+                    "Access accounts: Custom",
+                    "AI messages processed / month: Custom",
+                    "Omnichannel conversation pages: Custom",
+                    "Basic AI responses: Yes",
+                    "AI image responses: Yes",
+                    "AI omnichannel ticket handling: Yes",
+                    "Sentiment & topic analysis: Supported",
+                    "Extended AI tasks: Custom",
+                    "Support specialist: Priority",
+                    "AI setup & training: Yes",
+                    "Automated campaigns: Yes",
+                    "Languages & platforms: Custom"
+                ]
+            },
+            "buttons": {
+                "buy_now": "Buy Now",
+                "contact_now": "Contact Now"
+            }
+        },
+        "comparison": {
+            "title": "MiAgent DIFFERENCE VS COMPETITORS",
+            "headers": {
+                "feature": "Highlight Features",
+                "detail": "Detailed Description",
+                "diff": "Key Differentiation"
+            },
+            "rows": [
+                {
+                    "feature": "Product Image Recognition & Processing",
+                    "detail": "• Send and analyze images directly in chat.<br />• AI automatically recognizes customer images to identify products of interest.",
+                    "diff": "• Most platforms only support text chat.<br />• MiAgent understands images like humans, allowing customers to just snap a photo for AI to identify and consult correctly."
+                },
+                {
+                    "feature": "Video Content Understanding & Analysis",
+                    "detail": "• Allows sending product videos in chat.<br />• AI can understand, extract content, and analyze customer videos.",
+                    "diff": "• Competitors rarely handle video.<br />• MiAgent analyzes both content and emotion in videos to determine customer interest or issues."
+                },
+                {
+                    "feature": "Intent Understanding & Natural Context",
+                    "detail": "• Accurately identifies customer intent and replies only with sufficient context.<br />• AI inherits full conversation history to continue consulting seamlessly like a human.",
+                    "diff": "• Competitors often lose context when switching agents or when customers return days later.<br />• MiAgent keeps the flow intact, making the experience more natural and professional."
+                },
+                {
+                    "feature": "System Connection & Full Sales Automation",
+                    "detail": "• Integrates CRM, ERP, Facebook, Zalo OA, Shopee, Amazon, TikTok Shop, Spotify…<br />• Smart Remarketing: auto-send care messages based on buying behavior, alert staff on bad signals.",
+                    "diff": "• While others stop at customer support chatbots,<br />• MiAgent acts as an AI Sales System – automating the entire sales chain, from interaction, analysis to closing."
+                }
+            ]
+        },
+        "footer_banner": {
+            "description": "MiAgent helps businesses automate processes and serve customers quickly",
+            "buttons": {
+                "consult": "Book Consultation",
+                "pricing": "See Pricing"
+            }
+        }
+    },
+    "about": {
+        "title": "About MiAgent AI",
+        "subtitle": "Professional AI Assistant for Businesses and Retailers",
+        "mission": {
+            "title": "Our Mission: Unlocking Sales Potential",
+            "content": "MiAgent AI's core mission is: Revolutionize how businesses interact and sell through Artificial Intelligence applications. We believe that with our exclusive AI Agent technology, every business can achieve superior sales performance, significantly save operating costs, and provide consistent, uninterrupted (24/7) customer experiences. We aim to transform traditional Chatbots into AI Sales Agents that are truly as natural as humans."
+        },
+        "who_we_are": {
+            "title": "Who Are We?",
+            "description": "MiAgent AI was founded by a multidisciplinary team, including top software engineers, Machine Learning experts, and experienced business strategists. We all share a common goal: Develop an AI Assistant capable of selling and communicating complexly like a professional sales employee.",
+            "capabilities_title": "Our AI Agent is not merely a Q&A tool, but also capable of:",
+            "capabilities": [
+                {
+                    "title": "Contextual Understanding:",
+                    "description": "Accurately identify purchase intent, indirect questions, and even customer emotions or tone."
+                },
+                {
+                    "title": "Actionable Intelligence:",
+                    "description": "Integrate order creation, stock status checking, and interaction with backend systems (CRM/ERP) in real-time."
+                },
+                {
+                    "title": "Multimodal Capability:",
+                    "description": "Process and consult based on various data types, including text and product images sent by customers."
+                }
+            ]
+        },
+        "values": {
+            "title": "Core Values Making the Difference",
+            "items": [
+                {
+                    "title": "1. Exclusive Technology",
+                    "description": "We surpass limits of generic AI tools. MiAgent develops and owns distinct AI models, deeply fine-tuned for industry specifics and Vietnamese market communication contexts. This ensures fast response speed, high accuracy, and superior capability to handle tricky conversations."
+                },
+                {
+                    "title": "2. Deep Integration",
+                    "description": "MiAgent is designed to be the central operator of your business ecosystem. Real-time API connection capability with existing management systems (like PanCake, Odoo, KiotViet, Haravan, and other CRM/ERP software) is our commitment to providing a truly useful AI solution, not just a standalone tool."
+                },
+                {
+                    "title": "3. Performance Driven",
+                    "description": "Every feature and improvement we make is aimed at the customer's ultimate goal: achieving Superior Business Performance. MiAgent AI is an investment designed to bring clear results: <strong class=\"text-red-600\">Increase 60% Revenue</strong> and <strong class=\"text-red-600\">Reduce 80% Costs</strong> of operating sales teams."
+                }
+            ]
+        },
+        "vision": {
+            "title": "Future Vision",
+            "content_1": "We envision a future where MiAgent AIs work harmoniously and effectively with your staff. MiAgent will take over all repetitive or high-volume sales and support tasks, freeing up your employees to focus on strategic interactions, building long-term relationships, and creative activities requiring human intervention.",
+            "content_2": "We will continuously expand Agent AI capabilities to adapt to every industry-specific requirement: from Education, Banking, to Restaurants, ensuring MiAgent is always the leading professional AI Agent solution."
+        }
+    },
+    "contact": {
+        "title": "MiAgent Global",
+        "subtitle": "Contact Us",
+        "description": "We are always ready to listen and support you. Please contact us via the channels below or fill out the form for the earliest response.",
+        "info": {
+            "address": {
+                "title": "Address",
+                "value": "8th Floor, Mitec Building, Yen Hoa, Cau Giay, Hanoi."
+            },
+            "email": {
+                "title": "Email"
+            },
+            "hotline": {
+                "title": "Hotline"
+            }
+        },
+        "form": {
+            "title": "Contact",
+            "subtitle": "We will contact you as soon as possible!",
+            "fields": {
+                "name": "Full Name (*)",
+                "email": "Email (*)",
+                "phone": "Phone Number (*)",
+                "title": "Subject",
+                "message": "Message"
+            },
+            "submit": "SEND"
+        },
+        "footer_banner": {
+            "description": "MiAgent helps businesses automate processes and serve customers quickly",
+            "buttons": {
+                "consult": "Book Consultation",
+                "pricing": "See Pricing"
+            }
+        }
+    },
+    "blog": {
+        "list": {
+            "meta_title": "Blog List | MiAgent",
+            "all_posts": "All Posts",
+            "no_posts": "No posts published yet.",
+            "read_more": "Read More"
+        },
+        "post": {
+            "published_at": "Published at:",
+            "category": "Category:",
+            "back_to_list": "← Back to blog list"
+        }
+    },
+    "auth": {
+        "login": {
+            "title": "Login to your account",
+            "subtitle": "Welcome back! Please enter your email and password to login.",
+            "submit": "Login",
+            "no_account": "Don't have an account?",
+            "signup_link": "Sign Up"
+        },
+        "signup": {
+            "title": "Join our community",
+            "subtitle": "Sign up to join the community and start building your brand.",
+            "submit": "Sign Up",
+            "has_account": "Already have an account?",
+            "signin_link": "Login",
+            "agreement": {
+                "text": "You agree to our",
+                "terms": "Terms of Service",
+                "and": "and",
+                "privacy": "Privacy Policy"
+            }
+        },
+        "fields": {
+            "email": {
+                "label": "Email",
+                "placeholder": "Your email address",
+                "error": "Please enter a valid email address."
+            },
+            "firstname": {
+                "label": "Your Name",
+                "placeholder": "Enter your name",
+                "error": "Please enter your name."
+            }
+        }
+    },
+    "legal": {
+        "payment": {
+            "title": "Payment Policy",
+            "effective_date": "Effective date: January 01, 2025",
+            "intro": "This policy regulates payment methods, renewal processes, invoicing, and refund conditions when using Mi Agent software.",
+            "sections": [
+                {
+                    "title": "1. Fees and Billing Cycle",
+                    "content": "Software usage fees are calculated based on subscription packages based on the number of features and usage time:",
+                    "items": [
+                        "<strong>Monthly Plan:</strong> Pay monthly, auto-renew on the same day of the next month.",
+                        "<strong>Yearly Plan:</strong> Pay once for 12 months (usually with discount), auto-renew after expiration.",
+                        "<strong>Plan Change:</strong> Customers can Upgrade the plan at any time. The difference cost will be automatically calculated by the system based on the remaining time."
+                    ]
+                },
+                {
+                    "title": "2. Payment Methods",
+                    "content": "MiAgent supports 3 main payment methods:",
+                    "method1": {
+                        "title": "Method 1: Bank Transfer (Preferred)",
+                        "description": "Applicable to all service packages. Service is activated within <strong>2 working hours</strong> after receiving money.",
+                        "bank_info": {
+                            "bank": "Bank",
+                            "bank_name": "MB BANK (Military Bank)",
+                            "account_number": "Account Number",
+                            "account_number_value": "2222233666666",
+                            "account_holder": "Account Holder",
+                            "account_holder_value": "NGUYEN HAI LONG"
+                        },
+                        "note": "* Transfer content: <strong>[Customer Name/Phone] - [Service Package]</strong>"
+                    },
+                    "method2": {
+                        "title": "Method 2: Online Payment (Visa/Mastercard/E-wallet)",
+                        "description": "Pay directly on the website via a secure payment gateway. Service will be activated <strong>immediately</strong> after successful transaction."
+                    },
+                    "method3": {
+                        "title": "Method 3: Direct Payment at Office",
+                        "description": "Customers in Hanoi can visit the office for consultation, contract signing, and payment:",
+                        "items": [
+                            "<strong>Address:</strong> 8th Floor, Mitec Building, Yen Hoa, Cau Giay, Hanoi.",
+                            "<strong>Working hours:</strong> 08:30 - 17:30 (Mon - Fri)."
+                        ]
+                    }
+                },
+                {
+                    "title": "3. Refund Policy",
+                    "content": "We are committed to protecting customer rights:",
+                    "items": [
+                        "<strong>Refund within 7 days:</strong> If you are not satisfied with the service within the first 7 days of new registration, we will refund 100% of the cost.",
+                        "<strong>System Error:</strong> Refund corresponding to the interruption time if the error originates from MiAgent server for more than 24h.",
+                        "<strong>No Refund:</strong> For unilateral contract termination before term or violation of terms of use (spam, fraud...)."
+                    ]
+                },
+                {
+                    "title": "4. Invoice Regulations (VAT)",
+                    "items": [
+                        "Listed prices on the website do not include 10% VAT.",
+                        "To get a VAT invoice, please fill in Tax Code information at the payment step or contact the accounting department within <strong>3 days</strong> from payment.",
+                        "Electronic invoice (e-invoice) will be sent via registered email."
+                    ]
+                },
+                {
+                    "title": "5. Payment Support",
+                    "contact_info": {
+                        "title": "For any payment inquiries, please contact:",
+                        "hotline": "Support Hotline:",
+                        "email": "Email:"
+                    }
+                }
+            ],
+            "footer": "Sincerely thank you for trusting and using Mi Agent services!"
+        },
+        "privacy": {
+            "title": "Privacy Policy",
+            "effective_date": "Effective date: January 01, 2025"
+        },
+        "terms": {
+            "title": "Terms of Service",
+            "effective_date": "Last updated: January 01, 2025"
+        }
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Answers to commonly asked questions about our platform",
+        "items": [
+            {
+                "q": "What is Mi Agent?",
+                "a": "Mi Agent is a no-code platform that lets you easily build and deploy AI Agents for sales, customer support, and task automation — without writing a single line of code."
+            },
+            {
+                "q": "Do I need coding skills to use Mi Agent?",
+                "a": "Not at all. Mi Agent is built for non-technical users. You can create an AI Agent in minutes using a simple drag-and-drop interface — no coding required."
+            },
+            {
+                "q": "Can the AI Agent learn from my documents?",
+                "a": "Yes. You can upload PDFs, paste text, link to websites, or connect your Google Drive. Mi Agent will train the AI Agent based on your custom content."
+            },
+            {
+                "q": "What platforms does Mi Agent integrate with?",
+                "a": "Mi Agent supports integration with websites, Facebook Messenger, Telegram, Zalo (coming soon), and internal systems via API or Webhooks."
+            },
+            {
+                "q": "What languages does the AI Agent support?",
+                "a": "Mi Agent's AI Agents support multiple languages including English, Vietnamese, Spanish, German, French, and more. You can set a preferred language or let the AI auto-detect."
+            },
+            {
+                "q": "Where is my data stored?",
+                "a": "Your data is stored securely in encrypted cloud infrastructure, compliant with global standards like GDPR and ISO27001."
+            },
+            {
+                "q": "Can I try Mi Agent for free?",
+                "a": "Yes. Mi Agent offers a free trial that gives access to essential features so you can build and launch your first AI Agent quickly."
+            },
+            {
+                "q": "How is Mi Agent different from other AI chatbot tools?",
+                "a": "Mi Agent emphasizes fast deployment, no-code simplicity, private knowledge training, and a focus on small & medium businesses. You can go live in 5–10 minutes."
+            }
+        ]
+    },
+    "meta": {
+        "defaults": {
+            "title": "MiAgent - AI Agent Solution for Retailers",
+            "description": "MiAgent AI Chatbot: Omnichannel sales AI Agent solution, automated 24/7 customer service, order processing, and CRM/ERP synchronization. Helping retail businesses increase productivity & reduce costs.",
+            "keywords": "AI Agent, AI Chatbot, Omnichannel Sales, Online Sales, Retail, MiAgent, Automated Customer Service, CRM, ERP, AHT Tech",
+            "author": "MiAgent Team",
+            "og_title": "MiAgent - AI Assistant for Omnichannel Sales",
+            "og_description": "Automated 24/7 customer service, order closing, and data synchronization. Cost-optimized AI solution for businesses.",
+            "twitter_title": "MiAgent - AI Assistant for Omnichannel Sales",
+            "twitter_description": "Automated 24/7 customer service, order closing, and data synchronization. Cost-optimized AI solution."
+        }
+    }
+}

@@ -1,5 +1,9 @@
 ---
 // src/pages/pricing.astro
+import i18next from "../../i18n";
+
+const currentLang = i18next.language;
+const baseUrl = currentLang === "en" ? "/en" : "/vi";
 ---
 
 <section class="py-20 bg-gray-50">
@@ -18,7 +22,7 @@
         <div class="text-3xl font-bold text-gray-900 mb-1">20,000,000đ</div>
         <div class="text-gray-600 mb-6">/tháng</div>
         <a
-          href="/checkout"
+          href={baseUrl + "/checkout"}
           class="block text-center bg-green-400 text-white font-semibold rounded-lg py-2 hover:bg-green-400 transition"
         >
           Mua ngay
@@ -52,7 +56,7 @@
         <div class="text-3xl font-bold text-gray-900 mb-1">2,369,000đ</div>
         <div class="text-gray-600 mb-6">/tháng</div>
         <a
-          href="/checkout"
+          href={baseUrl + "/checkout"}
           class="block text-center bg-blue-600 text-white font-semibold rounded-lg py-2 hover:bg-blue-700 transition"
         >
           Mua ngay
@@ -87,7 +91,7 @@
         <div class="text-3xl font-bold text-gray-900 mb-1">2,369,000đ</div>
         <div class="text-gray-600 mb-6">/tháng</div>
         <a
-          href="/checkout"
+          href={baseUrl + "/checkout"}
           class="block text-center bg-blue-600 text-white font-semibold rounded-lg py-2 hover:bg-blue-700 transition"
         >
           Mua ngay
@@ -122,7 +126,7 @@
         <div class="text-3xl font-bold text-gray-900 mb-1">2,369,000đ</div>
         <div class="text-gray-600 mb-6">/tháng</div>
         <a
-          href="/checkout"
+          href={baseUrl + "/checkout"}
           class="block text-center bg-blue-600 text-white font-semibold rounded-lg py-2 hover:bg-blue-700 transition"
         >
           Mua ngay
@@ -144,7 +148,7 @@
 
     <p style="text-align: center; margin-bottom: 60px;margin-top: 60px;">
       <a
-        href="/"
+        href={baseUrl + "/"}
         style="font-weight: bold; font-size: 40px; text-decoration: underline; text-decoration-color: purple; color: inherit;"
       >
         Xem chi tiết tính năng từng gói
@@ -252,13 +256,13 @@
 
             <div class="flex items-center justify-center gap-4">
               <a
-                href="/checkout"
+                href={baseUrl + "/checkout"}
                 class="bg-green-400 text-white font-semibold rounded-lg py-2 px-6 hover:bg-green-500 transition"
               >
                 Đặt lịch tư vấn
               </a>
               <a
-                href="/contact"
+                href={baseUrl + "/contact"}
                 class="bg-green-400 text-white font-semibold rounded-lg py-2 px-6 hover:bg-green-500 transition"
               >
                 Ước TÍnh ROI

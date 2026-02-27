@@ -1,0 +1,75 @@
+---
+export const prerender = false;
+const messengerLink = "https://m.me/miagent.io?text=Xin%20ch%C3%A0o";
+const facebookLink = "https://www.facebook.com/miagent.io/#";
+import i18next from "../../../i18n";
+---
+
+<style>
+  .chat-btn {
+    position: fixed;
+    right: 24px;
+    background-color: white;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border: 1px solid rgba(0, 0, 0, 0.1); /* xám nhạt, trong suốt */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 50;
+  }
+
+  .chat-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 14px rgba(0,132,255,0.4);
+  }
+
+  /* Messenger button */
+  #chatBtnMessenger {
+    bottom: 24px;
+  }
+
+  /* Facebook button (nằm trên Messenger một chút) */
+  #chatBtnFacebook {
+    bottom: 100px; /* cách nút dưới 76px (64 + 12px khoảng trống) */
+  }
+
+  .chat-icon-m{
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+  }
+  .chat-icon-f{
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+  }
+</style>
+
+<!-- Nút Facebook -->
+<div class="chat-btn" id="chatBtnFacebook">
+  <img src="/Facebook_Logo_Primary.png" alt={i18next.t('landing.chat_messenger.facebook_alt')} class="chat-icon-f" />
+</div>
+
+<!-- Nút Messenger -->
+<div class="chat-btn" id="chatBtnMessenger">
+  <img src="/messeger.svg" alt={i18next.t('landing.chat_messenger.messenger_alt')} class="chat-icon-m" />
+</div>
+
+<script is:inline>
+  // Link Messenger
+  const messengerLink = "https://m.me/miagent.io?text=Xin%20ch%C3%A0o";
+  document.getElementById("chatBtnMessenger").addEventListener("click", () => {
+    window.open(messengerLink, "_blank");
+  });
+
+  // Link Facebook
+  const facebookLink = "https://www.facebook.com/miagent.io/#";
+  document.getElementById("chatBtnFacebook").addEventListener("click", () => {
+    window.open(facebookLink, "_blank");
+  });
+</script>

@@ -1,5 +1,9 @@
 ---
 // src/pages/pricing.astro
+import i18next from "../../i18n";
+
+const currentLang = i18next.language;
+const baseUrl = currentLang === "en" ? "/en" : "/vi";
 ---
 
 <section class="py-16 md:py-20">
@@ -11,17 +15,17 @@
         class="bg-gradient-to-br from-gray-300 via-white to-gray-400 border-base-200 rounded-2xl shadow-md p-4 border-2 relative hover:shadow-lg transition flex flex-col md:order-1"
       >
         <div class="flex-1">
-          <h3 class="text-lg font-bold text-black mb-2">DÙNG THỬ</h3>
+          <h3 class="text-lg font-bold text-black mb-2">{i18next.t('pricing.plans.trial.name')}</h3>
           <p class="text-sm mb-4 text-black text-left opacity-80">
-            Dành cho những doanh nghiệp vừa và nhỏ muốn làm việc với AI Agent
+            {i18next.t('pricing.plans.trial.description')}
           </p>
-          <div class="text-3xl font-bold text-black mb-1 mt-4">Miễn Phí</div>
+          <div class="text-3xl font-bold text-black mb-1 mt-4">{i18next.t('pricing.plans.trial.price')}</div>
         </div>
         <a
-          href="/checkout"
+          href={baseUrl + "/checkout"}
           class="block text-center bg-black text-white font-semibold rounded-lg py-2 hover:bg-green-400 transition mt-4 shadow-sm"
         >
-          Mua ngay
+          {i18next.t('pricing.plans.buttons.buy_now')}
         </a>
       </div>
 
@@ -30,47 +34,45 @@
         class="bg-white rounded-2xl shadow-inner p-8 border-2 border-gray-200 flex flex-col text-black text-base md:order-6"
       >
         <h4 class="font-bold text-gray-800 mb-4 border-b pb-2">
-          Chi tiết Gói Dùng Thử:
+          {i18next.t('pricing.plans.trial.details_title')}
         </h4>
         <ul class="space-y-2 text-left text-gray-700">
           <li class="mb-2">
-            <span class="text-green-500">✔</span> Tài khoản truy cập: 1
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.trial.features.0')}
           </li>
           <li>
-            <span class="text-green-500">✔</span> Tin nhắn AI xử lý / tháng: 200
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.trial.features.1')}
           </li>
           <li class="mb-8">
-            <span class="text-green-500">✔</span> Trang hội thoại đa kênh: 1
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.trial.features.2')}
           </li>
 
           <li>
-            <span class="text-green-500">✔</span> AI trả lời phản hồi cơ bản: Có
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.trial.features.3')}
           </li>
           <li class="mb-8">
-            <span class="text-red-500">✘</span> AI trả lời bằng hình ảnh: Không
+            <span class="text-red-500">✘</span> {i18next.t('pricing.plans.trial.features.4')}
           </li>
           <li>
-            <span class="text-red-500">✘</span> AI xử lý Ticket đa kênh: Không
+            <span class="text-red-500">✘</span> {i18next.t('pricing.plans.trial.features.5')}
           </li>
           <li>
-            <span class="text-red-500">✘</span> Phân tích cảm xúc & chủ đề: Không
-            hỗ trợ
+            <span class="text-red-500">✘</span> {i18next.t('pricing.plans.trial.features.6')}
           </li>
           <li class="mb-8">
-            <span class="text-red-500">✘</span> Tác vụ mở rộng AI: Không
+            <span class="text-red-500">✘</span> {i18next.t('pricing.plans.trial.features.7')}
           </li>
           <li>
-            <span class="text-red-500">✘</span> Chuyên viên hỗ trợ: Không hỗ trợ
+            <span class="text-red-500">✘</span> {i18next.t('pricing.plans.trial.features.8')}
           </li>
           <li>
-            <span class="text-green-500">✔</span> Thiết lập & huấn luyện AI: Hạn
-            chế
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.trial.features.9')}
           </li>
           <li>
-            <span class="text-red-500">✘</span> Chiến dịch tự động: Không hỗ trợ
+            <span class="text-red-500">✘</span> {i18next.t('pricing.plans.trial.features.10')}
           </li>
           <li>
-            <span class="text-green-500">✔</span> Ngôn ngữ & nền tảng: Đa ngôn ngữ
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.trial.features.11')}
           </li>
         </ul>
       </div>
@@ -80,18 +82,18 @@
         class="bg-white rounded-2xl shadow-md p-4 border-2 border-green-500 relative hover:shadow-lg transition flex flex-col md:order-2"
       >
         <div class="flex-1">
-          <h3 class="text-lg font-bold text-green-600 mb-2">KHỞI ĐẦU</h3>
+          <h3 class="text-lg font-bold text-green-600 mb-2">{i18next.t('pricing.plans.startup.name')}</h3>
           <p class="text-sm mb-4 text-gray-600 text-left">
-            Dành cho những doanh nghiệp vừa và nhỏ muốn làm việc với AI Agent
+            {i18next.t('pricing.plans.startup.description')}
           </p>
-          <div class="text-3xl font-bold text-gray-900 mb-1 mt-4">980,000đ</div>
-          <div class="text-gray-600 text-left">/tháng</div>
+          <div class="text-3xl font-bold text-gray-900 mb-1 mt-4">{i18next.t('pricing.plans.startup.price')}</div>
+          <div class="text-gray-600 text-left">{i18next.t('pricing.plans.startup.unit')}</div>
         </div>
         <a
-          href="/checkout"
+          href={baseUrl + "/checkout"}
           class="block text-center bg-black text-white font-semibold rounded-lg py-2 hover:bg-green-400 transition mt-4 shadow-sm"
         >
-          Mua ngay
+          {i18next.t('pricing.plans.buttons.buy_now')}
         </a>
       </div>
 
@@ -100,40 +102,39 @@
         class="bg-white rounded-2xl shadow-inner p-8 border-2 border-gray-200 flex flex-col text-black text-base md:order-7"
       >
         <h4 class="font-bold text-gray-800 mb-4 border-b pb-2">
-          Chi tiết Gói Khởi Đầu:
+          {i18next.t('pricing.plans.startup.details_title')}
         </h4>
         <ul class="space-y-2 text-left text-gray-700">
-          <li><span class="text-green-500">✔</span> Tài khoản truy cập: 3</li>
+          <li><span class="text-green-500">✔</span> {i18next.t('pricing.plans.startup.features.0')}</li>
           <li>
-            <span class="text-green-500">✔</span> Tin nhắn AI xử lý / tháng: 1,500
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.startup.features.1')}
           </li>
           <li class="mb-8">
-            <span class="text-green-500">✔</span> Trang hội thoại đa kênh: 5
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.startup.features.2')}
           </li>
 
           <li>
-            <span class="text-green-500">✔</span> AI trả lời phản hồi cơ bản: Có
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.startup.features.3')}
           </li>
           <li class="mb-8">
-            <span class="text-red-500">✘</span> AI trả lời bằng hình ảnh: Không
+            <span class="text-red-500">✘</span> {i18next.t('pricing.plans.startup.features.4')}
           </li>
           <li>
-            <span class="text-green-500">✔</span> AI xử lý Ticket đa kênh: Có
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.startup.features.5')}
           </li>
           <li>
-            <span class="text-red-500">✘</span> Phân tích cảm xúc & chủ đề: Không
-            hỗ trợ
+            <span class="text-red-500">✘</span> {i18next.t('pricing.plans.startup.features.6')}
           </li>
           <li class="mb-8">
-            <span class="text-red-500">✘</span> Tác vụ mở rộng AI: Không
+            <span class="text-red-500">✘</span> {i18next.t('pricing.plans.startup.features.7')}
           </li>
-          <li><span class="text-red-500">✘</span> Chuyên viên hỗ trợ: Không</li>
+          <li><span class="text-red-500">✘</span> {i18next.t('pricing.plans.startup.features.8')}</li>
           <li>
-            <span class="text-green-500">✔</span> Thiết lập & huấn luyện AI: Có
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.startup.features.9')}
           </li>
-          <li><span class="text-green-500">✔</span> Chiến dịch tự động: Có</li>
+          <li><span class="text-green-500">✔</span> {i18next.t('pricing.plans.startup.features.10')}</li>
           <li>
-            <span class="text-green-500">✔</span> Ngôn ngữ & nền tảng: Đa ngôn ngữ
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.startup.features.11')}
           </li>
         </ul>
       </div>
@@ -143,18 +144,18 @@
         class="bg-gradient-to-br from-black to-green-800 rounded-2xl shadow-lg p-4 border-2 border-white relative hover:shadow-xl transition overflow-hidden flex flex-col md:order-3"
       >
         <div class="flex-1">
-          <h3 class="text-lg font-bold text-white mb-2">CHUYÊN NGHIỆP</h3>
+          <h3 class="text-lg font-bold text-white mb-2">{i18next.t('pricing.plans.pro.name')}</h3>
           <p class="text-sm mb-4 text-white text-left opacity-90">
-            Dành cho doanh nghiệp vừa và lớn, cần AI Agent chuyên nghiệp
+            {i18next.t('pricing.plans.pro.description')}
           </p>
-          <div class="text-3xl font-bold text-white mb-1 mt-4">2,390,000đ</div>
-          <div class="text-white text-left">/tháng</div>
+          <div class="text-3xl font-bold text-white mb-1 mt-4">{i18next.t('pricing.plans.pro.price')}</div>
+          <div class="text-white text-left">{i18next.t('pricing.plans.pro.unit')}</div>
         </div>
         <a
-          href="/checkout"
+          href={baseUrl + "/checkout"}
           class="block text-center bg-green-600 text-white font-semibold rounded-lg py-2 hover:bg-blue-700 transition mt-4 shadow-md"
         >
-          Mua ngay
+          {i18next.t('pricing.plans.buttons.buy_now')}
         </a>
       </div>
 
@@ -163,40 +164,39 @@
         class="bg-white rounded-2xl shadow-inner p-8 border-2 border-gray-200 flex flex-col text-black text-base md:order-8"
       >
         <h4 class="font-bold text-gray-800 mb-4 border-b pb-2">
-          Chi tiết Gói Chuyên Nghiệp:
+          {i18next.t('pricing.plans.pro.details_title')}
         </h4>
         <ul class="space-y-2 text-left text-gray-700">
-          <li><span class="text-green-500">✔</span> Tài khoản truy cập: 5</li>
+          <li><span class="text-green-500">✔</span> {i18next.t('pricing.plans.pro.features.0')}</li>
           <li>
-            <span class="text-green-500">✔</span> Tin nhắn AI xử lý / tháng: 5,000
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.pro.features.1')}
           </li>
           <li class="mb-8">
-            <span class="text-green-500">✔</span> Trang hội thoại đa kênh: 10
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.pro.features.2')}
           </li>
 
           <li>
-            <span class="text-green-500">✔</span> AI trả lời phản hồi cơ bản: Có
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.pro.features.3')}
           </li>
           <li class="mb-8">
-            <span class="text-green-500">✔</span> AI trả lời bằng hình ảnh: Có
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.pro.features.4')}
           </li>
           <li>
-            <span class="text-green-500">✔</span> AI xử lý Ticket đa kênh: Có
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.pro.features.5')}
           </li>
           <li>
-            <span class="text-green-500">✔</span> Phân tích cảm xúc & chủ đề: Có
-            hỗ trợ
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.pro.features.6')}
           </li>
           <li class="mb-8">
-            <span class="text-green-500">✔</span> Tác vụ mở rộng AI: Không
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.pro.features.7')}
           </li>
-          <li><span class="text-green-500">✔</span> Chuyên viên hỗ trợ: Có</li>
+          <li><span class="text-green-500">✔</span> {i18next.t('pricing.plans.pro.features.8')}</li>
           <li>
-            <span class="text-green-500">✔</span> Thiết lập & huấn luyện AI: Có
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.pro.features.9')}
           </li>
-          <li><span class="text-green-500">✔</span> Chiến dịch tự động: Có</li>
+          <li><span class="text-green-500">✔</span> {i18next.t('pricing.plans.pro.features.10')}</li>
           <li>
-            <span class="text-green-500">✔</span> Ngôn ngữ & nền tảng: Đa ngôn ngữ
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.pro.features.11')}
           </li>
         </ul>
       </div>
@@ -208,24 +208,23 @@
         <span
           class="absolute top-0 right-0 bg-blue-900 text-white text-xs font-semibold px-3 py-1 rounded-bl-lg"
         >
-          Phổ biến
+          {i18next.t('pricing.plans.scale.badge')}
         </span>
         <div class="flex-1">
-          <h3 class="text-lg font-bold text-blue-900 mb-2">MỞ RỘNG</h3>
+          <h3 class="text-lg font-bold text-blue-900 mb-2">{i18next.t('pricing.plans.scale.name')}</h3>
           <p class="text-sm mb-4 text-black text-left">
-            Dành cho doanh nghiệp lớn, cần AI Agent chuyên nghiệp mở rộng hệ
-            thống
+            {i18next.t('pricing.plans.scale.description')}
           </p>
           <div class="text-3xl font-bold text-gray-900 mb-1 mt-4">
-            6,900,000đ
+            {i18next.t('pricing.plans.scale.price')}
           </div>
-          <div class="text-gray-600 text-left">/tháng</div>
+          <div class="text-gray-600 text-left">{i18next.t('pricing.plans.scale.unit')}</div>
         </div>
         <a
-          href="/checkout"
+          href={baseUrl + "/checkout"}
           class="block text-center bg-blue-600 text-white font-semibold rounded-lg py-2 hover:bg-blue-700 transition mt-4 shadow-md"
         >
-          Mua ngay
+          {i18next.t('pricing.plans.buttons.buy_now')}
         </a>
       </div>
 
@@ -234,42 +233,41 @@
         class="bg-white rounded-2xl shadow-inner p-8 border-2 border-gray-200 flex flex-col text-black text-base md:order-9"
       >
         <h4 class="font-bold text-gray-800 mb-4 border-b pb-2">
-          Chi tiết Gói Mở Rộng:
+          {i18next.t('pricing.plans.scale.details_title')}
         </h4>
         <ul class="space-y-2 text-left text-gray-700">
-          <li><span class="text-green-500">✔</span> Tài khoản truy cập: 10</li>
+          <li><span class="text-green-500">✔</span> {i18next.t('pricing.plans.scale.features.0')}</li>
           <li>
-            <span class="text-green-500">✔</span> Tin nhắn AI xử lý / tháng: 15,000
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.scale.features.1')}
           </li>
           <li class="mb-8">
-            <span class="text-green-500">✔</span> Trang hội thoại đa kênh: 50
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.scale.features.2')}
           </li>
 
           <li>
-            <span class="text-green-500">✔</span> AI trả lời phản hồi cơ bản: Có
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.scale.features.3')}
           </li>
           <li class="mb-8">
-            <span class="text-green-500">✔</span> AI trả lời bằng hình ảnh: Có
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.scale.features.4')}
           </li>
           <li>
-            <span class="text-green-500">✔</span> AI xử lý Ticket đa kênh: Có
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.scale.features.5')}
           </li>
           <li>
-            <span class="text-green-500">✔</span> Phân tích cảm xúc & chủ đề: Có
-            hỗ trợ
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.scale.features.6')}
           </li>
           <li class="mb-8">
-            <span class="text-green-500">✔</span> Tác vụ mở rộng AI: 5 tác vụ
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.scale.features.7')}
           </li>
           <li>
-            <span class="text-green-500">✔</span> Chuyên viên hỗ trợ: Ưu tiên
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.scale.features.8')}
           </li>
           <li>
-            <span class="text-green-500">✔</span> Thiết lập & huấn luyện AI: Có
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.scale.features.9')}
           </li>
-          <li><span class="text-green-500">✔</span> Chiến dịch tự động: Có</li>
+          <li><span class="text-green-500">✔</span> {i18next.t('pricing.plans.scale.features.10')}</li>
           <li>
-            <span class="text-green-500">✔</span> Ngôn ngữ & nền tảng: Đa ngôn ngữ
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.scale.features.11')}
           </li>
         </ul>
       </div>
@@ -280,18 +278,18 @@
       >
         <div class="flex-1">
           <h3 class="text-lg font-bold text-orange-600 mb-2">
-            DOANH NGHIỆP LỚN
+            {i18next.t('pricing.plans.enterprise.name')}
           </h3>
           <p class="text-sm mb-4 text-black text-left">
-            Dành cho doanh nghiệp lớn, cần AI Agent cho các mục đích phức tạp.
+            {i18next.t('pricing.plans.enterprise.description')}
           </p>
-          <div class="text-3xl font-bold text-black mb-1 mt-4">LIÊN HỆ</div>
+          <div class="text-3xl font-bold text-black mb-1 mt-4">{i18next.t('pricing.plans.enterprise.price')}</div>
         </div>
         <a
-          href="/checkout"
+          href={baseUrl + "/checkout"}
           class="block text-center bg-orange-600 text-white font-semibold rounded-lg py-2 hover:bg-blue-700 transition mt-4 shadow-md"
         >
-          Liên hệ ngay
+          {i18next.t('pricing.plans.buttons.contact_now')}
         </a>
       </div>
 
@@ -300,45 +298,43 @@
         class="bg-white rounded-2xl shadow-inner p-8 border-2 border-gray-200 flex flex-col text-black text-base md:order-10"
       >
         <h4 class="font-bold text-gray-800 mb-4 border-b pb-2">
-          Chi tiết Gói Doanh Nghiệp Lớn:
+          {i18next.t('pricing.plans.enterprise.details_title')}
         </h4>
         <ul class="space-y-2 text-left text-gray-700">
           <li>
-            <span class="text-green-500">✔</span> Tài khoản truy cập: tùy chỉnh
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.enterprise.features.0')}
           </li>
           <li>
-            <span class="text-green-500">✔</span> Tin nhắn AI xử lý / tháng: tùy
-            chỉnh
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.enterprise.features.1')}
           </li>
           <li class="mb-8">
-            <span class="text-green-500">✔</span> Trang hội thoại đa kênh: tùy chỉnh
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.enterprise.features.2')}
           </li>
 
           <li>
-            <span class="text-green-500">✔</span> AI trả lời phản hồi cơ bản: Có
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.enterprise.features.3')}
           </li>
           <li class="mb-8">
-            <span class="text-green-500">✔</span> AI trả lời bằng hình ảnh: Có
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.enterprise.features.4')}
           </li>
           <li>
-            <span class="text-green-500">✔</span> AI xử lý Ticket đa kênh: Có
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.enterprise.features.5')}
           </li>
           <li>
-            <span class="text-green-500">✔</span> Phân tích cảm xúc & chủ đề: Có
-            hỗ trợ
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.enterprise.features.6')}
           </li>
           <li class="mb-8">
-            <span class="text-green-500">✔</span> Tác vụ mở rộng AI: tùy chỉnh
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.enterprise.features.7')}
           </li>
           <li>
-            <span class="text-green-500">✔</span> Chuyên viên hỗ trợ: Ưu tiên
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.enterprise.features.8')}
           </li>
           <li>
-            <span class="text-green-500">✔</span> Thiết lập & huấn luyện AI: Có
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.enterprise.features.9')}
           </li>
-          <li><span class="text-green-500">✔</span> Chiến dịch tự động: Có</li>
+          <li><span class="text-green-500">✔</span> {i18next.t('pricing.plans.enterprise.features.10')}</li>
           <li>
-            <span class="text-green-500">✔</span> Ngôn ngữ & nền tảng: tùy chỉnh
+            <span class="text-green-500">✔</span> {i18next.t('pricing.plans.enterprise.features.11')}
           </li>
         </ul>
       </div>
@@ -347,10 +343,10 @@
 
   <p style="text-align: center; margin-bottom: 60px;margin-top: 60px;">
     <a
-      href="/"
+      href={baseUrl + "/"}
       style="font-weight: bold; font-size: 40px; text-decoration: underline; text-decoration-color: purple; color: inherit;"
     >
-      MiAgent KHÁC BIỆT SO VỚI ĐỐI THỦ
+      {i18next.t('pricing.comparison.title')}
     </a>
   </p>
   <!-- Bảng sản phẩm -->
@@ -360,75 +356,39 @@
         <thead class="bg-gray-100 text-gray-700">
           <tr>
             <th class="px-4 py-3 rounded-tl-xl">#</th>
-            <th class="px-4 py-3">Tính năng nổi bật</th>
-            <th class="px-4 py-3">Mô tả chi tiết</th>
+            <th class="px-4 py-3">{i18next.t('pricing.comparison.headers.feature')}</th>
+            <th class="px-4 py-3">{i18next.t('pricing.comparison.headers.detail')}</th>
             <th class="px-4 py-3 rounded-tr-xl"
-              >Giá trị khác biệt so với đối thủ</th
+              >{i18next.t('pricing.comparison.headers.diff')}</th
             >
           </tr>
         </thead>
         <tbody class="divide-y">
           <tr>
             <td class="px-4 py-4 font-semibold">1</td>
-            <td class="px-4 py-4">Nhận diện & xử lý hình ảnh sản phẩm</td>
-            <td class="px-4 py-4">
-              • Gửi và phân tích hình ảnh trực tiếp trong cuộc trò chuyện.<br />
-              • AI tự động nhận diện hình ảnh khách hàng gửi để xác định sản phẩm
-              họ đang quan tâm.
-            </td>
-            <td class="px-4 py-4">
-              • Đa số nền tảng chỉ hỗ trợ chat văn bản.<br />
-              • MiAgent hiểu hình ảnh như con người, cho phép khách hàng chỉ cần
-              chụp sản phẩm là AI đã nhận ra và tư vấn đúng nhu cầu.
-            </td>
+            <td class="px-4 py-4">{i18next.t('pricing.comparison.rows.0.feature')}</td>
+            <td class="px-4 py-4" set:html={i18next.t('pricing.comparison.rows.0.detail')} />
+            <td class="px-4 py-4" set:html={i18next.t('pricing.comparison.rows.0.diff')} />
           </tr>
           <tr>
             <td class="px-4 py-4 font-semibold">2</td>
-            <td class="px-4 py-4">Hiểu & phân tích nội dung video</td>
-            <td class="px-4 py-4">
-              • Cho phép gửi video sản phẩm ngay trong khung chat.<br />
-              • AI có thể đọc hiểu, trích xuất nội dung và phân tích video khách
-              hàng gửi lại.
-            </td>
-            <td class="px-4 py-4">
-              • Các đối thủ gần như không xử lý video.<br />
-              • MiAgent phân tích cả nội dung và cảm xúc trong video để xác định
-              mức độ quan tâm hoặc vấn đề khách hàng đang gặp.
-            </td>
+            <td class="px-4 py-4">{i18next.t('pricing.comparison.rows.1.feature')}</td>
+            <td class="px-4 py-4" set:html={i18next.t('pricing.comparison.rows.1.detail')} />
+            <td class="px-4 py-4" set:html={i18next.t('pricing.comparison.rows.1.diff')} />
           </tr>
           <tr>
             <td class="px-4 py-4 font-semibold">3</td>
-            <td class="px-4 py-4">Hiểu ý định & kế thừa hội thoại tự nhiên</td>
-            <td class="px-4 py-4">
-              • Nhận diện chính xác ý định của khách hàng và chỉ phản hồi khi đủ
-              ngữ cảnh.<br />
-              • AI kế thừa toàn bộ lịch sử hội thoại để tiếp tục tư vấn liền mạch
-              như con người.
-            </td>
-            <td class="px-4 py-4">
-              • Đối thủ thường mất ngữ cảnh khi đổi người chat hoặc khi khách
-              quay lại sau vài ngày.<br />
-              • MiAgent giữ mạch hội thoại xuyên suốt, giúp trải nghiệm tự nhiên
-              và chuyên nghiệp hơn.
-            </td>
+            <td class="px-4 py-4">{i18next.t('pricing.comparison.rows.2.feature')}</td>
+            <td class="px-4 py-4" set:html={i18next.t('pricing.comparison.rows.2.detail')} />
+            <td class="px-4 py-4" set:html={i18next.t('pricing.comparison.rows.2.diff')} />
           </tr>
           <tr>
             <td class="px-4 py-4 font-semibold">4</td>
             <td class="px-4 py-4"
-              >Kết nối hệ thống & tự động hóa toàn chuỗi bán hàng</td
+              >{i18next.t('pricing.comparison.rows.3.feature')}</td
             >
-            <td class="px-4 py-4">
-              • Tích hợp CRM, ERP cùng các nền tảng Facebook, Zalo OA, Shopee,
-              Amazon, TikTok Shop, Spotify…<br />
-              • Remarketing thông minh: tự động gửi tin chăm sóc theo hành vi mua
-              hàng, cảnh báo nhân viên khi có tín hiệu xấu.
-            </td>
-            <td class="px-4 py-4 rounded-b-xl">
-              • Trong khi các nền tảng khác chỉ dừng ở chatbot chăm sóc khách
-              hàng,<br />
-              • MiAgent hoạt động như một hệ thống AI Sales – tự động hóa toàn chuỗi
-              bán hàng, từ tương tác, phân tích đến chốt đơn.
-            </td>
+            <td class="px-4 py-4" set:html={i18next.t('pricing.comparison.rows.3.detail')} />
+            <td class="px-4 py-4 rounded-b-xl" set:html={i18next.t('pricing.comparison.rows.3.diff')} />
           </tr>
         </tbody>
       </table>
@@ -473,22 +433,21 @@
           </div>
 
           <p class="text-xl font-medium text-gray-300">
-            MiAgent giúp doanh nghiệp tự động hóa quy trình và phục vụ khách
-            hàng nhanh chóng
+            {i18next.t('pricing.footer_banner.description')}
           </p>
 
           <div class="flex items-center justify-center gap-4">
             <a
-              href="/contact"
+              href={baseUrl + "/contact"}
               class="bg-green-400 text-white font-semibold rounded-lg py-2 px-6 hover:bg-green-500 transition"
             >
-              Đặt lịch tư vấn
+              {i18next.t('pricing.footer_banner.buttons.consult')}
             </a>
             <a
-              href="/pricing"
+              href={baseUrl + "/pricing"}
               class="bg-green-400 text-white font-semibold rounded-lg py-2 px-6 hover:bg-green-500 transition"
             >
-              Tham khảo giá
+              {i18next.t('pricing.footer_banner.buttons.pricing')}
             </a>
           </div>
         </div>

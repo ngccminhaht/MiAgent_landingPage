@@ -1,0 +1,38 @@
+---
+import i18next from "../../i18n";
+i18next.changeLanguage("en");
+
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import WhyChooseUs from "../../components/landing/WhyChooseUs.astro";
+import Hero from "../../components/landing/Hero.astro";
+import SectionTwo from "../../components/landing/SectionTwo.astro";
+import SectionAIforWork from "../../components/landing/SectionAIforWork.astro";
+import SectionAIforService from "../../components/landing/SectionAIforService.astro";
+import SectionAIforWorkflow from "../../components/landing/SectionAIforWorkflow.astro";
+import TestHero from "../../components/landing/TestHero.astro";
+import SectionCase from "../../components/landing/SectionCase.astro";
+import SectionOne from "../../components/landing/SectionOne.astro";
+import HowItWorks from "../../components/landing/HowItWorks.astro";
+import OnlyMiAgent from "../../components/landing/OnlyMiAgent.astro";
+import Page4 from "../../components/landing/Page4.astro";
+import ChatWidget from "../../components/features/chat/ChatWidget";
+import RotatingIcon from "../../components/features/interactive/Rotating-icon";
+import ChatWidget2 from "../../components/features/chat/ChatWidget2";
+import ChatWidget3 from "../../components/features/chat/ChatWidget3";
+import ChatWidget4 from "../../components/features/chat/ChatWidget4";
+import ChatMessenger from "../../components/features/chat/ChatMessenger.astro";
+---
+
+<BaseLayout>
+  <ChatMessenger />
+  <Hero />
+  <WhyChooseUs />
+  <SectionAIforWork/>
+  <OnlyMiAgent/>
+  <Page4/>
+</BaseLayout>
+
+<script is:inline>
+  // Script logic needs to be preserved or adjusted if it depends on specific DOM elements
+  // Assuming no language-specific logic here that breaks
+</script>

@@ -7,16 +7,17 @@
 
 // Import các icon Lucide (Nếu bạn đang sử dụng tích hợp Lucide trong Astro,
 // nếu không, chúng ta sẽ dùng SVG thô như bên dưới)
+import i18next from "../../i18n";
 ---
 
 <section id="about-miagent" class="py-20 sm:py-32 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center max-w-4xl mx-auto mb-16">
       <h1 class="text-6xl font-extrabold text-gray-900 tracking-tight mb-4">
-        Về MiAgent AI
+        {i18next.t('about.title')}
       </h1>
       <p class="text-3xl font-medium text-gray-600 leading-relaxed">
-        Trợ Lý AI Chuyên Nghiệp Cho Doanh Nghiệp và Các Nhà Bán Lẻ
+        {i18next.t('about.subtitle')}
       </p>
     </div>
 
@@ -26,16 +27,10 @@
       <h2
         class="text-3xl font-extrabold text-blue-700 mb-4 flex items-center gap-3"
       >
-        Sứ Mệnh Của Chúng Tôi: Khai Phóng Tiềm Năng Bán Hàng
+        {i18next.t('about.mission.title')}
       </h2>
       <p class="text-lg text-gray-700 leading-relaxed">
-        Sứ mệnh cốt lõi của MiAgent AI là: Cách mạng hóa cách doanh nghiệp tương
-        tác và bán hàng thông qua ứng dụng Trí tuệ Nhân tạo . Chúng tôi tin
-        rằng, với sự hỗ trợ của công nghệ AI Agent độc quyền, mọi doanh nghiệp
-        đều có khả năng đạt được hiệu suất bán hàng vượt trội, tiết kiệm đáng kể
-        chi phí vận hành, và cung cấp trải nghiệm khách hàng nhất quán, không
-        gián đoạn (24/7). Chúng tôi hướng tới việc chuyển đổi Chatbot truyền
-        thống thành các AI Sales Agent thực sự tự nhiên như con người.
+        {i18next.t('about.mission.content')}
       </p>
     </div>
 
@@ -43,16 +38,12 @@
       <h2
         class="text-3xl font-extrabold text-gray-900 mb-6 flex items-center gap-3"
       >
-        Chúng Tôi Là Ai?
+        {i18next.t('about.who_we_are.title')}
       </h2>
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
         <div class="lg:col-span-1">
           <p class="text-lg text-gray-700 leading-relaxed">
-            MiAgent AI được thành lập bởi một đội ngũ đa ngành, bao gồm các kỹ
-            sư phần mềm hàng đầu, chuyên gia về Học máy (Machine Learning) và
-            các chiến lược gia kinh doanh giàu kinh nghiệm. Tất cả chúng tôi đều
-            có chung một mục tiêu: Phát triển một Trợ lý AI có khả năng bán hàng
-            và giao tiếp phức tạp như một nhân viên sales chuyên nghiệp.
+            {i18next.t('about.who_we_are.description')}
           </p>
         </div>
 
@@ -60,32 +51,28 @@
           class="lg:col-span-2 p-6 border-l-4 border-green-500 bg-green-50/50 rounded-xl shadow-md"
         >
           <p class="text-xl font-semibold text-gray-800 mb-4">
-            Agent AI của chúng tôi không chỉ đơn thuần là công cụ hỏi đáp, mà
-            còn có khả năng:
+            {i18next.t('about.who_we_are.capabilities_title')}
           </p>
           <ul class="space-y-3">
             <li class="flex items-start">
               <div>
                 <strong class="text-gray-900"
-                  >Hiểu ngữ cảnh sâu sắc (Contextual Understanding):</strong
-                > Nhận diện chính xác ý định mua hàng, các câu hỏi gián tiếp, và
-                cả cảm xúc hoặc tone giọng của khách hàng.
+                  >{i18next.t('about.who_we_are.capabilities.0.title')}</strong
+                > {i18next.t('about.who_we_are.capabilities.0.description')}
               </div>
             </li>
             <li class="flex items-start">
               <div>
                 <strong class="text-gray-900"
-                  >Thực hiện hành động thông minh (Actionable Intelligence):</strong
-                > Tích hợp khả năng lên đơn hàng, kiểm tra trạng thái tồn kho, và
-                tương tác với các hệ thống backend (CRM/ERP) trong thời gian thực.
+                  >{i18next.t('about.who_we_are.capabilities.1.title')}</strong
+                > {i18next.t('about.who_we_are.capabilities.1.description')}
               </div>
             </li>
             <li class="flex items-start">
               <div>
                 <strong class="text-gray-900"
-                  >Xử lý đa phương thức (Multimodal Capability):</strong
-                > Xử lý và tư vấn dựa trên nhiều loại dữ liệu, bao gồm văn bản và
-                hình ảnh sản phẩm do khách hàng gửi.
+                  >{i18next.t('about.who_we_are.capabilities.2.title')}</strong
+                > {i18next.t('about.who_we_are.capabilities.2.description')}
               </div>
             </li>
           </ul>
@@ -97,21 +84,17 @@
       <h2
         class="text-3xl font-extrabold text-gray-900 mb-6 flex items-center gap-3"
       >
-        Giá Trị Cốt Lõi Tạo Nên Sự Khác Biệt
+        {i18next.t('about.values.title')}
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div
           class="p-6 bg-gray-50 rounded-xl shadow-md border-t-4 border-blue-600 flex flex-col items-start"
         >
           <h3 class="text-xl font-bold text-gray-900 mb-3">
-            1. Công Nghệ Độc Quyền
+            {i18next.t('about.values.items.0.title')}
           </h3>
           <p class="text-gray-700">
-            Chúng tôi vượt qua giới hạn của các công cụ AI generic. MiAgent phát
-            triển và sở hữu các mô hình AI riêng biệt, được tinh chỉnh chuyên
-            sâu cho đặc thù ngành nghề và ngữ cảnh giao tiếp của thị trường Việt
-            Nam. Điều này đảm bảo tốc độ phản hồi nhanh, độ chính xác cao và khả
-            năng xử lý các cuộc hội thoại lắt léo vượt trội.
+            {i18next.t('about.values.items.0.description')}
           </p>
         </div>
 
@@ -119,14 +102,10 @@
           class="p-6 bg-gray-50 rounded-xl shadow-md border-t-4 border-green-600 flex flex-col items-start"
         >
           <h3 class="text-xl font-bold text-gray-900 mb-3">
-            2. Tích Hợp Sâu (Deep Integration)
+            {i18next.t('about.values.items.1.title')}
           </h3>
           <p class="text-gray-700">
-            MiAgent được thiết kế để trở thành trung tâm điều hành của hệ sinh
-            thái doanh nghiệp bạn. Khả năng kết nối API Real-time với các hệ
-            thống quản lý hiện có (như PanCake, Odoo, KiotViet, Haravan, và các
-            phần mềm CRM/ERP khác) là cam kết của chúng tôi nhằm cung cấp một
-            giải pháp AI thực sự hữu dụng, không chỉ là công cụ đứng độc lập.
+            {i18next.t('about.values.items.1.description')}
           </p>
         </div>
 
@@ -134,16 +113,9 @@
           class="p-6 bg-gray-50 rounded-xl shadow-md border-t-4 border-red-600 flex flex-col items-start"
         >
           <h3 class="text-xl font-bold text-gray-900 mb-3">
-            3. Hiệu suất Định hướng
+            {i18next.t('about.values.items.2.title')}
           </h3>
-          <p class="text-gray-700">
-            Mọi tính năng và cải tiến mà chúng tôi thực hiện đều hướng tới mục
-            tiêu cuối cùng của khách hàng: đạt được Hiệu suất Kinh doanh vượt
-            trội. MiAgent AI là một khoản đầu tư được thiết kế để mang lại kết
-            quả rõ ràng: <strong class="text-red-600">Tăng 60% Doanh thu</strong
-            > và <strong class="text-red-600">Giảm 80% Chi phí</strong> vận hành
-            đội ngũ sale bán hàng.
-          </p>
+          <p class="text-gray-700" set:html={i18next.t('about.values.items.2.description')} />
         </div>
       </div>
     </div>
@@ -152,20 +124,13 @@
       <h2
         class="text-3xl font-extrabold text-gray-900 mb-4 flex justify-center items-center gap-3"
       >
-        Tầm Nhìn Tương Lai
+        {i18next.t('about.vision.title')}
       </h2>
       <p class="text-lg text-gray-700 leading-relaxed mb-4">
-        Chúng tôi hình dung ra một tương lai nơi các MiAgent AI làm việc hài hòa
-        và hiệu quả với đội ngũ nhân viên của bạn. MiAgent sẽ đảm nhận tất cả
-        các nhiệm vụ bán hàng và hỗ trợ khách hàng lặp đi lặp lại hoặc có khối
-        lượng lớn, giúp giải phóng nhân viên của bạn để họ có thể tập trung vào
-        những tương tác chiến lược, xây dựng mối quan hệ lâu dài, và các hoạt
-        động sáng tạo, cần sự can thiệp của con người.
+        {i18next.t('about.vision.content_1')}
       </p>
       <p class="text-lg text-gray-700 font-medium">
-        Chúng tôi sẽ liên tục mở rộng khả năng của Agent AI để thích nghi với
-        mọi yêu cầu đặc thù của ngành: từ Giáo dục, Ngân hàng, đến Nhà hàng, đảm
-        bảo MiAgent luôn là giải pháp dẫn đầu về AI Agent chuyên nghiệp.
+        {i18next.t('about.vision.content_2')}
       </p>
     </div>
   </div>

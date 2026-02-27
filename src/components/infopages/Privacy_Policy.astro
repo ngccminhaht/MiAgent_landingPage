@@ -1,3 +1,6 @@
+---
+import i18next from "../../i18n";
+---
 <section class="bg-white relative overflow-hidden">
   <div class="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-5"></div>
 
@@ -6,10 +9,10 @@
       <h1
         class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl font-display"
       >
-        Chính sách bảo mật
+        {i18next.t('legal.privacy.title')}
       </h1>
       <p class="mt-4 text-base leading-7 text-gray-500">
-        Hiệu lực từ ngày: 01 tháng 01 năm 2025
+        {i18next.t('legal.privacy.effective_date')}
       </p>
       <div class="mt-6 w-24 h-1 bg-green-500 mx-auto rounded-full"></div>
     </div>

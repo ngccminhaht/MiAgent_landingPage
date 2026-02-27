@@ -1,3 +1,12 @@
+---
+import i18next from "../../i18n";
+const sections = i18next.t('legal.payment.sections', { returnObjects: true }) as any;
+const section1 = sections[0];
+const section2 = sections[1];
+const section3 = sections[2];
+const section4 = sections[3];
+const section5 = sections[4];
+---
 <section class="bg-white relative overflow-hidden">
   <div class="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-5"></div>
 
@@ -8,10 +17,10 @@
       <h1
         class="text-3xl tracking-tight font-bold text-gray-900 md:text-5xl font-display"
       >
-        Chính sách thanh toán
+        {i18next.t('legal.payment.title')}
       </h1>
       <p class="mt-4 text-base leading-7 text-gray-500">
-        Hiệu lực từ ngày: 01 tháng 01 năm 2025
+        {i18next.t('legal.payment.effective_date')}
       </p>
       <div class="mt-6 w-24 h-1 bg-green-500 mx-auto rounded-full"></div>
     </div>
@@ -20,34 +29,21 @@
       class="mx-auto max-w-[48rem] prose prose-lg prose-green text-gray-600 prose-h3:text-gray-900 prose-h3:text-xl prose-a:font-semibold prose-a:text-green-600 hover:prose-a:text-green-800"
     >
       <p class="lead">
-        Chính sách này quy định về các phương thức thanh toán, quy trình gia
-        hạn, xuất hóa đơn và các điều kiện hoàn tiền khi sử dụng phần mềm Mi
-        Agent.
+        {i18next.t('legal.payment.intro')}
       </p>
 
-      <h3>1. Cước phí và Chu kỳ thanh toán</h3>
+      <h3>{section1.title}</h3>
       <p>
-        Cước phí sử dụng phần mềm được tính theo gói dịch vụ (Subscription) dựa
-        trên số lượng tính năng và thời gian sử dụng:
+        {section1.content}
       </p>
       <ul>
-        <li>
-          <strong>Gói tháng:</strong> Thanh toán từng tháng, tự động gia hạn vào cùng
-          ngày của tháng tiếp theo.
-        </li>
-        <li>
-          <strong>Gói năm:</strong> Thanh toán 1 lần cho 12 tháng (thường có ưu đãi
-          giảm giá), tự động gia hạn sau khi hết hạn.
-        </li>
-        <li>
-          <strong>Thay đổi gói:</strong> Khách hàng có thể nâng cấp (Upgrade) gói
-          cước bất kỳ lúc nào. Chi phí chênh lệch sẽ được hệ thống tính toán tự động
-          dựa trên thời gian còn lại.
-        </li>
+        {section1.items.map((item) => (
+            <li set:html={item}></li>
+        ))}
       </ul>
 
-      <h3>2. Hình thức thanh toán</h3>
-      <p>MiAgent hỗ trợ 3 hình thức thanh toán chính:</p>
+      <h3>{section2.title}</h3>
+      <p>{section2.content}</p>
 
       <div
         class="not-prose my-6 bg-green-50 p-6 rounded-2xl border border-green-200 shadow-sm"
@@ -67,113 +63,80 @@
               d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"
             ></path></svg
           >
-          Hình thức 1: Chuyển khoản ngân hàng (Ưu tiên)
+          {section2.method1.title}
         </h4>
-        <p class="text-sm text-gray-700 mb-4">
-          Áp dụng cho tất cả các gói dịch vụ. Dịch vụ được kích hoạt trong vòng <strong
-            >2h làm việc</strong
-          > sau khi nhận được tiền.
-        </p>
+        <p class="text-sm text-gray-700 mb-4" set:html={section2.method1.description}></p>
 
         <div class="bg-white p-5 rounded-xl border border-green-100 grid gap-3">
           <div
             class="flex justify-between items-center border-b border-gray-100 pb-2"
           >
-            <span class="text-gray-500 text-sm">Ngân hàng</span>
+            <span class="text-gray-500 text-sm">{section2.method1.bank_info.bank}</span>
             <span class="font-bold text-gray-900 text-lg"
-              >MB BANK (Quân Đội)</span
+              >{section2.method1.bank_info.bank_name}</span
             >
           </div>
           <div
             class="flex justify-between items-center border-b border-gray-100 pb-2"
           >
-            <span class="text-gray-500 text-sm">Số tài khoản</span>
+            <span class="text-gray-500 text-sm">{section2.method1.bank_info.account_number}</span>
             <span
               class="font-mono font-bold text-2xl text-green-600 tracking-wider"
-              >2222233666666</span
+              >{section2.method1.bank_info.account_number_value}</span
             >
           </div>
           <div class="flex justify-between items-center">
-            <span class="text-gray-500 text-sm">Chủ tài khoản</span>
+            <span class="text-gray-500 text-sm">{section2.method1.bank_info.account_holder}</span>
             <span class="font-bold text-gray-900 text-lg uppercase"
-              >NGUYEN HAI LONG</span
+              >{section2.method1.bank_info.account_holder_value}</span
             >
           </div>
         </div>
-        <p class="text-xs text-gray-500 mt-3 italic">
-          * Nội dung chuyển khoản: <strong
-            >[Tên Khách Hàng/SĐT] - [Gói Dịch Vụ]</strong
-          >
-        </p>
+        <p class="text-xs text-gray-500 mt-3 italic" set:html={section2.method1.note}></p>
       </div>
 
-      <h4>Hình thức 2: Thanh toán Online (Visa/Mastercard/Ví điện tử)</h4>
-      <p>
-        Thanh toán trực tiếp trên website thông qua cổng thanh toán bảo mật.
-        Dịch vụ sẽ được kích hoạt <strong>ngay lập tức</strong> sau khi giao dịch
-        thành công.
-      </p>
+      <h4>{section2.method2.title}</h4>
+      <p set:html={section2.method2.description}></p>
 
-      <h4>Hình thức 3: Thanh toán trực tiếp tại văn phòng</h4>
-      <p>
-        Khách hàng tại Hà Nội có thể đến văn phòng để được tư vấn, ký hợp đồng
-        và thanh toán:
-      </p>
+      <h4>{section2.method3.title}</h4>
+      <p>{section2.method3.description}</p>
       <ul>
-        <li>
-          <strong>Địa chỉ:</strong> Tầng 8, Tòa nhà Mitec, Phường Yên Hoà, Quận Cầu
-          Giấy, Hà Nội.
-        </li>
-        <li><strong>Giờ làm việc:</strong> 08:30 - 17:30 (Thứ 2 - Thứ 6).</li>
+        {section2.method3.items.map((item) => (
+            <li set:html={item}></li>
+        ))}
       </ul>
 
-      <h3>3. Chính sách hoàn tiền (Refund Policy)</h3>
-      <p>Chúng tôi cam kết bảo vệ quyền lợi khách hàng:</p>
+      <h3>{section3.title}</h3>
+      <p>{section3.content}</p>
       <ul>
-        <li>
-          <strong>Hoàn tiền trong 7 ngày:</strong> Nếu quý khách không hài lòng với
-          dịch vụ trong 7 ngày đầu tiên đăng ký mới, chúng tôi sẽ hoàn lại 100% chi
-          phí.
-        </li>
-        <li>
-          <strong>Lỗi hệ thống:</strong> Hoàn tiền tương ứng với thời gian gián đoạn
-          nếu lỗi xuất phát từ máy chủ MiAgent quá 24h.
-        </li>
-        <li>
-          <strong>Không hoàn tiền:</strong> Đối với việc đơn phương chấm dứt hợp đồng
-          trước thời hạn hoặc vi phạm điều khoản sử dụng (spam, lừa đảo...).
-        </li>
+        {section3.items.map((item) => (
+            <li set:html={item}></li>
+        ))}
       </ul>
 
-      <h3>4. Quy định về Hóa đơn (VAT)</h3>
+      <h3>{section4.title}</h3>
       <ul>
-        <li>Giá niêm yết trên website chưa bao gồm 10% VAT.</li>
-        <li>
-          Để lấy hóa đơn GTGT, quý khách vui lòng điền thông tin Mã số thuế tại
-          bước thanh toán hoặc liên hệ bộ phận kế toán trong vòng <strong
-            >3 ngày</strong
-          > kể từ khi thanh toán.
-        </li>
-        <li>Hóa đơn điện tử (e-invoice) sẽ được gửi qua email đăng ký.</li>
+        {section4.items.map((item) => (
+            <li set:html={item}></li>
+        ))}
       </ul>
 
-      <h3>5. Hỗ trợ thanh toán</h3>
+      <h3>{section5.title}</h3>
       <div class="mt-8 p-4 bg-gray-50 rounded-lg border-l-4 border-green-500">
         <p class="font-bold text-gray-900">
-          Mọi thắc mắc về thanh toán xin liên hệ:
+          {section5.contact_info.title}
         </p>
         <p class="mt-2 text-gray-700">
-          Tổng đài hỗ trợ: <a
+          {section5.contact_info.hotline} <a
             href="tel:0987654321"
             class="font-bold text-green-600 hover:underline">0708207777</a
           >
         </p>
-        <p class="text-gray-700">Email: billing@miagent.io</p>
+        <p class="text-gray-700">{section5.contact_info.email} billing@miagent.io</p>
       </div>
 
       <p class="mt-8 text-center font-medium text-gray-900">
-        Xin chân thành cảm ơn quý khách hàng đã tin tưởng sử dụng dịch vụ của Mi
-        Agent!
+        {i18next.t('legal.payment.footer')}
       </p>
     </div>
   </div>
