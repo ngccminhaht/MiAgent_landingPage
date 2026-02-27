@@ -2,7 +2,7 @@
 import i18next from "../../i18n";
 
 const currentLang = i18next.language;
-const baseUrl = currentLang === "en" ? "/en" : "/vi";
+const baseUrl = currentLang === "en" ? "/en" : "";
 
 // Server-side logic for language switching
 const pathname = Astro.url.pathname;
@@ -12,10 +12,9 @@ let switchLabel = "";
 let mobileSwitchLabel = "";
 
 if (isEn) {
-  // Currently EN, switch to VI
-  switchUrl = pathname.replace(/^\/en(\/|$)/, "/vi/");
-  if (switchUrl === "/vi/") switchUrl = "/vi";
-  if (switchUrl !== "/vi" && switchUrl.endsWith("/")) {
+  // Currently EN, switch to VI (root)
+  switchUrl = pathname.replace(/^\/en(\/|$)/, "/");
+  if (switchUrl !== "/" && switchUrl.endsWith("/")) {
      switchUrl = switchUrl.slice(0, -1);
   }
   
@@ -23,12 +22,7 @@ if (isEn) {
   mobileSwitchLabel = "Chuyển sang Tiếng Việt";
 } else {
   // Currently VI, switch to EN
-  if (pathname.startsWith("/vi")) {
-    switchUrl = pathname.replace(/^\/vi(\/|$)/, "/en/");
-  } else {
-    switchUrl = "/en" + (pathname === "/" ? "" : pathname);
-  }
-  if (switchUrl === "/en/") switchUrl = "/en";
+  switchUrl = "/en" + (pathname === "/" ? "" : pathname);
   if (switchUrl !== "/en" && switchUrl.endsWith("/")) {
      switchUrl = switchUrl.slice(0, -1);
   }
